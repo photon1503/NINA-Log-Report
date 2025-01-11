@@ -128,8 +128,8 @@ class Object:
         # if more then one filter
         if len(exposure_time_by_filter) > 1:
             print(f"Total {number_of_observations} exposures,  Exposure Time: {human_time_duration(total_exposure_time)}")
-        print(f"Average HFR: {average_hfr} asec" )
-        print(f"Average Drift: {average_drift}")
+        print(f"Average HFR: {average_hfr:.2f} asec" )
+        print(f"Average Drift: {average_drift:.2f} asec/s" )
         
         '''
         print("**** DETAILS ****\n")
@@ -207,13 +207,13 @@ def log_parser(log_file):
             if (message.__contains__("AppData\\Local\\NINA\\PlateSolver")):
                 continue
             obj.filter = message.split("\\")[-2]            
-            obj.name = message.split("\\")[-4]
+
+            #obj.name = message.split("\\")[-4]
+            # C:\Users\AMOS\Documents\N.I.N.A\2025-01-03\LIGHT\2025-01-03_19-45-31_Lum_-15.00_300.00s_0000_20.30_NGC 1977_2.77_0.53__.fits
+            # NGC 977 is name
+            obj.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
             night.exposureTime += obj.exposure
             night.exposures += 1
-           
-            
-
-            
 
             if obj.name not in objects:                
                 objects[obj.name] = Object(obj.name)
@@ -227,14 +227,16 @@ def log_parser(log_file):
     f.close()
 
 
-    print ("Summary:")
+    nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
+    print (f"Summary for {nighttime}" )
 
-    print (f"Sequence started at {night.startSequence} and ended at {night.endSequence} ({human_time_duration(night.getSequenceDuration())})")
-    print (f"Imaged from {night.startTimestamp} until {night.endTimestamp} ({human_time_duration(night.getImagingDuration())})")    
-    print (f"Total exposures: {night.exposures}")
-    print (f"Exposure time: {human_time_duration( night.exposureTime)}")
-    print (f"Safe duration: {human_time_duration(night.getTotalSafeMinutes() * 60)}")
-    print (f"Unsafe duration: {human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
+    # reformat 2025-01-10T17:06:18.6750 to 17:06
+    #night.startSequence = format_timestamp(night.startSequence)
+    
+    print (f"Total images: \t{night.exposures}")
+    print (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
+    print (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
+    print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
 
     # add observations to events
     for obj in objects.values():                               
@@ -245,7 +247,28 @@ def log_parser(log_file):
 
     night.events.sort(key=lambda x: toDateTime(x.startTimestamp) or datetime.max)
 
-    print (f"Events: {len(night.events)}")
+
+    # Combine consecutive "unsafe" events
+    combined_events = []
+    previous_event = None
+
+    for event in night.events:
+        if previous_event and event.eventType == "unsafe" and previous_event.eventType == "unsafe":
+            # Combine events if they are consecutive
+            previous_event.endTimestamp = event.endTimestamp
+            #previous_event.eventType = "unsafe (with gaps)"
+        else:
+            if previous_event:
+                combined_events.append(previous_event)
+            previous_event = event
+
+    if previous_event:
+        combined_events.append(previous_event)
+
+    night.events = combined_events
+
+    #print (f"Events: {len(night.events)}")
+    print()
     for event in night.events:
         try:
             start =  format_timestamp(event.startTimestamp)
@@ -262,14 +285,20 @@ def log_parser(log_file):
         except:
             duration = ""
         
-        print(f" {start}-{end}  \t{event.eventType} ({duration})")
+        if start == "":
+            print (f"     ", end="")
+
+        print(f" {start}-{end}  \t{event.eventType}", end="" )
+        if duration != "":
+            print(f" ({duration})", end="")
+        print()
 
     for obj in objects.values():
         obj.get_summary()
 
 
 def main():
-    log_parser("example.log")
+    log_parser("20250102-190030-3.1.2.9001.14692-202501.log")
 
 if __name__ == '__main__':
     main()
