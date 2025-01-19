@@ -1,4 +1,6 @@
 from datetime import datetime
+from datetime import timedelta
+
 
 TIME_DURATION_UNITS = (
     ('w', 60*60*24*7),
@@ -42,8 +44,33 @@ class Event:
     def minutes(self):
         return (toDateTime(self.endTimestamp) - toDateTime(self.startTimestamp)).seconds / 60
 
+class Nights:
+    def __init__(self):
+        self.nights = []
+
+    def add(self, night):
+        self.nights.append(night)
+
+    def addNight(self, date):
+        night = Night()
+        night.date = date
+        self.nights.append(night)
+        return night    
+    
+    def getNight(self, date):
+        for night in self.nights:                        
+            if date.split("T")[1] < "12:00:00":
+                if night.date == (datetime.strptime(date.split("T")[0], '%Y-%m-%d') - timedelta(days=1)).strftime('%Y-%m-%d'):
+                    return night
+            if night.date == date.split("T")[0]:
+                return night
+            
+        return self.addNight(date.split("T")[0])
+
+nights = Nights()
 class Night:
     def __init__(self):
+        self.date = None
         self.startSequence = 0
         self.endSequence = 0
         self.startTimestamp = 0
@@ -51,6 +78,10 @@ class Night:
         self.exposureTime = 0
         self.exposures = 0
         self.events = []
+        self.objects = {}
+
+
+      
 
     def updateStartEnd(self, timestamp):
         if self.startTimestamp == 0:
@@ -74,7 +105,7 @@ class Night:
         return (toDateTime(self.endTimestamp) - toDateTime(self.startTimestamp)).seconds / 60 - self.getTotalUnsafeMinutes()
         
         
-class Observation:
+class Exposure:
     def __init__(self):
         self.date = ""
         self.name = ""
@@ -84,10 +115,8 @@ class Observation:
         self.stars = 0
         self.drift = 0
     
-    def __str__(self):
-        return f"Date:{self.date} Obj:{self.name} Filter:{self.filter} Exp:{self.exposure} HFR:{self.hfr} Stars:{self.stars} Drift:{self.drift} "
     
-class Object:    
+class Target:    
     def __init__(self, name=""):
         self.observations = []
         self.name = name
@@ -96,15 +125,25 @@ class Object:
         self.observations.append(observation)
 
     def getStartTimestamp(self):
+        if len(self.observations) == 0:
+            return None
         return str(self.observations[0].date)
     
     def getEndTimestamp(self):
+        if len(self.observations) == 0:
+            return None
         return str(self.observations[-1].date)
 
     def get_summary(self):
         total_exposure_time = sum(obs.exposure for obs in self.observations)
-        average_hfr = sum(obs.hfr for obs in self.observations) / len(self.observations)
-        average_drift = sum(obs.drift for obs in self.observations) / len(self.observations)
+        if len(self.observations) != 0:
+            average_hfr = sum(obs.hfr for obs in self.observations) / len(self.observations)
+        else:
+            average_hfr = 0
+        if len(self.observations) != 0:
+            average_drift = sum(obs.drift for obs in self.observations) / len(self.observations)
+        else:
+            average_drift = 0
         number_of_observations = len(self.observations)
 
         exposure_time_by_filter = {}
@@ -131,33 +170,28 @@ class Object:
         print(f"Average HFR: {average_hfr:.2f} asec" )
         print(f"Average Drift: {average_drift:.2f} asec/s" )
         
-        '''
-        print("**** DETAILS ****\n")
 
-        #print details
-        for obs in self.observations:
-            print(obs)
-        '''
- 
-def log_parser(log_file):
+def parse_log_file(log_file):
     f = open(log_file, "r")
     lines = f.readlines()
 
-    objects = {}
-    obj = Observation()
-    night = Night()
-    event = Event()
-
     messageOld = ""
+    exp = Exposure()   
+    event = Event()
     
-
     for line in lines:
         # if line starts with "---" then ignore it
         if line.startswith("---"):
             continue
 
+        if line.startswith("DATE|"):
+            continue
+
+        if not line.startswith("20"):
+            continue
+
         parts = line.split("|")
-        obj.date = parts[0]
+        exp.date = parts[0]
         fields = ["", "", "", "", ""]
         for i in range(1, 6):
             try:
@@ -165,81 +199,102 @@ def log_parser(log_file):
             except IndexError:
                 pass
 
-        level, source, member, line, message = fields
+        level, source, member, line, message = fields     
 
+        night = nights.getNight(exp.date)  
+           
         if member == "StartSequence":
             if message.startswith("Advanced Sequence finished"):
                 if not messageOld.startswith("Sequence run was cancelled"):                        
-                    night.endSequence = obj.date
+                    night.endSequence = exp.date
                     night.events.append(Event("Sequence finished", 0, night.endSequence))
 
         if member == "StartSequence":
             if message.startswith("Advanced Sequence starting"):                
                 if not messageOld.startswith("InterruptWhen: Sequence longer running"):                    
-                    night.startSequence = obj.date
+                    night.startSequence = exp.date
                     night.events.append(Event("Sequence starting", night.startSequence, 0))
-
+                    # set next day to obj.date + 1 at 12:00 
+                    # add 1 day to obj.date
+                    nextDay = datetime.strptime(exp.date.split("T")[0], '%Y-%m-%d') + timedelta(days=1)
+                    nextDay = nextDay.strftime('%Y-%m-%d') + "T12:00:00.0000"
+                    
         if member == "UpdateMonitorValues":
             if message.startswith("SafetyMonitorInfo state changed to Unsafe"):
                 event = Event("unsafe")
-                event.startTimestamp = obj.date
-                obj = Observation()
+                event.startTimestamp = exp.date
+                exp = Exposure()
         
         if member == "UpdateMonitorValues":
             if message.startswith("SafetyMonitorInfo state changed to Safe"):
                 
-                event.endTimestamp = obj.date
+                event.endTimestamp = exp.date
                 night.events.append(event)
 
         if member == "Capture":
-            obj.exposure = int(message.split(";")[0].split(":")[1].replace("s", ""))
+            exp.exposure = int(message.split(";")[0].split(":")[1].replace("s", ""))
             
-            night.updateStartEnd(obj.date)
+            night.updateStartEnd(exp.date)
 
         if member == "Detect":            
-            obj.hfr   = float(message.split(",")[0].split(":")[1])
-            obj.stars = int(message.split(",")[2].split(" ")[3])            
+            exp.hfr   = float(message.split(",")[0].split(":")[1])
+            exp.stars = int(message.split(",")[2].split(" ")[3])            
 
         if member == "PlatesolvingImageFollower_PropertyChanged":
-            obj.drift = float(message.split(",")[0].split(":")[1].split('/')[0])
+            exp.drift = float(message.split(",")[0].split(":")[1].split('/')[0])
 
         if member == "SaveToDisk":
             if (message.__contains__("AppData\\Local\\NINA\\PlateSolver")):
                 continue
-            obj.filter = message.split("\\")[-2]            
+            exp.filter = message.split("\\")[-2]            
 
             #obj.name = message.split("\\")[-4]
             # C:\Users\AMOS\Documents\N.I.N.A\2025-01-03\LIGHT\2025-01-03_19-45-31_Lum_-15.00_300.00s_0000_20.30_NGC 1977_2.77_0.53__.fits
             # NGC 977 is name
-            obj.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
-            night.exposureTime += obj.exposure
+            exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
+            night.exposureTime += exp.exposure
             night.exposures += 1
 
-            if obj.name not in objects:                
-                objects[obj.name] = Object(obj.name)
+            if exp.name not in night.objects:                
+                night.objects[exp.name] = Target(exp.name)
             else:                
-                objects[obj.name].add(obj)
-            obj = Observation()
+                night.objects[exp.name].add(exp)
+            exp = Exposure()
 
         messageOld = message
         
            
     f.close()
+ 
+def log_parser():
 
+    # read all log files with YYYYMMDD-*.log
+    import glob
+    log_files = glob.glob("*.log") 
+    log_files.sort()
+    for log_file in log_files:
+        if log_file.startswith("20"):
+            parse_log_file(log_file)
+
+    for night in nights.nights:
+        print_summary(night)
+    
+
+def print_summary(night):
+    if night.startTimestamp == 0:
+        return
 
     nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
+    
     print (f"Summary for {nighttime}" )
 
-    # reformat 2025-01-10T17:06:18.6750 to 17:06
-    #night.startSequence = format_timestamp(night.startSequence)
-    
     print (f"Total images: \t{night.exposures}")
     print (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
     print (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
     print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
 
     # add observations to events
-    for obj in objects.values():                               
+    for obj in night.objects.values():                               
         start_timestamp = obj.getStartTimestamp()
         end_timestamp = obj.getEndTimestamp()
         night.events.append(Event(obj.name, start_timestamp, end_timestamp))
@@ -293,12 +348,12 @@ def log_parser(log_file):
             print(f" ({duration})", end="")
         print()
 
-    for obj in objects.values():
+    for obj in night.objects.values():
         obj.get_summary()
 
 
 def main():
-    log_parser("20250102-190030-3.1.2.9001.14692-202501.log")
+    log_parser()
 
 if __name__ == '__main__':
     main()
