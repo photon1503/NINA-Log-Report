@@ -2,6 +2,7 @@ from datetime import datetime
 from datetime import timedelta
 import json
 import os
+import argparse
 
 from pushover import PushoverClient
 
@@ -357,7 +358,7 @@ def generate_night_summary(night, report):
         report.addLine (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
 
     if night.errors > 0:
-        report.addLine (f"Errors: \t{night.errors}")
+        report.addLine (f"Errors: \t\t{night.errors}")
 
     # add observations to events
     for obj in night.objects.values():                               
@@ -365,13 +366,7 @@ def generate_night_summary(night, report):
         end_timestamp = obj.getEndTimestamp()
         night.events.append(Event(obj.name, start_timestamp, end_timestamp))
         
-
-    
-
     night.events.sort(key=lambda x: toDateTime(x.startTimestamp) or datetime.max)
-
-
-
 
     # Combine consecutive "unsafe" events
     combined_events = []
@@ -412,10 +407,10 @@ def generate_night_summary(night, report):
         
 
         if start == end:
-             report.addLine(f" {start}  \t{event.eventType}" )
+             report.addLine(f" {start} {event.eventType}" )
      
         else:
-            report.addLine(f" {start}-{end}  \t{event.eventType}" )
+            report.addLine(f" {start}-{end} {event.eventType}" )
             if duration != "":
                 report.addString(f" ({duration})")
 
@@ -425,7 +420,10 @@ def generate_night_summary(night, report):
 
 
 def main():
-    # get keys from secrets file
+    parser = argparse.ArgumentParser("nina_report")
+    parser.add_argument("-n", "--night", help="0=last night, 1=the night before etc.", type=int, default=0)
+    parser.add_argument("-P", "--pushover", help="Send report to pushover", action="store_true", default=False)
+    args = parser.parse_args()
    
     with open('secrets.json') as secrets_file:
         secrets = json.load(secrets_file)
@@ -438,17 +436,20 @@ def main():
         print("No data found")
         return
     
-    last_night = nights.nights[-2]
+    n = -(args.night + 1)
+    print (f"Processing night {n}")
+    last_night = nights.nights[n]
     report=Report()
     generate_night_summary(last_night, report)
-    pushover.send_message(report.getLines())
-
-    for night in nights.nights:
-        report = Report()
-        generate_night_summary(night, report)
+    if args.pushover:
+        pushover.send_message(report.getLines(), f"NINA Report for {last_night.date}")
+    else:
         print(report.getLines())
 
-
+   # for night in nights.nights:
+   #     report = Report()
+   #     generate_night_summary(night, report)
+   #     print(report.getLines())
 
 if __name__ == '__main__':
     main()

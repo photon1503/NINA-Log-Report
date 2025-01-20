@@ -11,16 +11,17 @@ class PushoverClient:
    
         self.conn = http.client.HTTPSConnection("api.pushover.net:443")
 
-    def send_message(self, message):
+    def send_message(self, message, title):
         if len(message) > 1024:
             messages = [message[i:i+1024] for i in range(0, len(message), 1024)]
             for msg in messages:
-                self.send_message(msg)
+                self.send_message(msg, title + " (continued)")
         self.conn.request("POST", "/1/messages.json",
                           urllib.parse.urlencode({
                               "token": self.token,
                               "user": self.user_key,
                               "message": message,
+                              "title": title
                           }), {"Content-type": "application/x-www-form-urlencoded"})
         response = self.conn.getresponse()
         return response.read()
