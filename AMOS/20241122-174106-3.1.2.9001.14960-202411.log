@@ -1,0 +1,805 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2024-11-22T17:41:07--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.22631---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2024-11-22T17:41:06.8821|INFO|CameraChooserVM.cs|GetEquipment|69|Found 2 ASI Cameras
+2024-11-22T17:41:08.5837|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2024-11-22T17:41:08.6802|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2024-11-22T17:41:08.6806|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2024-11-22T17:41:10.6584|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2024-11-22T17:41:10.7755|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2024-11-22T17:41:10.9526|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2024-11-22T17:41:11.1404|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2024-11-22T17:41:11.6310|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2024-11-22T17:41:11.9558|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2024-11-22T17:41:11.9575|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2024-11-22T17:41:12.2680|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 36.3 GB
+2024-11-22T17:41:12.2681|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive D:\: 4458.68 GB
+2024-11-22T17:41:12.2689|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2024-11-22T17:41:12.2703|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2024-11-22T17:41:12.2735|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2024-11-22T17:41:12.5170|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.2.0 by Gerald Hitz (photon)
+2024-11-22T17:41:12.6432|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2024-11-22T17:41:12.8691|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2024-11-22T17:41:13.1344|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2024-11-22T17:41:13.4527|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2024-11-22T17:41:15.4185|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2024-11-22T17:41:15.8447|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2024-11-22T17:41:16.2422|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2024-11-22T17:41:16.2428|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2024-11-22T17:41:16.2428|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2024-11-22T17:41:16.2428|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2024-11-22T17:41:16.2450|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2024-11-22T17:41:16.4310|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.4.2 by Stefan Berg
+2024-11-22T17:41:16.6359|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.16.1.0 by Marc Blank
+2024-11-22T17:41:17.2046|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2024-11-22T17:41:17.4766|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.0.0 by Tom Palmer @tcpalmer
+2024-11-22T17:41:17.6886|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2024-11-22T17:41:17.6889|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|110|purging old web session history: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\sessions\20241112-194332
+2024-11-22T17:41:17.7243|INFO|NINAWeb.cs|changePluginState|260|Web plugin state change from OFF to ON
+2024-11-22T17:41:17.7254|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20241122-174106-3.1.2.9001.14960-202411.log
+2024-11-22T17:41:17.7274|INFO|AutofocusDirectoryWatcher.cs|Watch|31|web viewer: watching AF directory file: C:\Users\AMOS\AppData\Local\NINA\AutoFocus
+2024-11-22T17:41:17.7302|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2024-11-22T17:41:17.7309|INFO|HttpServer.cs|ConfigureLogging|143|web server log: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\webserver-20241122-174117.log
+2024-11-22T17:41:17.7313|INFO|HttpServer.cs|WebServerTask|62|starting web server, listening at http://localhost:80/dist
+2024-11-22T17:41:17.7370|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-11-22T17:41:18.1545|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2024-11-22T17:41:18.2835|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2024-11-22T17:41:18.3049|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2024-11-22T17:41:18.3058|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2024-11-22T17:41:18.6509|INFO|PluginFetcher.cs|RequestAll|57|Found 58 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-11-22T17:41:19.7851|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2024-11-22T17:41:19.7851|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2024-11-22T17:41:19.7851|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2024-11-22T17:41:19.7851|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2024-11-22T17:41:19.7851|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2024-11-22T17:41:19.7852|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2024-11-22T17:41:19.7852|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2024-11-22T17:41:19.7852|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2024-11-22T17:41:19.7852|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2024-11-22T17:41:20.3084|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2024-11-22T17:41:20.3102|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2024-11-22T17:41:23.4077|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-22T17:41:25.3464|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-11-22T17:41:25.3486|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-11-22T17:41:25.3521|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2024-11-22T17:41:25.3548|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-11-22T17:41:26.5217|INFO|FilterWheelVM.cs|ChooseFW|272|Successfully connected Filter Wheel. Id: ASCOM.EFW2.FilterWheel Name: ZWO FilterWheel (1) DisplayName: ZWO FilterWheel (1) Driver Version: 6.0
+2024-11-22T17:41:26.5293|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-11-22T17:41:27.2976|INFO|AscomTelescope.cs|CheckMountTime|817|Mount UTC Time: 2024-11-22 16:41:27Z / System UTC Time: 2024-11-22 16:41:27Z; Difference: 0.002 seconds
+2024-11-22T17:41:27.3083|INFO|AscomTelescope.cs|CheckMountTime|837|Mount driver does not allow the mount's time to be set.
+2024-11-22T17:41:27.4002|INFO|TelescopeVM.cs|ChooseTelescope|518|Successfully connected mount. Id: ASCOM.photonProxyHub.Telescope Name: ASCOM Telescope Driver for photonProxyHub DisplayName: ASCOM Telescope Driver for photonProxyHub Driver Version: 2011_10_08
+2024-11-22T17:41:27.4028|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-11-22T17:41:28.2342|INFO|FocuserVM.cs|ChooseFocuser|324|Successfully connected Focuser. Id: ASCOM.MicroTouchServer.Focuser1 Name: MicroTouch Focuser1 DisplayName: MicroTouch Focuser1 Driver Version: 1.3
+2024-11-22T17:41:28.2371|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-11-22T17:41:37.0529|INFO|RotatorVM.cs|Connect|398|Successfully connected Rotator. Id: ASCOM.PegasusAstroFalconV2.Rotator Name: PegasusAstro FalconV2 DisplayName: PegasusAstro FalconV2 Driver Version: 2.4.4561.305
+2024-11-22T17:41:37.0660|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-11-22T17:41:40.4340|INFO|FlatDeviceVM.cs|Connect|234|Successfully connected flat device. Id: ASCOM.OptecAlnitak.CoverCalibrator Name: Optec Alnitak DisplayName: Optec Alnitak Driver Version: 1.0
+2024-11-22T17:41:40.4363|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-11-22T17:41:42.1768|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.SkyBrightness GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-11-22T17:41:42.1818|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.StarFWHM GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-11-22T17:41:42.1855|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.WindDirection GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-11-22T17:41:42.1900|INFO|WeatherDataVM.cs|ChooseWeatherData|143|Successfully connected Weather Device. Id: ASCOM.CloudWatcher.ObservingConditions Name: Lunatico CloudWatcher Observing Conditions DisplayName: Lunatico CloudWatcher Observing Conditions Driver Version: 1.0
+2024-11-22T17:41:42.1933|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2024-11-22T17:41:42.1968|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-11-22T17:41:42.8195|INFO|DomeVM.cs|ChooseDome|191|Successfully connected Dome. Id: ASCOM.AMOS.Dome Name: ASCOM Dome Driver for AMOS DisplayName: ASCOM Dome Driver for AMOS Driver Version: 1.0.1
+2024-11-22T17:41:42.8217|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-11-22T17:41:43.4739|INFO|SafetyMonitorVM.cs|Connect|168|Successfully connected Safety Monitor. Id: ASCOM.CloudWatcher.SafetyMonitor Name: Lunatico CloudWatcher Safety Monitor DisplayName: Lunatico CloudWatcher Safety Monitor Driver Version: 1.0
+2024-11-22T17:45:53.5421|INFO|Sequence2VM.cs|StartSequence|485|Advanced Sequence starting
+2024-11-22T17:45:53.5639|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[CREATED]: 3
+2024-11-22T17:45:53.5678|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy
+2024-11-22T17:45:53.5688|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy
+2024-11-22T17:45:53.5702|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 5
+2024-11-22T17:45:53.5706|INFO|SequenceItem.cs|Run|208|Starting Category: ASA Tools, Item: PowerOn
+2024-11-22T17:45:53.5774|INFO|SequenceItem.cs|Run|254|Finishing Category: ASA Tools, Item: PowerOn
+2024-11-22T17:45:53.5784|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: SetTracking, TrackingMode: Stopped
+2024-11-22T17:45:53.5822|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: SetTracking, TrackingMode: Stopped
+2024-11-22T17:45:53.5847|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: CoolCamera, Temperature: -15, Duration: 0
+2024-11-22T17:45:53.5900|INFO|CameraVM.cs|CoolCamera|139|Cooling Camera. Target: -15 Duration: 00:00:00
+2024-11-22T17:50:40.5651|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: CoolCamera, Temperature: -15, Duration: 0
+2024-11-22T17:50:40.5654|INFO|SequenceItem.cs|Run|208|Starting Category: Flat Device, Item: CloseCover
+2024-11-22T17:50:40.5673|INFO|FlatDeviceVM.cs|CloseCover|331|Closing Flat Device Cover
+2024-11-22T17:50:44.4652|INFO|SequenceItem.cs|Run|254|Finishing Category: Flat Device, Item: CloseCover
+2024-11-22T17:50:44.4669|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.DeepSkyObjectContainer, Strategy: SequentialStrategy, Items[DISABLED]: 2, Items[CREATED]: 1, Conditions: Condition: SunAltitudeCondition, CurrentAltitude: -14.64, Comparator: GREATER_THAN, TargetAltitude: -6, , Target: Dark RA: 01:40:17; Dec: 45° 58' 46"; Epoch: J2000 0
+2024-11-22T17:50:44.4688|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T17:50:44.4690|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T17:50:44.4734|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[SKIPPED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T17:50:44.4758|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T17:50:44.4767|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T17:50:44.4818|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter Ha at Position 4
+2024-11-22T17:50:44.5581|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15334
+2024-11-22T17:50:50.3859|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T17:50:50.3935|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T17:50:50.4232|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:00:52.2894|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:00:52.2905|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:00:52.2999|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:00:52.3004|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:00:52.3253|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:00:52.8461|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_17-50-50_Ha_-15.00_600.00s_0050_19.06_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:00:52.8464|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_17-50-50_Ha_-15.00_600.00s_0050_19.06_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3901593; BeforeSave: 00:00:00.0000546; BeforeFinalizeImageSaved: 00:00:00.2581627; FinalizeSaveTime: 00:00:00.1319411
+2024-11-22T18:03:01.3109|INFO|DockManagerVM.cs|InitializeAvalonDockLayout|356|Initializing imaging tab layout from C:\Users\AMOS\AppData\Local\NINA\Profiles\4efc0507-b521-49ce-88b6-96e9d454c1a7.dock.config
+2024-11-22T18:10:54.1067|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:10:54.1071|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:10:54.1099|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:10:54.1103|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:10:54.1340|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:10:54.5438|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-00-52_Ha_-15.00_600.00s_0051_19.30_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:10:54.5439|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-00-52_Ha_-15.00_600.00s_0051_19.30_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3291557; BeforeSave: 00:00:00.0000138; BeforeFinalizeImageSaved: 00:00:00.1722925; FinalizeSaveTime: 00:00:00.1568458
+2024-11-22T18:20:55.9614|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:20:55.9616|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T18:20:55.9620|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T18:20:55.9625|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T18:20:55.9627|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:20:55.9658|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:20:55.9660|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:20:55.9971|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:20:56.3495|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-10-54_Ha_-15.00_600.00s_0052_19.53_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:20:56.3496|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-10-54_Ha_-15.00_600.00s_0052_19.53_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2803115; BeforeSave: 00:00:00.0000095; BeforeFinalizeImageSaved: 00:00:00.1441162; FinalizeSaveTime: 00:00:00.1361798
+2024-11-22T18:30:57.7967|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:30:57.7975|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:30:57.7998|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:30:57.8005|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:30:57.8175|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:30:58.1799|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-20-55_Ha_-15.00_600.00s_0053_19.74_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:30:58.1800|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-20-55_Ha_-15.00_600.00s_0053_19.74_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2955985; BeforeSave: 00:00:00.0000130; BeforeFinalizeImageSaved: 00:00:00.1653658; FinalizeSaveTime: 00:00:00.1302195
+2024-11-22T18:40:59.4945|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:40:59.4950|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:40:59.4979|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:40:59.4991|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:40:59.5284|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:40:59.8876|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-30-57_Ha_-15.00_600.00s_0054_19.85_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:40:59.8877|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-30-57_Ha_-15.00_600.00s_0054_19.85_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3093506; BeforeSave: 00:00:00.0000141; BeforeFinalizeImageSaved: 00:00:00.1748284; FinalizeSaveTime: 00:00:00.1345077
+2024-11-22T18:51:01.2950|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:51:01.2952|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T18:51:01.2953|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T18:51:01.2956|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T18:51:01.2956|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:51:01.2988|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T18:51:01.2990|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T18:51:01.3150|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T18:51:01.6766|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-40-59_Ha_-15.00_600.00s_0055_19.74_Dark_0.00_0.00__0.00.fits
+2024-11-22T18:51:01.6766|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-40-59_Ha_-15.00_600.00s_0055_19.74_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2815290; BeforeSave: 00:00:00.0000115; BeforeFinalizeImageSaved: 00:00:00.1433549; FinalizeSaveTime: 00:00:00.1381619
+2024-11-22T19:01:03.1079|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:01:03.1084|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:01:03.1120|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:01:03.1126|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:01:03.1569|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:01:03.4907|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-51-01_Ha_-15.00_600.00s_0056_19.22_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:01:03.4908|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_18-51-01_Ha_-15.00_600.00s_0056_19.22_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2783692; BeforeSave: 00:00:00.0000195; BeforeFinalizeImageSaved: 00:00:00.1508897; FinalizeSaveTime: 00:00:00.1274594
+2024-11-22T19:11:04.9063|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:11:04.9068|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:11:04.9099|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:11:04.9102|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:11:04.9271|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:11:05.2865|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-01-03_Ha_-15.00_600.00s_0057_19.09_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:11:05.2865|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-01-03_Ha_-15.00_600.00s_0057_19.09_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2949569; BeforeSave: 00:00:00.0000121; BeforeFinalizeImageSaved: 00:00:00.1704380; FinalizeSaveTime: 00:00:00.1245064
+2024-11-22T19:21:06.6456|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:21:06.6458|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T19:21:06.6459|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T19:21:06.6467|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T19:21:06.6468|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:21:06.6498|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:21:06.6503|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:21:06.6785|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:21:07.0191|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-11-04_Ha_-15.00_600.00s_0058_19.30_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:21:07.0192|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-11-04_Ha_-15.00_600.00s_0058_19.30_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2861088; BeforeSave: 00:00:00.0000148; BeforeFinalizeImageSaved: 00:00:00.1682127; FinalizeSaveTime: 00:00:00.1178810
+2024-11-22T19:31:08.4031|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:31:08.4038|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:31:08.4069|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:31:08.4076|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:31:08.4241|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:31:08.7775|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-21-06_Ha_-15.00_600.00s_0059_19.36_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:31:08.7776|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-21-06_Ha_-15.00_600.00s_0059_19.36_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2927191; BeforeSave: 00:00:00.0000109; BeforeFinalizeImageSaved: 00:00:00.1756719; FinalizeSaveTime: 00:00:00.1170359
+2024-11-22T19:41:10.2306|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:41:10.2313|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:41:10.2348|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:41:10.2351|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:41:10.2652|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:41:10.6120|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-31-08_Ha_-15.00_600.00s_0060_19.25_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:41:10.6121|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-31-08_Ha_-15.00_600.00s_0060_19.25_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2926051; BeforeSave: 00:00:00.0000150; BeforeFinalizeImageSaved: 00:00:00.1803072; FinalizeSaveTime: 00:00:00.1122824
+2024-11-22T19:51:11.9365|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:51:11.9368|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T19:51:11.9369|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T19:51:11.9376|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T19:51:11.9378|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:51:11.9408|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T19:51:11.9412|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T19:51:11.9586|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T19:51:12.3309|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-41-10_Ha_-15.00_600.00s_0061_18.77_Dark_0.00_0.00__0.00.fits
+2024-11-22T19:51:12.3310|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-41-10_Ha_-15.00_600.00s_0061_18.77_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3080033; BeforeSave: 00:00:00.0000088; BeforeFinalizeImageSaved: 00:00:00.1600431; FinalizeSaveTime: 00:00:00.1479511
+2024-11-22T20:01:13.7197|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:01:13.7203|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:01:13.7238|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:01:13.7243|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:01:13.7533|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:01:14.0865|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-51-11_Ha_-15.00_600.00s_0062_19.72_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:01:14.0866|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_19-51-11_Ha_-15.00_600.00s_0062_19.72_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2819111; BeforeSave: 00:00:00.0000132; BeforeFinalizeImageSaved: 00:00:00.1477620; FinalizeSaveTime: 00:00:00.1341356
+2024-11-22T20:11:15.5982|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:11:15.5988|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:11:15.6018|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:11:15.6025|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:11:15.6198|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:11:15.9518|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-01-13_Ha_-15.00_600.00s_0063_19.88_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:11:15.9519|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-01-13_Ha_-15.00_600.00s_0063_19.88_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2601071; BeforeSave: 00:00:00.0000111; BeforeFinalizeImageSaved: 00:00:00.1411476; FinalizeSaveTime: 00:00:00.1189478
+2024-11-22T20:21:17.3341|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:21:17.3342|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T20:21:17.3343|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T20:21:17.3347|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T20:21:17.3349|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:21:17.3377|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:21:17.3382|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:21:17.3753|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:21:17.7149|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-11-15_Ha_-15.00_600.00s_0064_19.81_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:21:17.7150|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-11-15_Ha_-15.00_600.00s_0064_19.81_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2876380; BeforeSave: 00:00:00.0000094; BeforeFinalizeImageSaved: 00:00:00.1711408; FinalizeSaveTime: 00:00:00.1164875
+2024-11-22T20:31:19.1623|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:31:19.1631|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:31:19.1658|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:31:19.1664|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:31:19.1832|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:31:19.5410|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-21-17_Ha_-15.00_600.00s_0065_20.08_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:31:19.5410|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-21-17_Ha_-15.00_600.00s_0065_20.08_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2873025; BeforeSave: 00:00:00.0000111; BeforeFinalizeImageSaved: 00:00:00.1659639; FinalizeSaveTime: 00:00:00.1213270
+2024-11-22T20:41:21.0424|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:41:21.0429|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:41:21.0458|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:41:21.0461|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:41:21.0777|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:41:21.4116|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-31-19_Ha_-15.00_600.00s_0066_20.03_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:41:21.4117|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-31-19_Ha_-15.00_600.00s_0066_20.03_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2772765; BeforeSave: 00:00:00.0000089; BeforeFinalizeImageSaved: 00:00:00.1662598; FinalizeSaveTime: 00:00:00.1110077
+2024-11-22T20:51:22.9170|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:51:22.9172|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T20:51:22.9174|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T20:51:22.9179|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T20:51:22.9180|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:51:22.9207|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T20:51:22.9213|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T20:51:22.9404|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T20:51:23.2612|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-41-21_Ha_-15.00_600.00s_0067_19.68_Dark_0.00_0.00__0.00.fits
+2024-11-22T20:51:23.2613|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_20-41-21_Ha_-15.00_600.00s_0067_19.68_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2574126; BeforeSave: 00:00:00.0000138; BeforeFinalizeImageSaved: 00:00:00.1464301; FinalizeSaveTime: 00:00:00.1109684
+2024-11-22T21:02:24.0241|ERROR|CameraVM.cs|Capture|767
+NINA.Equipment.Exceptions.CameraDownloadFailedException: Camera Timeout - Camera did not set image as ready after exposuretime + 60 seconds - Exposure details: Exposure time: 600, Type: DARK, Gain: -1, Filter: 
+2024-11-22T21:02:24.0243|ERROR|ImagingVM.cs|CaptureImage|254|Camera Timeout - Camera did not set image as ready after exposuretime + 60 seconds - Exposure details: Exposure time: 600, Type: DARK, Gain: -1, Filter: 
+2024-11-22T21:02:24.0249|ERROR|SequenceItem.cs|Run|263|Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1 - 
+NINA.Equipment.Exceptions.CameraDownloadFailedException: Camera Timeout - Camera did not set image as ready after exposuretime + 60 seconds - Exposure details: Exposure time: 600, Type: DARK, Gain: -1, Filter: 
+   at NINA.WPF.Base.ViewModel.Equipment.Camera.CameraVM.Capture(CaptureSequence sequence, CancellationToken token, IProgress`1 progress) in C:\Projects\nina\NINA.WPF.Base\ViewModel\Equipment\Camera\CameraVM.cs:line 769
+   at NINA.ViewModel.ImagingVM.<>c__DisplayClass38_0.<<CaptureImage>b__0>d.MoveNext() in C:\Projects\nina\NINA\ViewModel\ImagingVM.cs:line 224
+--- End of stack trace from previous location ---
+   at NINA.Sequencer.SequenceItem.Imaging.TakeExposure.Execute(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\Imaging\TakeExposure.cs:line 190
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 249
+2024-11-22T21:02:24.0388|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction Take Exposure failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2024-11-22T21:02:24.0395|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:02:24.0427|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:02:24.0431|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:02:24.0600|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:12:25.8041|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:12:25.8046|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:12:25.8077|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:12:25.8079|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:12:25.8385|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:12:26.2070|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-02-24_Ha_-15.00_600.00s_0068_19.22_Dark_0.00_0.00__0.00.fits
+2024-11-22T21:12:26.2070|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-02-24_Ha_-15.00_600.00s_0068_19.22_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3006281; BeforeSave: 00:00:00.0000130; BeforeFinalizeImageSaved: 00:00:00.1643502; FinalizeSaveTime: 00:00:00.1362646
+2024-11-22T21:22:27.6151|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:22:27.6153|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T21:22:27.6154|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T21:22:27.6159|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T21:22:27.6162|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:22:27.6197|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:22:27.6199|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:22:27.6368|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:22:27.9852|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-12-25_Ha_-15.00_600.00s_0069_19.56_Dark_0.00_0.00__0.00.fits
+2024-11-22T21:22:27.9853|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-12-25_Ha_-15.00_600.00s_0069_19.56_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2864275; BeforeSave: 00:00:00.0000121; BeforeFinalizeImageSaved: 00:00:00.1713989; FinalizeSaveTime: 00:00:00.1150133
+2024-11-22T21:32:29.3924|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:32:29.3933|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:32:29.3967|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:32:29.3969|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:32:29.4266|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:32:29.7657|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-22-27_Ha_-15.00_600.00s_0070_19.08_Dark_0.00_0.00__0.00.fits
+2024-11-22T21:32:29.7657|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-22-27_Ha_-15.00_600.00s_0070_19.08_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2798098; BeforeSave: 00:00:00.0000150; BeforeFinalizeImageSaved: 00:00:00.1510268; FinalizeSaveTime: 00:00:00.1287674
+2024-11-22T21:42:31.1711|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:42:31.1717|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:42:31.1747|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:42:31.1752|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:42:31.2058|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:42:31.5733|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-32-29_Ha_-15.00_600.00s_0071_19.29_Dark_0.00_0.00__0.00.fits
+2024-11-22T21:42:31.5734|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-32-29_Ha_-15.00_600.00s_0071_19.29_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2994220; BeforeSave: 00:00:00.0000079; BeforeFinalizeImageSaved: 00:00:00.1694067; FinalizeSaveTime: 00:00:00.1300067
+2024-11-22T21:52:33.0065|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:52:33.0068|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T21:52:33.0068|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T21:52:33.0075|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T21:52:33.0076|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:52:33.0107|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T21:52:33.0111|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T21:52:33.0417|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T21:52:33.3696|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-42-31_Ha_-15.00_600.00s_0072_19.52_Dark_0.00_0.00__0.00.fits
+2024-11-22T21:52:33.3697|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-42-31_Ha_-15.00_600.00s_0072_19.52_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2837449; BeforeSave: 00:00:00.0000084; BeforeFinalizeImageSaved: 00:00:00.1694113; FinalizeSaveTime: 00:00:00.1143246
+2024-11-22T22:02:34.7628|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:02:34.7636|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:02:34.7667|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:02:34.7672|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:02:34.7853|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:02:35.1477|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-52-33_Ha_-15.00_600.00s_0073_19.06_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:02:35.1478|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_21-52-33_Ha_-15.00_600.00s_0073_19.06_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2942904; BeforeSave: 00:00:00.0000127; BeforeFinalizeImageSaved: 00:00:00.1656298; FinalizeSaveTime: 00:00:00.1286473
+2024-11-22T22:12:36.5413|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:12:36.5417|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:12:36.5447|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:12:36.5449|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:12:36.5885|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:12:36.9293|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-02-34_Ha_-15.00_600.00s_0074_18.90_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:12:36.9293|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-02-34_Ha_-15.00_600.00s_0074_18.90_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2848032; BeforeSave: 00:00:00.0000216; BeforeFinalizeImageSaved: 00:00:00.1707563; FinalizeSaveTime: 00:00:00.1140249
+2024-11-22T22:22:38.4723|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:22:38.4725|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T22:22:38.4726|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T22:22:38.4731|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T22:22:38.4732|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:22:38.4767|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:22:38.4773|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:22:38.4947|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:22:38.8808|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-12-36_Ha_-15.00_600.00s_0075_18.69_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:22:38.8809|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-12-36_Ha_-15.00_600.00s_0075_18.69_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3150768; BeforeSave: 00:00:00.0000103; BeforeFinalizeImageSaved: 00:00:00.1789496; FinalizeSaveTime: 00:00:00.1361164
+2024-11-22T22:32:40.3534|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:32:40.3539|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:32:40.3566|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:32:40.3569|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:32:40.3875|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:32:40.7399|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-22-38_Ha_-15.00_600.00s_0076_18.56_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:32:40.7400|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-22-38_Ha_-15.00_600.00s_0076_18.56_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2935835; BeforeSave: 00:00:00.0000107; BeforeFinalizeImageSaved: 00:00:00.1774569; FinalizeSaveTime: 00:00:00.1161152
+2024-11-22T22:42:39.7552|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:42:39.7555|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:42:39.7590|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:42:39.7595|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:42:39.7767|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:42:40.1589|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-32-40_Ha_-15.00_600.00s_0077_18.55_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:42:40.1589|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-32-40_Ha_-15.00_600.00s_0077_18.55_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3126376; BeforeSave: 00:00:00.0000080; BeforeFinalizeImageSaved: 00:00:00.1777272; FinalizeSaveTime: 00:00:00.1349021
+2024-11-22T22:52:41.6156|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:52:41.6158|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T22:52:41.6158|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T22:52:41.6167|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T22:52:41.6168|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:52:41.6200|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T22:52:41.6203|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T22:52:41.6538|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T22:52:41.9942|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-42-39_Ha_-15.00_600.00s_0078_18.92_Dark_0.00_0.00__0.00.fits
+2024-11-22T22:52:41.9942|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-42-39_Ha_-15.00_600.00s_0078_18.92_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2858591; BeforeSave: 00:00:00.0000083; BeforeFinalizeImageSaved: 00:00:00.1731195; FinalizeSaveTime: 00:00:00.1127307
+2024-11-22T23:02:43.5358|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:02:43.5366|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:02:43.5391|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:02:43.5398|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:02:43.5568|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:02:43.9152|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-52-41_Ha_-15.00_600.00s_0079_18.96_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:02:43.9153|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_22-52-41_Ha_-15.00_600.00s_0079_18.96_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2872047; BeforeSave: 00:00:00.0000107; BeforeFinalizeImageSaved: 00:00:00.1575218; FinalizeSaveTime: 00:00:00.1296716
+2024-11-22T23:12:45.3321|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:12:45.3326|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:12:45.3360|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:12:45.3362|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:12:45.3681|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:12:45.7142|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-02-43_Ha_-15.00_600.00s_0080_19.37_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:12:45.7143|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-02-43_Ha_-15.00_600.00s_0080_19.37_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2872079; BeforeSave: 00:00:00.0000754; BeforeFinalizeImageSaved: 00:00:00.1775942; FinalizeSaveTime: 00:00:00.1095376
+2024-11-22T23:22:47.0321|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:22:47.0322|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T23:22:47.0323|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T23:22:47.0326|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T23:22:47.0327|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:22:47.0360|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:22:47.0364|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:22:47.0578|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:22:47.4164|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-12-45_Ha_-15.00_600.00s_0081_19.05_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:22:47.4165|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-12-45_Ha_-15.00_600.00s_0081_19.05_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2931721; BeforeSave: 00:00:00.0000051; BeforeFinalizeImageSaved: 00:00:00.1742811; FinalizeSaveTime: 00:00:00.1188823
+2024-11-22T23:32:48.9426|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:32:48.9434|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:32:48.9470|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:32:48.9478|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:32:48.9764|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:32:49.3117|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-22-47_Ha_-15.00_600.00s_0082_18.90_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:32:49.3117|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-22-47_Ha_-15.00_600.00s_0082_18.90_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2868967; BeforeSave: 00:00:00.0000130; BeforeFinalizeImageSaved: 00:00:00.1811893; FinalizeSaveTime: 00:00:00.1056940
+2024-11-22T23:42:50.6706|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:42:50.6714|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:42:50.6750|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:42:50.6757|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:42:50.6932|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:42:51.0575|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-32-48_Ha_-15.00_600.00s_0083_19.04_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:42:51.0576|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-32-48_Ha_-15.00_600.00s_0083_19.04_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2994414; BeforeSave: 00:00:00.0000063; BeforeFinalizeImageSaved: 00:00:00.1716976; FinalizeSaveTime: 00:00:00.1277370
+2024-11-22T23:52:52.4140|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:52:52.4141|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-22T23:52:52.4142|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T23:52:52.4144|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-22T23:52:52.4146|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:52:52.4181|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-22T23:52:52.4183|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-22T23:52:52.4466|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-22T23:52:52.7866|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-42-50_Ha_-15.00_600.00s_0084_19.29_Dark_0.00_0.00__0.00.fits
+2024-11-22T23:52:52.7867|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-42-50_Ha_-15.00_600.00s_0084_19.29_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2797514; BeforeSave: 00:00:00.0000224; BeforeFinalizeImageSaved: 00:00:00.1658650; FinalizeSaveTime: 00:00:00.1138636
+2024-11-23T00:02:54.3137|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:02:54.3142|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:02:54.3169|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:02:54.3175|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:02:54.3353|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:02:54.6822|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-52-52_Ha_-15.00_600.00s_0085_19.41_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:02:54.6822|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-22_23-52-52_Ha_-15.00_600.00s_0085_19.41_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2786230; BeforeSave: 00:00:00.0000277; BeforeFinalizeImageSaved: 00:00:00.1683517; FinalizeSaveTime: 00:00:00.1102431
+2024-11-23T00:12:56.1641|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:12:56.1647|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:12:56.1679|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:12:56.1681|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:12:56.1956|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:12:56.5319|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-02-54_Ha_-15.00_600.00s_0086_19.53_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:12:56.5320|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-02-54_Ha_-15.00_600.00s_0086_19.53_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2792879; BeforeSave: 00:00:00.0000104; BeforeFinalizeImageSaved: 00:00:00.1694899; FinalizeSaveTime: 00:00:00.1097868
+2024-11-23T00:22:57.9633|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:22:57.9634|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T00:22:57.9634|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T00:22:57.9637|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T00:22:57.9638|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:22:57.9661|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:22:57.9668|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:22:57.9843|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:22:58.3470|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-12-56_Ha_-15.00_600.00s_0087_19.64_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:22:58.3471|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-12-56_Ha_-15.00_600.00s_0087_19.64_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2887347; BeforeSave: 00:00:00.0000058; BeforeFinalizeImageSaved: 00:00:00.1634621; FinalizeSaveTime: 00:00:00.1252663
+2024-11-23T00:32:59.8383|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:32:59.8387|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:32:59.8419|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:32:59.8421|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:32:59.8708|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:33:00.2208|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-22-57_Ha_-15.00_600.00s_0088_19.68_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:33:00.2209|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-22-57_Ha_-15.00_600.00s_0088_19.68_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2918770; BeforeSave: 00:00:00.0000126; BeforeFinalizeImageSaved: 00:00:00.1834897; FinalizeSaveTime: 00:00:00.1083742
+2024-11-23T00:43:01.7076|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:43:01.7084|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:43:01.7119|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:43:01.7126|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:43:01.7338|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:43:02.0947|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-32-59_Ha_-15.00_600.00s_0089_19.73_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:43:02.0948|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-32-59_Ha_-15.00_600.00s_0089_19.73_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3018802; BeforeSave: 00:00:00.0000289; BeforeFinalizeImageSaved: 00:00:00.1730797; FinalizeSaveTime: 00:00:00.1287710
+2024-11-23T00:53:03.5693|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:53:03.5694|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T00:53:03.5696|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T00:53:03.5704|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T00:53:03.5705|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:53:03.5738|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T00:53:03.5741|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T00:53:03.6008|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T00:53:03.9197|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-43-01_Ha_-15.00_600.00s_0090_19.67_Dark_0.00_0.00__0.00.fits
+2024-11-23T00:53:03.9198|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-43-01_Ha_-15.00_600.00s_0090_19.67_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2714128; BeforeSave: 00:00:00.0000100; BeforeFinalizeImageSaved: 00:00:00.1629422; FinalizeSaveTime: 00:00:00.1084602
+2024-11-23T01:03:05.2607|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:03:05.2612|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:03:05.2638|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:03:05.2643|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:03:05.2833|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:03:05.6614|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-53-03_Ha_-15.00_600.00s_0091_19.72_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:03:05.6615|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_00-53-03_Ha_-15.00_600.00s_0091_19.72_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3081998; BeforeSave: 00:00:00.0000352; BeforeFinalizeImageSaved: 00:00:00.1756184; FinalizeSaveTime: 00:00:00.1325457
+2024-11-23T01:13:06.9991|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:13:06.9995|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:13:07.0028|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:13:07.0031|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:13:07.0319|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:13:07.3802|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-03-05_Ha_-15.00_600.00s_0092_19.74_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:13:07.3802|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-03-05_Ha_-15.00_600.00s_0092_19.74_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2920506; BeforeSave: 00:00:00.0000103; BeforeFinalizeImageSaved: 00:00:00.1861614; FinalizeSaveTime: 00:00:00.1058782
+2024-11-23T01:14:01.0086|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-11-23T01:16:17.0082|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-11-23T01:23:08.9391|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:23:08.9392|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T01:23:08.9394|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T01:23:08.9398|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T01:23:08.9401|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:23:08.9429|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:23:08.9433|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:23:08.9596|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:23:09.3108|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-13-07_Ha_-15.00_600.00s_0093_19.52_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:23:09.3108|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-13-07_Ha_-15.00_600.00s_0093_19.52_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2809569; BeforeSave: 00:00:00.0000055; BeforeFinalizeImageSaved: 00:00:00.1629010; FinalizeSaveTime: 00:00:00.1180499
+2024-11-23T01:33:10.7584|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:33:10.7593|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:33:10.7629|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:33:10.7631|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:33:10.7913|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:33:11.1435|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-23-08_Ha_-15.00_600.00s_0094_19.47_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:33:11.1436|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-23-08_Ha_-15.00_600.00s_0094_19.47_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2902153; BeforeSave: 00:00:00.0000219; BeforeFinalizeImageSaved: 00:00:00.1849253; FinalizeSaveTime: 00:00:00.1052673
+2024-11-23T01:42:33.0086|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-11-23T01:43:12.6364|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:43:12.6372|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:43:12.6398|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:43:12.6402|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:43:12.6566|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:43:13.0094|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-33-10_Ha_-15.00_600.00s_0095_19.71_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:43:13.0095|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-33-10_Ha_-15.00_600.00s_0095_19.71_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2909694; BeforeSave: 00:00:00.0000064; BeforeFinalizeImageSaved: 00:00:00.1553179; FinalizeSaveTime: 00:00:00.1356447
+2024-11-23T01:53:14.4582|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:53:14.4583|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T01:53:14.4583|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T01:53:14.4589|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T01:53:14.4593|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:53:14.4628|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T01:53:14.4631|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T01:53:14.4988|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T01:53:14.8349|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-43-12_Ha_-15.00_600.00s_0096_19.70_Dark_0.00_0.00__0.00.fits
+2024-11-23T01:53:14.8350|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-43-12_Ha_-15.00_600.00s_0096_19.70_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2761874; BeforeSave: 00:00:00.0000305; BeforeFinalizeImageSaved: 00:00:00.1711456; FinalizeSaveTime: 00:00:00.1050107
+2024-11-23T02:03:16.4081|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:03:16.4085|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:03:16.4120|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:03:16.4124|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:03:16.4448|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:03:16.8190|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-53-14_Ha_-15.00_600.00s_0097_19.65_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:03:16.8190|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_01-53-14_Ha_-15.00_600.00s_0097_19.65_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3228759; BeforeSave: 00:00:00.0000107; BeforeFinalizeImageSaved: 00:00:00.1890176; FinalizeSaveTime: 00:00:00.1338469
+2024-11-23T02:13:18.3013|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:13:18.3019|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:13:18.3049|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:13:18.3053|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:13:18.3332|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:13:18.6651|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-03-16_Ha_-15.00_600.00s_0098_19.65_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:13:18.6652|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-03-16_Ha_-15.00_600.00s_0098_19.65_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2796745; BeforeSave: 00:00:00.0000144; BeforeFinalizeImageSaved: 00:00:00.1743893; FinalizeSaveTime: 00:00:00.1052703
+2024-11-23T02:23:20.1406|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:23:20.1407|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T02:23:20.1408|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T02:23:20.1417|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T02:23:20.1419|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:23:20.1448|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:23:20.1453|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:23:20.1639|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:23:20.5200|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-13-18_Ha_-15.00_600.00s_0099_19.62_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:23:20.5201|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-13-18_Ha_-15.00_600.00s_0099_19.62_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2805350; BeforeSave: 00:00:00.0000080; BeforeFinalizeImageSaved: 00:00:00.1759893; FinalizeSaveTime: 00:00:00.1045373
+2024-11-23T02:33:21.8785|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:33:21.8790|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:33:21.8819|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:33:21.8822|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:33:21.9109|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:33:22.2508|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-23-20_Ha_-15.00_600.00s_0100_19.59_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:33:22.2509|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-23-20_Ha_-15.00_600.00s_0100_19.59_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2824946; BeforeSave: 00:00:00.0000309; BeforeFinalizeImageSaved: 00:00:00.1784524; FinalizeSaveTime: 00:00:00.1040107
+2024-11-23T02:43:23.6137|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:43:23.6142|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:43:23.6167|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:43:23.6172|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:43:23.6361|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:43:23.9942|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-33-21_Ha_-15.00_600.00s_0101_19.57_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:43:23.9942|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-33-21_Ha_-15.00_600.00s_0101_19.57_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2745575; BeforeSave: 00:00:00.0000140; BeforeFinalizeImageSaved: 00:00:00.1680049; FinalizeSaveTime: 00:00:00.1065381
+2024-11-23T02:53:25.5651|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:53:25.5653|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T02:53:25.5653|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T02:53:25.5961|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T02:53:25.5962|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:53:25.5988|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T02:53:25.5991|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T02:53:25.6270|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T02:53:25.9822|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-43-23_Ha_-15.00_600.00s_0102_19.52_Dark_0.00_0.00__0.00.fits
+2024-11-23T02:53:25.9823|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-43-23_Ha_-15.00_600.00s_0102_19.52_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2977192; BeforeSave: 00:00:00.0000106; BeforeFinalizeImageSaved: 00:00:00.1895303; FinalizeSaveTime: 00:00:00.1081778
+2024-11-23T03:03:27.3598|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:03:27.3606|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:03:27.3638|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:03:27.3643|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:03:27.3831|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:03:27.7573|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-53-25_Ha_-15.00_600.00s_0103_19.53_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:03:27.7573|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_02-53-25_Ha_-15.00_600.00s_0103_19.53_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2932794; BeforeSave: 00:00:00.0000085; BeforeFinalizeImageSaved: 00:00:00.1653965; FinalizeSaveTime: 00:00:00.1278735
+2024-11-23T03:13:29.3726|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:13:29.3735|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:13:29.3768|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:13:29.3770|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:13:29.4055|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:13:29.7675|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-03-27_Ha_-15.00_600.00s_0104_19.50_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:13:29.7675|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-03-27_Ha_-15.00_600.00s_0104_19.50_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2932129; BeforeSave: 00:00:00.0000143; BeforeFinalizeImageSaved: 00:00:00.1862814; FinalizeSaveTime: 00:00:00.1069165
+2024-11-23T03:23:31.3549|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:23:31.3550|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T03:23:31.3551|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T03:23:31.3553|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T03:23:31.3556|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:23:31.3589|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:23:31.3591|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:23:31.3844|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:23:31.7676|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-13-29_Ha_-15.00_600.00s_0105_19.48_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:23:31.7677|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-13-29_Ha_-15.00_600.00s_0105_19.48_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3062043; BeforeSave: 00:00:00.0000107; BeforeFinalizeImageSaved: 00:00:00.1736031; FinalizeSaveTime: 00:00:00.1325899
+2024-11-23T03:33:33.3090|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:33:33.3096|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:33:33.3128|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:33:33.3130|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:33:33.3397|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:33:33.6898|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-23-31_Ha_-15.00_600.00s_0106_19.46_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:33:33.6898|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-23-31_Ha_-15.00_600.00s_0106_19.46_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2916578; BeforeSave: 00:00:00.0000154; BeforeFinalizeImageSaved: 00:00:00.1859785; FinalizeSaveTime: 00:00:00.1056632
+2024-11-23T03:43:35.1207|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:43:35.1215|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:43:35.1248|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:43:35.1254|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:43:35.1448|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:43:35.5578|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-33-33_Ha_-15.00_600.00s_0107_19.43_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:43:35.5579|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-33-33_Ha_-15.00_600.00s_0107_19.43_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3118332; BeforeSave: 00:00:00.0000107; BeforeFinalizeImageSaved: 00:00:00.1834298; FinalizeSaveTime: 00:00:00.1283920
+2024-11-23T03:53:37.0239|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:53:37.0240|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T03:53:37.0241|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T03:53:37.0244|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T03:53:37.0246|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:53:37.0278|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T03:53:37.0317|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T03:53:37.0592|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T03:53:37.3871|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-43-35_Ha_-15.00_600.00s_0108_19.38_Dark_0.00_0.00__0.00.fits
+2024-11-23T03:53:37.3872|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-43-35_Ha_-15.00_600.00s_0108_19.38_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2850314; BeforeSave: 00:00:00.0000210; BeforeFinalizeImageSaved: 00:00:00.1782425; FinalizeSaveTime: 00:00:00.1067674
+2024-11-23T04:03:38.6815|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:03:38.6822|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:03:38.6967|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:03:38.6971|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:03:38.7137|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:03:39.0301|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-53-37_Ha_-15.00_600.00s_0109_19.36_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:03:39.0302|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_03-53-37_Ha_-15.00_600.00s_0109_19.36_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2593418; BeforeSave: 00:00:00.0000074; BeforeFinalizeImageSaved: 00:00:00.1501692; FinalizeSaveTime: 00:00:00.1091646
+2024-11-23T04:13:40.4422|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:13:40.4428|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:13:40.4457|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:13:40.4462|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:13:40.4749|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:13:40.8021|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-03-38_Ha_-15.00_600.00s_0110_19.33_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:13:40.8022|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-03-38_Ha_-15.00_600.00s_0110_19.33_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2772114; BeforeSave: 00:00:00.0000112; BeforeFinalizeImageSaved: 00:00:00.1739047; FinalizeSaveTime: 00:00:00.1032948
+2024-11-23T04:23:42.2165|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:23:42.2166|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T04:23:42.2166|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T04:23:42.2168|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T04:23:42.2169|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:23:42.2197|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:23:42.2202|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:23:42.2378|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:23:42.6126|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-13-40_Ha_-15.00_600.00s_0111_19.26_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:23:42.6127|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-13-40_Ha_-15.00_600.00s_0111_19.26_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2955328; BeforeSave: 00:00:00.0000303; BeforeFinalizeImageSaved: 00:00:00.1772936; FinalizeSaveTime: 00:00:00.1182083
+2024-11-23T04:33:44.0777|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:33:44.0784|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:33:44.0818|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:33:44.0825|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:33:44.1131|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:33:44.4622|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-23-42_Ha_-15.00_600.00s_0112_19.14_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:33:44.4622|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-23-42_Ha_-15.00_600.00s_0112_19.14_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2943058; BeforeSave: 00:00:00.0000060; BeforeFinalizeImageSaved: 00:00:00.1805390; FinalizeSaveTime: 00:00:00.1137603
+2024-11-23T04:43:45.8679|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:43:45.8682|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:43:45.8706|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:43:45.8711|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:43:45.8960|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:43:46.2422|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-33-44_Ha_-15.00_600.00s_0113_18.97_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:43:46.2422|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-33-44_Ha_-15.00_600.00s_0113_18.97_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2708501; BeforeSave: 00:00:00.0000057; BeforeFinalizeImageSaved: 00:00:00.1620603; FinalizeSaveTime: 00:00:00.1087837
+2024-11-23T04:53:47.6570|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:53:47.6571|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T04:53:47.6572|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T04:53:47.6574|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T04:53:47.6575|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:53:47.6606|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T04:53:47.6608|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T04:53:47.6931|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T04:53:48.0209|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-43-45_Ha_-15.00_600.00s_0114_18.74_Dark_0.00_0.00__0.00.fits
+2024-11-23T04:53:48.0209|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-43-45_Ha_-15.00_600.00s_0114_18.74_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2715910; BeforeSave: 00:00:00.0000048; BeforeFinalizeImageSaved: 00:00:00.1646255; FinalizeSaveTime: 00:00:00.1069598
+2024-11-23T05:03:49.4884|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:03:49.4889|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:03:49.4917|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:03:49.4922|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:03:49.5099|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:03:49.8519|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-53-47_Ha_-15.00_600.00s_0115_17.26_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:03:49.8520|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_04-53-47_Ha_-15.00_600.00s_0115_17.26_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2698332; BeforeSave: 00:00:00.0000236; BeforeFinalizeImageSaved: 00:00:00.1632894; FinalizeSaveTime: 00:00:00.1065197
+2024-11-23T05:13:51.3312|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:13:51.3315|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:13:51.3346|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:13:51.3351|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:13:51.3684|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:13:51.6900|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-03-49_Ha_-15.00_600.00s_0116_16.49_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:13:51.6900|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-03-49_Ha_-15.00_600.00s_0116_16.49_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2613321; BeforeSave: 00:00:00.0000292; BeforeFinalizeImageSaved: 00:00:00.1529552; FinalizeSaveTime: 00:00:00.1083475
+2024-11-23T05:23:53.0533|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:23:53.0534|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T05:23:53.0535|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T05:23:53.0543|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T05:23:53.0544|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:23:53.0577|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:23:53.0582|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:23:53.0771|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:23:53.4078|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-13-51_Ha_-15.00_600.00s_0117_16.41_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:23:53.4079|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-13-51_Ha_-15.00_600.00s_0117_16.41_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2577402; BeforeSave: 00:00:00.0000128; BeforeFinalizeImageSaved: 00:00:00.1529429; FinalizeSaveTime: 00:00:00.1047840
+2024-11-23T05:33:54.9457|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:33:54.9462|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:33:54.9487|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:33:54.9490|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:33:54.9825|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:33:55.2981|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-23-53_Ha_-15.00_600.00s_0118_16.36_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:33:55.2981|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-23-53_Ha_-15.00_600.00s_0118_16.36_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2576883; BeforeSave: 00:00:00.0000250; BeforeFinalizeImageSaved: 00:00:00.1546053; FinalizeSaveTime: 00:00:00.1030575
+2024-11-23T05:43:56.6986|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:43:56.6994|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:43:56.7017|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:43:56.7021|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:43:56.7207|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:43:57.0521|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-33-54_Ha_-15.00_600.00s_0119_16.31_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:43:57.0522|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-33-54_Ha_-15.00_600.00s_0119_16.31_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2625281; BeforeSave: 00:00:00.0000117; BeforeFinalizeImageSaved: 00:00:00.1528752; FinalizeSaveTime: 00:00:00.1096407
+2024-11-23T05:53:58.4580|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:53:58.4581|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T05:53:58.4581|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T05:53:58.4588|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T05:53:58.4590|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:53:58.4616|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T05:53:58.4621|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T05:53:58.4999|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T05:53:58.8112|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-43-56_Ha_-15.00_600.00s_0120_16.27_Dark_0.00_0.00__0.00.fits
+2024-11-23T05:53:58.8113|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-43-56_Ha_-15.00_600.00s_0120_16.27_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2578735; BeforeSave: 00:00:00.0000057; BeforeFinalizeImageSaved: 00:00:00.1545003; FinalizeSaveTime: 00:00:00.1033669
+2024-11-23T05:57:27.0074|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-11-23T06:02:27.0077|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-11-23T06:04:00.3065|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:04:00.3068|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:04:00.3096|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:04:00.3098|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:04:00.3271|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T06:04:00.6773|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-53-58_Ha_-15.00_600.00s_0121_16.21_Dark_0.00_0.00__0.00.fits
+2024-11-23T06:04:00.6774|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_05-53-58_Ha_-15.00_600.00s_0121_16.21_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2738844; BeforeSave: 00:00:00.0000139; BeforeFinalizeImageSaved: 00:00:00.1539438; FinalizeSaveTime: 00:00:00.1199261
+2024-11-23T06:14:02.1428|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:14:02.1434|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:14:02.1467|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:14:02.1471|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:14:02.1790|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T06:14:02.4964|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-04-00_Ha_-15.00_600.00s_0122_16.11_Dark_0.00_0.00__0.00.fits
+2024-11-23T06:14:02.4965|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-04-00_Ha_-15.00_600.00s_0122_16.11_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2602941; BeforeSave: 00:00:00.0000115; BeforeFinalizeImageSaved: 00:00:00.1548632; FinalizeSaveTime: 00:00:00.1054191
+2024-11-23T06:15:29.0080|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-11-23T06:24:04.0162|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:24:04.0163|INFO|LoopCondition.cs|Check|75|LoopCondition finished. Iterations: 3 / 3
+2024-11-23T06:24:04.0163|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 2, Conditions: Condition: LoopCondition, Iterations: 3/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T06:24:04.0168|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/3, , Triggers: Trigger: DitherAfterExposures, After Exposures: 0
+2024-11-23T06:24:04.0168|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:24:04.0196|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:24:04.0202|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:24:04.0377|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T06:24:04.4131|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-14-02_Ha_-15.00_600.00s_0123_15.63_Dark_0.00_0.00__0.00.fits
+2024-11-23T06:24:04.4132|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-14-02_Ha_-15.00_600.00s_0123_15.63_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3068084; BeforeSave: 00:00:00.0000119; BeforeFinalizeImageSaved: 00:00:00.1570821; FinalizeSaveTime: 00:00:00.1497138
+2024-11-23T06:34:05.9322|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:34:05.9327|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:34:05.9357|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:34:05.9363|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:34:05.9686|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T06:34:06.3313|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-24-04_Ha_-15.00_600.00s_0124_14.46_Dark_0.00_0.00__0.00.fits
+2024-11-23T06:34:06.3314|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-24-04_Ha_-15.00_600.00s_0124_14.46_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.3057650; BeforeSave: 00:00:00.0000082; BeforeFinalizeImageSaved: 00:00:00.2019952; FinalizeSaveTime: 00:00:00.1037611
+2024-11-23T06:44:07.7795|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:44:07.7803|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:44:07.7836|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: Ha
+2024-11-23T06:44:07.7841|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 600, Gain 102, Offset 50, ImageType DARK, Binning 1x1
+2024-11-23T06:44:07.8006|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 600s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2024-11-23T06:44:08.1114|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-34-05_Ha_-15.00_600.00s_0125_12.87_Dark_0.00_0.00__0.00.fits
+2024-11-23T06:44:08.1115|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-11-22\DARK\2024-11-23_06-34-05_Ha_-15.00_600.00s_0125_12.87_Dark_0.00_0.00__0.00.fits. Duration Total: 00:00:00.2534933; BeforeSave: 00:00:00.0000054; BeforeFinalizeImageSaved: 00:00:00.1506855; FinalizeSaveTime: 00:00:00.1028019
+2024-11-23T06:44:45.1037|INFO|LoopForSunMoonAltitudeBase.cs|Check|50|LoopForSunMoonAltitudeBase finished. Current GREATER_THAN Target: -5.98° / -6°
+2024-11-23T06:44:45.1038|INFO|LoopForSunMoonAltitudeBase.cs|Check|50|LoopForSunMoonAltitudeBase finished. Current GREATER_THAN Target: -5.98° / -6°
+2024-11-23T06:44:45.1038|INFO|LoopForAltitudeBase.cs|Interrupt|46|Sun is outside of the specified range - Interrupting current Instruction Set
+2024-11-23T06:44:46.2143|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.DeepSkyObjectContainer, Strategy: SequentialStrategy, Items[DISABLED]: 2, Items[CREATED]: 1, Conditions: Condition: SunAltitudeCondition, CurrentAltitude: -5.98, Comparator: GREATER_THAN, TargetAltitude: -6, , Target: Dark RA: 01:40:17; Dec: 45° 58' 46"; Epoch: J2000 0
+2024-11-23T06:44:46.2144|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 5
+2024-11-23T06:44:46.2145|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 4
+2024-11-23T06:44:46.2150|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: WarmCamera, Duration: 10
+2024-11-23T06:44:46.2160|INFO|CameraVM.cs|WarmCamera|162|Warming Camera. Duration: 00:10:00
+2024-11-23T06:59:18.2801|INFO|CameraVM.cs|WarmCamera|180|Could not reach warming temperature. Most likley due to ambient temperature being lower. Continuing...
+2024-11-23T06:59:38.3301|INFO|CameraVM.cs|WarmCamera|187|Turning cooler off
+2024-11-23T06:59:38.3323|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: WarmCamera, Duration: 10
+2024-11-23T06:59:38.3327|INFO|SequenceItem.cs|Run|208|Starting Category: ASA Tools, Item: PowerOn
+2024-11-23T06:59:38.3342|INFO|SequenceItem.cs|Run|254|Finishing Category: ASA Tools, Item: PowerOn
+2024-11-23T06:59:38.3345|INFO|SequenceItem.cs|Run|208|Starting Category: Connector, Item: DisconnectAllEquipment
+2024-11-23T06:59:38.3463|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2024-11-23T06:59:38.3819|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-23T06:59:38.3930|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.EFW2.FilterWheel ZWO FilterWheel (1)
+2024-11-23T06:59:38.4288|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-11-23T06:59:38.4301|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.MicroTouchServer.Focuser1 MicroTouch Focuser1
+2024-11-23T06:59:38.4646|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-11-23T06:59:38.4657|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.PegasusAstroFalconV2.Rotator PegasusAstro FalconV2
+2024-11-23T06:59:38.4734|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-11-23T06:59:38.4743|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.photonProxyHub.Telescope ASCOM Telescope Driver for photonProxyHub
+2024-11-23T06:59:38.4749|WARNING|DirectGuider.cs|UpdateDeviceInfo|56|Telescope is disconnected. Direct Guide will disconnect. Dither will not occur.
+2024-11-23T06:59:38.4804|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-11-23T06:59:38.4806|INFO|DisconnectAllEquipment.cs|Execute|139|Guider is already disconnected
+2024-11-23T06:59:38.4806|INFO|DisconnectAllEquipment.cs|Execute|139|Switch is already disconnected
+2024-11-23T06:59:38.4814|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.OptecAlnitak.CoverCalibrator Optec Alnitak
+2024-11-23T06:59:38.6070|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-11-23T06:59:38.6077|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.ObservingConditions Lunatico CloudWatcher Observing Conditions
+2024-11-23T06:59:38.6110|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-11-23T06:59:38.6118|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.AMOS.Dome ASCOM Dome Driver for AMOS
+2024-11-23T06:59:38.6161|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-11-23T06:59:38.6168|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.SafetyMonitor Lunatico CloudWatcher Safety Monitor
+2024-11-23T06:59:38.6196|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-11-23T06:59:38.6197|INFO|SequenceItem.cs|Run|254|Finishing Category: Connector, Item: DisconnectAllEquipment
+2024-11-23T06:59:38.6200|INFO|SequenceItem.cs|Run|208|Starting Category: Ground Station, Item: Send to Pushover, Title: Darks Bias 
+2024-11-23T06:59:38.9730|INFO|SequenceItem.cs|Run|254|Finishing Category: Ground Station, Item: Send to Pushover, Title: Darks Bias 
+2024-11-23T06:59:38.9732|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2024-11-23T06:59:38.9732|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[FINISHED]: 3
+2024-11-23T06:59:38.9748|INFO|Sequence2VM.cs|StartSequence|490|Advanced Sequence finished
+2024-11-23T09:09:30.9578|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2024-11-23T09:09:30.9716|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-11-23T09:09:30.9724|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-11-23T09:09:30.9759|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-23T09:09:30.9760|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-11-23T09:09:30.9767|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-11-23T09:09:30.9768|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-11-23T09:09:30.9776|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-11-23T09:09:30.9782|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2024-11-23T09:09:30.9794|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-11-23T09:09:30.9798|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-11-23T09:09:31.4250|INFO|HttpServer.cs|WaitForStopped|108|waited 0ms for web server to stop

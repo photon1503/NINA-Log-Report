@@ -1,0 +1,87 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2024-12-21T16:54:27--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.26100---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2024-12-21T16:54:27.9012|INFO|CameraChooserVM.cs|GetEquipment|69|Found 2 ASI Cameras
+2024-12-21T16:54:29.9580|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2024-12-21T16:54:30.0593|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2024-12-21T16:54:30.0597|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2024-12-21T16:54:31.2550|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2024-12-21T16:54:31.3549|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2024-12-21T16:54:31.5317|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2024-12-21T16:54:31.7432|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2024-12-21T16:54:31.9990|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2024-12-21T16:54:32.2241|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2024-12-21T16:54:32.2251|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2024-12-21T16:54:32.7610|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 50.98 GB
+2024-12-21T16:54:32.7611|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive D:\: 4446.96 GB
+2024-12-21T16:54:32.7619|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2024-12-21T16:54:32.7623|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2024-12-21T16:54:32.7665|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2024-12-21T16:54:32.9849|INFO|EarthRotationParameterUpdater.cs|Update|121|Updating EarthRotationParameters due to being outdated. Last available parameter date 2024-12-09
+2024-12-21T16:54:33.0170|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.2.0 by Gerald Hitz (photon)
+2024-12-21T16:54:33.1527|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2024-12-21T16:54:33.4342|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2024-12-21T16:54:33.7317|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2024-12-21T16:54:33.8838|INFO|EarthRotationParameterUpdater.cs|Update|123|Updated EarthRotationParameters. New last available parameter date 2025-03-21
+2024-12-21T16:54:34.0230|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2024-12-21T16:54:35.9279|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2024-12-21T16:54:36.0895|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2024-12-21T16:54:36.5424|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2024-12-21T16:54:36.5579|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2024-12-21T16:54:36.5587|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2024-12-21T16:54:36.5587|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2024-12-21T16:54:36.5587|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2024-12-21T16:54:36.7260|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.4.2 by Stefan Berg
+2024-12-21T16:54:36.9698|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.20.0.0 by Marc Blank
+2024-12-21T16:54:37.7336|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2024-12-21T16:54:37.9824|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.0.0 by Tom Palmer @tcpalmer
+2024-12-21T16:54:38.2227|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2024-12-21T16:54:38.2231|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|110|purging old web session history: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\sessions\20241211-192720
+2024-12-21T16:54:38.2510|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|110|purging old web session history: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\sessions\20241211-233411
+2024-12-21T16:54:38.2864|INFO|NINAWeb.cs|changePluginState|260|Web plugin state change from OFF to ON
+2024-12-21T16:54:38.2875|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20241221-165427-3.1.2.9001.3808-202412.log
+2024-12-21T16:54:38.2895|INFO|AutofocusDirectoryWatcher.cs|Watch|31|web viewer: watching AF directory file: C:\Users\AMOS\AppData\Local\NINA\AutoFocus
+2024-12-21T16:54:38.2930|INFO|HttpServer.cs|ConfigureLogging|143|web server log: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\webserver-20241221-165438.log
+2024-12-21T16:54:38.2931|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2024-12-21T16:54:38.2935|INFO|HttpServer.cs|WebServerTask|62|starting web server, listening at http://localhost:80/dist
+2024-12-21T16:54:38.2997|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-12-21T16:54:38.5282|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2024-12-21T16:54:38.7040|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2024-12-21T16:54:38.8567|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2024-12-21T16:54:38.8576|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2024-12-21T16:54:38.9753|INFO|PluginFetcher.cs|RequestAll|57|Found 58 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-12-21T16:54:40.3493|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2024-12-21T16:54:40.3493|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2024-12-21T16:54:40.3493|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2024-12-21T16:54:40.3494|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2024-12-21T16:54:40.3494|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2024-12-21T16:54:40.3494|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2024-12-21T16:54:40.3495|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2024-12-21T16:54:40.3495|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2024-12-21T16:54:40.3495|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2024-12-21T16:54:40.8601|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2024-12-21T16:54:40.8693|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2024-12-21T16:55:17.7807|INFO|FramingAssistantVM.cs|LoadImage|1072|Loading image from source SKYATLAS with field of view 4° for coordinates RA: 05:41:17; Dec: 52° 11' 18"; Epoch: J2000
+2024-12-21T16:57:45.9048|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2024-12-21T16:57:45.9158|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-12-21T16:57:45.9173|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-12-21T16:57:45.9201|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-12-21T16:57:45.9232|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-12-21T16:57:45.9241|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-12-21T16:57:45.9252|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-12-21T16:57:45.9266|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-12-21T16:57:45.9278|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2024-12-21T16:57:45.9290|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-12-21T16:57:45.9301|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-12-21T16:57:46.2749|INFO|HttpServer.cs|WaitForStopped|108|waited 0ms for web server to stop

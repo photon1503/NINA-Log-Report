@@ -1,0 +1,130 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2025-01-18T03:35:31--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.26100---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2025-01-18T03:35:31.6978|ERROR|ProfileService.cs|MigrateModularizedSolutionNamespaceChange|445|Failed to migrate profile C:\Users\AMOS\AppData\Local\NINA\Profiles\4efc0507-b521-49ce-88b6-96e9d454c1a7.profile due to 
+System.IO.IOException: The process cannot access the file 'C:\Users\AMOS\AppData\Local\NINA\Profiles\4efc0507-b521-49ce-88b6-96e9d454c1a7.profile' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at NINA.Profile.ProfileService.MigrateModularizedSolutionNamespaceChange() in C:\Projects\nina\NINA.Profile\ProfileService.cs:line 419
+2025-01-18T03:35:32.2869|INFO|CameraChooserVM.cs|GetEquipment|69|Found 2 ASI Cameras
+2025-01-18T03:35:32.3252|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2025-01-18T03:35:32.5470|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2025-01-18T03:35:32.5474|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2025-01-18T03:35:33.5643|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2025-01-18T03:35:33.5981|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2025-01-18T03:35:33.6012|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2025-01-18T03:35:33.6048|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2025-01-18T03:35:33.6340|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2025-01-18T03:35:33.6383|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2025-01-18T03:35:33.6432|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2025-01-18T03:35:34.0072|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 37.8 GB
+2025-01-18T03:35:34.0073|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive D:\: 4337.62 GB
+2025-01-18T03:35:34.0082|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2025-01-18T03:35:34.0099|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2025-01-18T03:35:34.0127|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2025-01-18T03:35:34.2224|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.2.0 by Gerald Hitz (photon)
+2025-01-18T03:35:34.2437|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2025-01-18T03:35:34.2550|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2025-01-18T03:35:34.2729|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2025-01-18T03:35:34.3374|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2025-01-18T03:35:34.4459|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2025-01-18T03:35:34.4668|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2025-01-18T03:35:34.5164|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2025-01-18T03:35:34.5178|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2025-01-18T03:35:34.5178|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2025-01-18T03:35:34.5178|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2025-01-18T03:35:34.5267|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2025-01-18T03:35:34.5409|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.5.1 by Stefan Berg @isbeorn
+2025-01-18T03:35:34.5612|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Remote Copy version 3.0.0.0 by Tom Palmer @tcpalmer
+2025-01-18T03:35:35.3348|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.22.0.3 by Marc Blank
+2025-01-18T03:35:35.4488|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2025-01-18T03:35:35.7420|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.1.0 by Tom Palmer @tcpalmer
+2025-01-18T03:35:35.7798|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2025-01-18T03:35:35.8291|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2025-01-18T03:35:35.8352|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2025-01-18T03:35:35.8429|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2025-01-18T03:35:35.8475|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2025-01-18T03:35:35.8584|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2025-01-18T03:35:35.8602|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2025-01-18T03:35:36.6014|INFO|PluginFetcher.cs|RequestAll|57|Found 60 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2025-01-18T03:35:37.8532|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2025-01-18T03:35:37.8532|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2025-01-18T03:35:37.8536|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2025-01-18T03:35:37.8532|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2025-01-18T03:35:37.8532|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2025-01-18T03:35:37.8532|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2025-01-18T03:35:37.8532|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2025-01-18T03:35:37.8532|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2025-01-18T03:35:37.8532|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2025-01-18T03:35:37.8619|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2025-01-18T03:35:37.8638|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2025-01-18T03:35:41.7647|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-18T03:35:42.7614|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (2) (ASCOM))
+2025-01-18T03:35:42.7638|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (2) (ASCOM))
+2025-01-18T03:35:42.7683|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2_2.Camera Name: ASI Camera (2) (ASCOM) DisplayName: ASI Camera (2) (ASCOM)Driver Version: 6.5
+2025-01-18T03:35:42.7711|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-18T03:35:42.7767|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-18T03:35:42.8106|INFO|AscomTelescope.cs|CheckMountTime|817|Mount UTC Time: 2025-01-18 02:35:42Z / System UTC Time: 2025-01-18 02:35:42Z; Difference: 0.008 seconds
+2025-01-18T03:35:42.8152|INFO|AscomTelescope.cs|CheckMountTime|837|Mount driver does not allow the mount's time to be set.
+2025-01-18T03:35:42.9338|INFO|TelescopeVM.cs|ChooseTelescope|518|Successfully connected mount. Id: ASCOM.photonProxyHub.Telescope Name: ASCOM Telescope Driver for photonProxyHub DisplayName: ASCOM Telescope Driver for photonProxyHub Driver Version: 2011_10_08
+2025-01-18T03:35:42.9360|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-18T03:35:44.1101|INFO|FocuserVM.cs|ChooseFocuser|324|Successfully connected Focuser. Id: ASCOM.ArcoEsatto.Focuser Name: PLL ASCOM Focuser DisplayName: PLL ASCOM Focuser Driver Version: 3.6
+2025-01-18T03:35:44.1132|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-18T03:35:44.5049|INFO|RotatorVM.cs|Connect|398|Successfully connected Rotator. Id: ASCOM.ArcoEsatto.Rotator Name: PLL ASCOM Rotator DisplayName: PLL ASCOM Rotator Driver Version: 3.6
+2025-01-18T03:35:44.5112|INFO|PHD2Guider.cs|Connect|202|Connecting to PHD2 server at 127.0.0.1:4400
+2025-01-18T03:35:50.9721|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-18T03:35:50.9901|INFO|FlatDeviceVM.cs|Connect|234|Successfully connected flat device. Id: ASCOM.OptecAlnitak.CoverCalibrator Name: Optec Alnitak DisplayName: Optec Alnitak Driver Version: 1.0
+2025-01-18T03:35:50.9933|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-18T03:35:51.0385|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.SkyBrightness GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-18T03:35:51.0428|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.StarFWHM GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-18T03:35:51.0460|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.WindDirection GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-18T03:35:51.0516|INFO|WeatherDataVM.cs|ChooseWeatherData|143|Successfully connected Weather Device. Id: ASCOM.CloudWatcher.ObservingConditions Name: Lunatico CloudWatcher Observing Conditions DisplayName: Lunatico CloudWatcher Observing Conditions Driver Version: 1.0
+2025-01-18T03:35:51.0551|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-18T03:35:51.0583|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-18T03:35:51.1630|INFO|DomeVM.cs|ChooseDome|191|Successfully connected Dome. Id: ASCOM.MaestroDome.Dome Name: Astrometric dome control via Maestro DisplayName: Astrometric dome control via Maestro Driver Version: 1.0.1
+2025-01-18T03:35:51.1684|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-18T03:35:51.2148|INFO|SafetyMonitorVM.cs|Connect|168|Successfully connected Safety Monitor. Id: ASCOM.CloudWatcher.SafetyMonitor Name: Lunatico CloudWatcher Safety Monitor DisplayName: Lunatico CloudWatcher Safety Monitor Driver Version: 1.0
+2025-01-18T03:36:41.9096|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.MaestroDome.Dome Astrometric dome control via Maestro
+2025-01-18T03:36:41.9242|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-18T03:36:41.9252|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.OptecAlnitak.CoverCalibrator Optec Alnitak
+2025-01-18T03:36:41.9308|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-18T03:36:41.9317|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2_2.Camera ASI Camera (2) (ASCOM)
+2025-01-18T03:36:41.9551|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-18T03:36:41.9560|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.photonProxyHub.Telescope ASCOM Telescope Driver for photonProxyHub
+2025-01-18T03:36:41.9659|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-18T03:36:41.9667|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-18T03:36:41.9675|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ArcoEsatto.Focuser PLL ASCOM Focuser
+2025-01-18T03:36:41.9729|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-18T03:36:41.9741|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ArcoEsatto.Rotator PLL ASCOM Rotator
+2025-01-18T03:36:41.9795|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-18T03:36:41.9805|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-18T03:36:41.9813|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.ObservingConditions Lunatico CloudWatcher Observing Conditions
+2025-01-18T03:36:41.9853|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-18T03:36:41.9859|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.SafetyMonitor Lunatico CloudWatcher Safety Monitor
+2025-01-18T03:36:41.9900|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-18T03:36:50.8238|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2025-01-18T03:36:50.8292|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-18T03:36:50.8300|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-18T03:36:50.8332|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-18T03:36:50.8334|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-18T03:36:50.8339|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-18T03:36:50.8341|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-18T03:36:50.8349|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-18T03:36:50.8356|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-18T03:36:50.8368|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-18T03:36:50.8372|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor

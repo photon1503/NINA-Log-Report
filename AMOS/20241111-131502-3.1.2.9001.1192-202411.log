@@ -1,0 +1,97 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2024-11-11T13:15:03--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.22631---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2024-11-11T13:15:03.4093|INFO|CameraChooserVM.cs|GetEquipment|69|Found 1 ASI Cameras
+2024-11-11T13:15:03.4302|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\Atik\Atik.Core.dll due to error code 126
+2024-11-11T13:15:03.5690|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2024-11-11T13:15:03.8503|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2024-11-11T13:15:03.8508|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2024-11-11T13:15:04.8937|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2024-11-11T13:15:04.9260|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2024-11-11T13:15:04.9288|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2024-11-11T13:15:04.9326|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2024-11-11T13:15:04.9622|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2024-11-11T13:15:04.9667|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2024-11-11T13:15:04.9716|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2024-11-11T13:15:05.2203|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 41.11 GB
+2024-11-11T13:15:05.2212|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2024-11-11T13:15:05.2229|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2024-11-11T13:15:05.2263|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2024-11-11T13:15:05.3514|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.1.0 by Gerald Hitz (photon)
+2024-11-11T13:15:05.3929|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2024-11-11T13:15:05.4217|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2024-11-11T13:15:05.4342|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2024-11-11T13:15:05.4937|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2024-11-11T13:15:05.6029|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2024-11-11T13:15:05.6196|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2024-11-11T13:15:05.6679|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2024-11-11T13:15:05.6685|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2024-11-11T13:15:05.6685|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2024-11-11T13:15:05.6685|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2024-11-11T13:15:05.6763|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2024-11-11T13:15:05.6875|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.4.2 by Stefan Berg
+2024-11-11T13:15:05.7829|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.16.1.0 by Marc Blank
+2024-11-11T13:15:05.8712|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2024-11-11T13:15:06.0950|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.0.0 by Tom Palmer @tcpalmer
+2024-11-11T13:15:06.1250|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2024-11-11T13:15:06.1566|INFO|NINAWeb.cs|changePluginState|260|Web plugin state change from OFF to ON
+2024-11-11T13:15:06.1582|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20241111-131502-3.1.2.9001.1192-202411.log
+2024-11-11T13:15:06.1594|INFO|AutofocusDirectoryWatcher.cs|Watch|31|web viewer: watching AF directory file: C:\Users\AMOS\AppData\Local\NINA\AutoFocus
+2024-11-11T13:15:06.1613|INFO|HttpServer.cs|ConfigureLogging|143|web server log: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\webserver-20241111-131506.log
+2024-11-11T13:15:06.1617|INFO|HttpServer.cs|WebServerTask|62|starting web server, listening at http://localhost:80/dist
+2024-11-11T13:15:06.1625|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2024-11-11T13:15:06.1684|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-11-11T13:15:06.1999|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2024-11-11T13:15:06.2030|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2024-11-11T13:15:06.2097|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2024-11-11T13:15:06.2114|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2024-11-11T13:15:06.8128|INFO|PluginFetcher.cs|RequestAll|57|Found 56 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-11-11T13:15:08.2069|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2024-11-11T13:15:08.2069|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2024-11-11T13:15:08.2069|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2024-11-11T13:15:08.2069|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2024-11-11T13:15:08.2069|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2024-11-11T13:15:08.2069|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2024-11-11T13:15:08.2070|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2024-11-11T13:15:08.2070|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2024-11-11T13:15:08.2070|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2024-11-11T13:15:08.2140|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2024-11-11T13:15:08.2154|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2024-11-11T13:15:25.7453|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-11T13:15:26.6798|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-11-11T13:15:26.6818|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-11-11T13:15:26.6854|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2024-11-11T13:15:35.7930|INFO|CameraVM.cs|WarmCamera|162|Warming Camera. Duration: 00:00:00
+2024-11-11T13:15:44.0600|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2024-11-11T13:15:44.0940|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-11T13:15:44.0938|ERROR|NotifyTaskCompletion.cs|WatchTaskAsync|35
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at NINA.Core.Utility.CoreUtil.Delay(TimeSpan span, CancellationToken token) in C:\Projects\nina\NINA.Core\Utility\CoreUtil.cs:line 129
+   at NINA.Core.Utility.CoreUtil.Delay(Int32 milliseconds, CancellationToken token) in C:\Projects\nina\NINA.Core\Utility\CoreUtil.cs:line 124
+   at NINA.Core.Utility.CoreUtil.Wait(TimeSpan t, Boolean progressCountDown, CancellationToken token, IProgress`1 progress, String status) in C:\Projects\nina\NINA.Core\Utility\CoreUtil.cs:line 142
+   at NINA.WPF.Base.ViewModel.Equipment.Camera.CameraVM.RegulateTemperature(Double temperature, TimeSpan duration, Boolean cooling, IProgress`1 progress, CancellationToken ct) in C:\Projects\nina\NINA.WPF.Base\ViewModel\Equipment\Camera\CameraVM.cs:line 237
+   at NINA.WPF.Base.ViewModel.Equipment.Camera.CameraVM.WarmCamera(TimeSpan duration, IProgress`1 progress, CancellationToken ct) in C:\Projects\nina\NINA.WPF.Base\ViewModel\Equipment\Camera\CameraVM.cs:line 174
+   at NINA.Core.Utility.NotifyTaskCompletion`1.WatchTaskAsync(Task task) in C:\Projects\nina\NINA.Core\Utility\NotifyTaskCompletion.cs:line 33
+2024-11-11T13:16:12.7890|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2024-11-11T13:16:12.7965|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-11-11T13:16:12.7978|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-11-11T13:16:12.8009|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-11-11T13:16:12.8040|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-11-11T13:16:12.8049|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-11-11T13:16:12.8060|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-11-11T13:16:12.8073|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-11-11T13:16:12.8085|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2024-11-11T13:16:12.8096|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-11-11T13:16:12.8106|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-11-11T13:16:13.1621|INFO|HttpServer.cs|WaitForStopped|108|waited 0ms for web server to stop

@@ -1,0 +1,568 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2025-01-11T17:11:44--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.26100---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2025-01-11T17:11:44.6079|INFO|CameraChooserVM.cs|GetEquipment|69|Found 2 ASI Cameras
+2025-01-11T17:11:44.7749|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2025-01-11T17:11:44.8819|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2025-01-11T17:11:44.8825|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2025-01-11T17:11:45.8999|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2025-01-11T17:11:45.9345|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2025-01-11T17:11:45.9380|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2025-01-11T17:11:45.9424|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2025-01-11T17:11:45.9807|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2025-01-11T17:11:45.9857|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2025-01-11T17:11:45.9918|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2025-01-11T17:11:46.7008|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 89.89 GB
+2025-01-11T17:11:46.7010|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive D:\: 4337.62 GB
+2025-01-11T17:11:46.7019|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2025-01-11T17:11:46.7040|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2025-01-11T17:11:46.7064|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2025-01-11T17:11:46.9517|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.2.0 by Gerald Hitz (photon)
+2025-01-11T17:11:46.9763|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2025-01-11T17:11:46.9933|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2025-01-11T17:11:47.0047|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2025-01-11T17:11:47.0705|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2025-01-11T17:11:47.1963|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2025-01-11T17:11:47.2163|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2025-01-11T17:11:47.2670|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2025-01-11T17:11:47.2676|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2025-01-11T17:11:47.2676|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2025-01-11T17:11:47.2676|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2025-01-11T17:11:47.2761|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2025-01-11T17:11:47.2898|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.5.0 by Stefan Berg @isbeorn
+2025-01-11T17:11:47.3135|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Remote Copy version 3.0.0.0 by Tom Palmer @tcpalmer
+2025-01-11T17:11:48.1754|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.22.0.0 by Marc Blank
+2025-01-11T17:11:48.3082|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2025-01-11T17:11:48.6074|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.1.0 by Tom Palmer @tcpalmer
+2025-01-11T17:11:48.6441|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2025-01-11T17:11:48.6813|INFO|NINAWeb.cs|changePluginState|260|Web plugin state change from OFF to ON
+2025-01-11T17:11:48.6825|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20250111-171142-3.1.2.9001.8168-202501.log
+2025-01-11T17:11:48.6836|INFO|AutofocusDirectoryWatcher.cs|Watch|31|web viewer: watching AF directory file: C:\Users\AMOS\AppData\Local\NINA\AutoFocus
+2025-01-11T17:11:48.6855|INFO|HttpServer.cs|ConfigureLogging|143|web server log: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\webserver-20250111-171148.log
+2025-01-11T17:11:48.6859|INFO|HttpServer.cs|WebServerTask|62|starting web server, listening at http://localhost:80/dist
+2025-01-11T17:11:48.6869|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2025-01-11T17:11:48.6954|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2025-01-11T17:11:48.7443|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2025-01-11T17:11:48.7485|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2025-01-11T17:11:48.7621|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2025-01-11T17:11:48.7631|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2025-01-11T17:11:49.4859|INFO|PluginFetcher.cs|RequestAll|57|Found 58 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2025-01-11T17:11:50.7515|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2025-01-11T17:11:50.7514|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2025-01-11T17:11:50.7514|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2025-01-11T17:11:50.7514|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2025-01-11T17:11:50.7514|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2025-01-11T17:11:50.7515|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2025-01-11T17:11:50.7514|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2025-01-11T17:11:50.7515|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2025-01-11T17:11:50.7515|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2025-01-11T17:11:50.7648|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2025-01-11T17:11:50.7667|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2025-01-11T17:11:55.3853|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-11T17:11:57.3672|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:11:57.3704|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:11:57.3741|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2025-01-11T17:11:59.3795|INFO|CameraVM.cs|CoolCamera|139|Cooling Camera. Target: -15 Duration: 00:00:00
+2025-01-11T17:12:26.5794|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:12:26.9305|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:20:02.6360|INFO|DockManagerVM.cs|InitializeAvalonDockLayout|356|Initializing imaging tab layout from C:\Users\AMOS\AppData\Local\NINA\Profiles\4efc0507-b521-49ce-88b6-96e9d454c1a7.dock.config
+2025-01-11T17:25:35.8867|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:25:36.2373|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:26:44.7555|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2025-01-11T17:26:44.8809|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-11T17:26:45.6882|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:26:45.6890|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:26:45.6903|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2025-01-11T17:26:45.6946|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-11T17:26:46.9292|INFO|FilterWheelVM.cs|ChooseFW|272|Successfully connected Filter Wheel. Id: ASCOM.EFW2.FilterWheel Name: ZWO FilterWheel (1) DisplayName: ZWO FilterWheel (1) Driver Version: 6.0
+2025-01-11T17:26:46.9511|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-11T17:26:47.7134|INFO|AscomTelescope.cs|CheckMountTime|817|Mount UTC Time: 2025-01-11 16:26:47Z / System UTC Time: 2025-01-11 16:26:47Z; Difference: 0.002 seconds
+2025-01-11T17:26:47.7340|INFO|AscomTelescope.cs|CheckMountTime|837|Mount driver does not allow the mount's time to be set.
+2025-01-11T17:26:47.8452|INFO|TelescopeVM.cs|ChooseTelescope|518|Successfully connected mount. Id: ASCOM.photonProxyHub.Telescope Name: ASCOM Telescope Driver for photonProxyHub DisplayName: ASCOM Telescope Driver for photonProxyHub Driver Version: 2011_10_08
+2025-01-11T17:26:47.8472|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-11T17:26:48.7239|INFO|FocuserVM.cs|ChooseFocuser|324|Successfully connected Focuser. Id: ASCOM.MicroTouchServer.Focuser1 Name: MicroTouch Focuser1 DisplayName: MicroTouch Focuser1 Driver Version: 1.3
+2025-01-11T17:26:48.7268|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-11T17:26:48.8069|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-11T17:26:48.8288|INFO|FlatDeviceVM.cs|Connect|234|Successfully connected flat device. Id: ASCOM.OptecAlnitak.CoverCalibrator Name: Optec Alnitak DisplayName: Optec Alnitak Driver Version: 1.0
+2025-01-11T17:26:48.8364|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-11T17:26:50.9308|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.SkyBrightness GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:26:50.9359|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.StarFWHM GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:26:50.9396|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.WindDirection GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:26:50.9462|INFO|WeatherDataVM.cs|ChooseWeatherData|143|Successfully connected Weather Device. Id: ASCOM.CloudWatcher.ObservingConditions Name: Lunatico CloudWatcher Observing Conditions DisplayName: Lunatico CloudWatcher Observing Conditions Driver Version: 1.0
+2025-01-11T17:26:50.9546|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-11T17:26:50.9580|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-11T17:26:51.6019|INFO|DomeVM.cs|ChooseDome|191|Successfully connected Dome. Id: ASCOM.AMOS.Dome Name: ASCOM Dome Driver for AMOS DisplayName: ASCOM Dome Driver for AMOS Driver Version: 1.0.1
+2025-01-11T17:26:51.6041|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-11T17:26:52.3325|INFO|SafetyMonitorVM.cs|Connect|168|Successfully connected Safety Monitor. Id: ASCOM.CloudWatcher.SafetyMonitor Name: Lunatico CloudWatcher Safety Monitor DisplayName: Lunatico CloudWatcher Safety Monitor Driver Version: 1.0
+2025-01-11T17:27:29.9254|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.AMOS.Dome ASCOM Dome Driver for AMOS
+2025-01-11T17:27:29.9351|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-11T17:27:29.9363|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.OptecAlnitak.CoverCalibrator Optec Alnitak
+2025-01-11T17:27:29.9447|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-11T17:27:29.9459|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2025-01-11T17:27:30.2341|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-11T17:27:30.2352|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.photonProxyHub.Telescope ASCOM Telescope Driver for photonProxyHub
+2025-01-11T17:27:30.2453|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-11T17:27:30.2455|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.EFW2.FilterWheel ZWO FilterWheel (1)
+2025-01-11T17:27:30.2500|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-11T17:27:30.2508|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.MicroTouchServer.Focuser1 MicroTouch Focuser1
+2025-01-11T17:27:30.2669|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-11T17:27:30.2681|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-11T17:27:30.2688|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-11T17:27:30.2694|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.ObservingConditions Lunatico CloudWatcher Observing Conditions
+2025-01-11T17:27:30.2738|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-11T17:27:30.2745|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.SafetyMonitor Lunatico CloudWatcher Safety Monitor
+2025-01-11T17:27:30.2795|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-11T17:32:01.9714|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-11T17:32:02.6820|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:32:02.6823|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2025-01-11T17:32:02.6828|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2025-01-11T17:32:02.6835|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-11T17:32:03.6066|INFO|FilterWheelVM.cs|ChooseFW|272|Successfully connected Filter Wheel. Id: ASCOM.EFW2.FilterWheel Name: ZWO FilterWheel (1) DisplayName: ZWO FilterWheel (1) Driver Version: 6.0
+2025-01-11T17:32:03.6072|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-11T17:32:04.1818|INFO|AscomTelescope.cs|CheckMountTime|817|Mount UTC Time: 2025-01-11 16:32:04Z / System UTC Time: 2025-01-11 16:32:04Z; Difference: 0.001 seconds
+2025-01-11T17:32:04.1920|INFO|AscomTelescope.cs|CheckMountTime|837|Mount driver does not allow the mount's time to be set.
+2025-01-11T17:32:04.2575|INFO|TelescopeVM.cs|ChooseTelescope|518|Successfully connected mount. Id: ASCOM.photonProxyHub.Telescope Name: ASCOM Telescope Driver for photonProxyHub DisplayName: ASCOM Telescope Driver for photonProxyHub Driver Version: 2011_10_08
+2025-01-11T17:32:04.2578|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-11T17:32:04.7178|INFO|FocuserVM.cs|ChooseFocuser|324|Successfully connected Focuser. Id: ASCOM.MicroTouchServer.Focuser1 Name: MicroTouch Focuser1 DisplayName: MicroTouch Focuser1 Driver Version: 1.3
+2025-01-11T17:32:04.7196|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-11T17:32:04.7833|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-11T17:32:04.7881|INFO|FlatDeviceVM.cs|Connect|234|Successfully connected flat device. Id: ASCOM.OptecAlnitak.CoverCalibrator Name: Optec Alnitak DisplayName: Optec Alnitak Driver Version: 1.0
+2025-01-11T17:32:04.7897|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-11T17:32:06.6634|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.SkyBrightness GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:32:06.6660|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.StarFWHM GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:32:06.6680|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.WindDirection GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2025-01-11T17:32:06.6707|INFO|WeatherDataVM.cs|ChooseWeatherData|143|Successfully connected Weather Device. Id: ASCOM.CloudWatcher.ObservingConditions Name: Lunatico CloudWatcher Observing Conditions DisplayName: Lunatico CloudWatcher Observing Conditions Driver Version: 1.0
+2025-01-11T17:32:06.6718|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-11T17:32:06.6733|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-11T17:32:07.1643|INFO|DomeVM.cs|ChooseDome|191|Successfully connected Dome. Id: ASCOM.AMOS.Dome Name: ASCOM Dome Driver for AMOS DisplayName: ASCOM Dome Driver for AMOS Driver Version: 1.0.1
+2025-01-11T17:32:07.1656|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-11T17:32:07.4316|INFO|SafetyMonitorVM.cs|Connect|168|Successfully connected Safety Monitor. Id: ASCOM.CloudWatcher.SafetyMonitor Name: Lunatico CloudWatcher Safety Monitor DisplayName: Lunatico CloudWatcher Safety Monitor Driver Version: 1.0
+2025-01-11T17:32:45.8200|INFO|CameraVM.cs|CoolCamera|139|Cooling Camera. Target: -15 Duration: 00:00:00
+2025-01-11T17:34:26.5133|INFO|FramingAssistantVM.cs|LoadImage|1072|Loading image from source NASA with field of view 12° for coordinates RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000
+2025-01-11T17:39:20.3293|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:39:20.6804|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:47:32.0271|INFO|Sequence2VM.cs|StartSequence|485|Advanced Sequence starting
+2025-01-11T17:47:32.0416|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[CREATED]: 3, Triggers: Category: Ground Station, Item: Failures to Pushover
+2025-01-11T17:47:32.0474|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 4
+2025-01-11T17:47:32.0484|INFO|SequenceItem.cs|Run|208|Starting Category: Utility, Item: WaitForSunAltitude, TargetAltitude: -6, Comparator: GREATER_THAN, CurrentSunAltitude: -11.51
+2025-01-11T17:47:32.0498|INFO|SequenceItem.cs|Run|254|Finishing Category: Utility, Item: WaitForSunAltitude, TargetAltitude: -6, Comparator: GREATER_THAN, CurrentSunAltitude: -11.51
+2025-01-11T17:47:32.0513|INFO|SequenceItem.cs|Run|208|Starting Category: Connector, Item: ConnectAllEquipment
+2025-01-11T17:47:32.0523|INFO|ConnectAllEquipment.cs|Execute|167|Camera is already connected
+2025-01-11T17:47:32.0524|INFO|ConnectAllEquipment.cs|Execute|167|Filter Wheel is already connected
+2025-01-11T17:47:32.0524|INFO|ConnectAllEquipment.cs|Execute|167|Focuser is already connected
+2025-01-11T17:47:32.0528|INFO|ConnectAllEquipment.cs|Execute|167|Telescope is already connected
+2025-01-11T17:47:32.0529|INFO|ConnectAllEquipment.cs|Execute|167|Guider is already connected
+2025-01-11T17:47:32.0529|INFO|ConnectAllEquipment.cs|Execute|167|Flat Panel is already connected
+2025-01-11T17:47:32.0529|INFO|ConnectAllEquipment.cs|Execute|167|Weather is already connected
+2025-01-11T17:47:32.0530|INFO|ConnectAllEquipment.cs|Execute|167|Dome is already connected
+2025-01-11T17:47:32.0530|INFO|ConnectAllEquipment.cs|Execute|167|Safety Monitor is already connected
+2025-01-11T17:47:32.0530|INFO|SequenceItem.cs|Run|254|Finishing Category: Connector, Item: ConnectAllEquipment
+2025-01-11T17:47:32.0534|INFO|SequenceItem.cs|Run|208|Starting Category: Safety Monitor, Item: WaitUntilSafe
+2025-01-11T17:47:32.0540|INFO|SequenceItem.cs|Run|254|Finishing Category: Safety Monitor, Item: WaitUntilSafe
+2025-01-11T17:47:32.0544|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 15, Triggers: Trigger: WhenUnsafe
+2025-01-11T17:47:32.0550|INFO|SequenceItem.cs|Run|208|Starting Category: ASA Tools, Item: PowerOn
+2025-01-11T17:47:32.0607|INFO|SequenceItem.cs|Run|254|Finishing Category: ASA Tools, Item: PowerOn
+2025-01-11T17:47:32.0642|INFO|SequenceItem.cs|Run|208|Starting Category: Utility, Item: WaitForTimeSpan, Time: 20s
+2025-01-11T17:47:52.1504|INFO|SequenceItem.cs|Run|254|Finishing Category: Utility, Item: WaitForTimeSpan, Time: 20s
+2025-01-11T17:47:52.1512|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: DisableDomeSynchronization
+2025-01-11T17:47:55.1928|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: DisableDomeSynchronization
+2025-01-11T17:47:55.1932|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: OpenDomeShutter
+2025-01-11T17:47:55.2012|INFO|DomeVM.cs|OpenShutter|429|Opening dome shutter. Shutter state after opening ShutterClosed
+2025-01-11T17:47:55.2021|INFO|AscomDome.cs|OpenShutter|205|Sending an OpenShutter request, since it is currently ShutterClosed
+2025-01-11T17:49:13.1822|INFO|DomeVM.cs|OpenShutter|435|Opened dome shutter. Shutter state after opening ShutterOpen
+2025-01-11T17:49:13.1827|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: OpenDomeShutter
+2025-01-11T17:49:13.1831|INFO|SequenceItem.cs|Run|208|Starting Category: Ground Station, Item: Send to Pushover, Title: AMOS
+2025-01-11T17:49:13.9069|INFO|SequenceItem.cs|Run|254|Finishing Category: Ground Station, Item: Send to Pushover, Title: AMOS
+2025-01-11T17:49:13.9073|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: CoolCamera, Temperature: -15, Duration: 0
+2025-01-11T17:49:13.9078|INFO|CameraVM.cs|CoolCamera|139|Cooling Camera. Target: -15 Duration: 00:00:00
+2025-01-11T17:49:13.9247|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: CoolCamera, Temperature: -15, Duration: 0
+2025-01-11T17:49:13.9252|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: ParkScope
+2025-01-11T17:49:13.9283|INFO|TelescopeVM.cs|ParkTelescope|134|Mount has been commanded to park
+2025-01-11T17:49:18.2968|INFO|TelescopeVM.cs|ParkTelescope|180|Mount has parked
+2025-01-11T17:49:18.2970|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: ParkScope
+2025-01-11T17:49:18.2973|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: UnparkScope
+2025-01-11T17:49:18.2985|INFO|TelescopeVM.cs|UnparkTelescope|230|Mount ordered to unpark
+2025-01-11T17:49:22.2915|INFO|TelescopeVM.cs|UnparkTelescope|271|Mount has unparked
+2025-01-11T17:49:22.2917|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: UnparkScope
+2025-01-11T17:49:22.2920|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: FindHome
+2025-01-11T17:49:22.2931|INFO|TelescopeVM.cs|FindHome|281|Mount ordered to locate home position
+2025-01-11T17:49:38.2844|INFO|TelescopeVM.cs|FindHome|338|Mount has located its home position
+2025-01-11T17:49:38.2846|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: FindHome
+2025-01-11T17:49:38.2850|INFO|SequenceItem.cs|Run|208|Starting Category: Flat Device, Item: OpenCover
+2025-01-11T17:49:38.2870|INFO|FlatDeviceVM.cs|OpenCover|302|Opening Flat Device Cover
+2025-01-11T17:49:50.8124|INFO|SequenceItem.cs|Run|254|Finishing Category: Flat Device, Item: OpenCover
+2025-01-11T17:49:50.8135|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: SetTracking, TrackingMode: Stopped
+2025-01-11T17:49:50.8266|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: SetTracking, TrackingMode: Stopped
+2025-01-11T17:49:50.8269|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: SlewScopeToAltAz, Coordinates: NINA.Astrometry.InputTopocentricCoordinates
+2025-01-11T17:49:50.8328|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 01:47:43; Dec: 46° 09' 51"; Epoch: JNOW to RA: 01:41:51; Dec: -02° 51' 52"; Epoch: JNOW - Alt: 40° 00' 00"; Az: 170° 00' 00"
+2025-01-11T17:49:50.8379|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 185.3008394190801°
+2025-01-11T17:50:55.1938|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: SlewScopeToAltAz, Coordinates: NINA.Astrometry.InputTopocentricCoordinates
+2025-01-11T17:50:55.1942|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: SetTracking, TrackingMode: Sidereal
+2025-01-11T17:50:55.2086|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: SetTracking, TrackingMode: Sidereal
+2025-01-11T17:50:55.2088|INFO|SequenceItem.cs|Run|208|Starting Category: Ground Station, Item: Send to Pushover, Title: AMOS
+2025-01-11T17:50:55.9404|INFO|SequenceItem.cs|Run|254|Finishing Category: Ground Station, Item: Send to Pushover, Title: AMOS
+2025-01-11T17:50:55.9429|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[FINISHED]: 14, Items[DISABLED]: 1, Triggers: Trigger: WhenUnsafe
+2025-01-11T17:50:55.9430|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-11T17:50:55.9432|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 1
+2025-01-11T17:50:55.9439|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.DeepSkyObjectContainer, Strategy: SequentialStrategy, Items[CREATED]: 2, Triggers: Category: Ground Station, Item: Failures to Pushover, Target: M 45 RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000 280
+2025-01-11T17:50:55.9441|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 5
+2025-01-11T17:50:55.9444|INFO|SequenceItem.cs|Run|208|Starting Category: Utility, Item: WaitForAltitude, Altitude: >20
+2025-01-11T17:50:55.9454|INFO|SequenceItem.cs|Run|254|Finishing Category: Utility, Item: WaitForAltitude, Altitude: >20
+2025-01-11T17:50:55.9457|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: EnableDomeSynchronization
+2025-01-11T17:50:55.9525|INFO|DomeVM.cs|OnFollowChanged|716|Dome following enabled
+2025-01-11T17:50:59.2241|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: EnableDomeSynchronization
+2025-01-11T17:50:59.2245|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: Center, Coordinates RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000
+2025-01-11T17:50:59.2903|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 01:41:51; Dec: -02° 51' 52"; Epoch: JNOW to RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW - Alt: 51° 39' 28"; Az: 112° 11' 17"
+2025-01-11T17:50:59.2910|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 134.31055847237837°
+2025-01-11T17:50:59.9558|INFO|DomeFollower.cs|WaitForPreviousSlew|212|Dome is already slewing. Waiting for previous slew to finish
+2025-01-11T17:51:05.4022|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:51:05.7544|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T17:51:47.2768|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 6s; Filter: Lum; Gain: 100; Offset 50; Binning: 1x1;
+2025-01-11T17:51:55.7003|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 03:47:00 Dec: 24° 07' 00" Epoch: J2000
+2025-01-11T17:51:55.8701|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\mmseuct0.zuy.fits
+2025-01-11T17:51:57.3162|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 03:47:47; Dec: 24° 06' 11"; Epoch: J2000
+2025-01-11T17:51:57.3223|INFO|CenteringSolver.cs|Center|99|Centering Solver - Scope Position: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Offset: RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"; Centering Coordinates: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Solved: RA: 03:49:18; Dec: 24° 10' 54"; Epoch: JNOW; Separation RA: -00:00:48; Dec: 00° 00' 51"; Distance: 00° 10' 52"; Bearing: -94° 24' 44"; Threshold: 1
+2025-01-11T17:51:58.4007|INFO|TelescopeVM.cs|Sync|800|Syncing scope from RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW to RA: 03:49:18; Dec: 24° 10' 54"; Epoch: JNOW
+2025-01-11T17:52:03.4032|INFO|CenteringSolver.cs|Center|132|Slewing to target after sync. Current Position: RA: 03:49:18; Dec: 24° 10' 54"; Epoch: JNOW; Target coordinates: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Offset RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"
+2025-01-11T17:52:03.4046|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 03:49:18; Dec: 24° 10' 54"; Epoch: JNOW to RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW - Alt: 51° 49' 40"; Az: 112° 28' 18"
+2025-01-11T17:52:10.4584|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 6s; Filter: Lum; Gain: 100; Offset 50; Binning: 1x1;
+2025-01-11T17:52:18.6221|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 03:47:00 Dec: 24° 07' 00" Epoch: J2000
+2025-01-11T17:52:18.7842|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\03gfmw0m.e15.fits
+2025-01-11T17:52:19.7361|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 03:47:00; Dec: 24° 07' 01"; Epoch: J2000
+2025-01-11T17:52:19.7390|INFO|CenteringSolver.cs|Center|99|Centering Solver - Scope Position: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Offset: RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"; Centering Coordinates: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Solved: RA: 03:48:30; Dec: 24° 11' 46"; Epoch: JNOW; Separation RA: 00:00:00; Dec: -00° 00' 01"; Distance: 00° 00' 02"; Bearing: 69° 57' 45"; Threshold: 1
+2025-01-11T17:52:19.7396|INFO|CenteringSolver.cs|Center|165|Restoring filter to Lum after centering
+2025-01-11T17:52:19.7444|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: Center, Coordinates RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000
+2025-01-11T17:52:19.7446|INFO|SequenceItem.cs|Run|208|Starting Category: Focuser, Item: RunAutofocus
+2025-01-11T17:52:19.8624|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:52:26.6579|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|788|Waiting on initial HFR analysis
+2025-01-11T17:52:26.6981|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15270
+2025-01-11T17:52:27.6419|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.31030454690022, HFR MAD: 0.2207149540589679, Detected Stars 82, Region: 0
+2025-01-11T17:52:32.8966|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:52:39.7257|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15210
+2025-01-11T17:52:40.4732|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.120385258155974, HFR MAD: 0.4585421383384336, Detected Stars 46, Region: 0
+2025-01-11T17:52:44.8987|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:52:51.6400|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15150
+2025-01-11T17:52:52.3820|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.822241013477391, HFR MAD: 0.42049950570114714, Detected Stars 60, Region: 0
+2025-01-11T17:52:54.8920|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:53:01.7261|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15090
+2025-01-11T17:53:02.4649|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.244765693361994, HFR MAD: 0.26071417407831987, Detected Stars 83, Region: 0
+2025-01-11T17:53:06.8886|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:53:13.5868|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|816|Waiting on initial focuser move analyses
+2025-01-11T17:53:14.3683|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.01464932396332, HFR MAD: 0.3264617756280872, Detected Stars 91, Region: 0
+2025-01-11T17:53:14.4142|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15030
+2025-01-11T17:53:18.9261|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:53:25.6253|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:53:26.4311|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.315170712005206, HFR MAD: 0.27115640850423617, Detected Stars 81, Region: 0
+2025-01-11T17:53:26.4803|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14970
+2025-01-11T17:53:30.8830|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:53:37.6069|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:53:38.4149|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.0957825658037565, HFR MAD: 0.2645645628433604, Detected Stars 68, Region: 0
+2025-01-11T17:53:38.4624|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14910
+2025-01-11T17:53:39.2296|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 135.24803198903328°
+2025-01-11T17:53:42.8961|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:53:49.6021|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:53:50.3898|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.670850192568806, HFR MAD: 0.32924205695451114, Detected Stars 55, Region: 0
+2025-01-11T17:53:50.4403|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14850
+2025-01-11T17:53:54.8915|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:54:01.6956|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:54:02.4863|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.76934604504919, HFR MAD: 0.5242826008933328, Detected Stars 38, Region: 0
+2025-01-11T17:54:02.4949|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|842|Enough left trend points (4) with an established minimum (15090) to queue remaining right focus points up to 15330
+2025-01-11T17:54:02.5224|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15330
+2025-01-11T17:54:10.9129|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:54:17.6063|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|915|Waiting on remaining AutoFocus analysis tasks
+2025-01-11T17:54:18.3940|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 10.305158746668969, HFR MAD: 0.30924413914518034, Detected Stars 37, Region: 0
+2025-01-11T17:54:18.4550|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15092
+2025-01-11T17:54:22.8812|INFO|AutoFocusEngine.cs|ValidateCalculatedFocusPosition|1168|Validating HFR at final focus position 15092
+2025-01-11T17:54:22.9015|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:54:30.3860|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.9627174448868945, HFR MAD: 0.3178680213642848, Detected Stars 92, Region: 0
+2025-01-11T17:54:30.4118|INFO|FocuserMediator.cs|BroadcastSuccessfulAutoFocusRun|45|Autofocus notification received - Temperature -3.1875
+2025-01-11T17:54:30.4396|INFO|SequenceItem.cs|Run|254|Finishing Category: Focuser, Item: RunAutofocus
+2025-01-11T17:54:30.4400|INFO|SequenceItem.cs|Run|208|Starting Category: Guider, Item: StartGuiding
+2025-01-11T17:54:30.4411|INFO|SequenceItem.cs|Run|254|Finishing Category: Guider, Item: StartGuiding
+2025-01-11T17:54:30.4413|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[FINISHED]: 5
+2025-01-11T17:54:30.4416|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 5, Conditions: Condition: TimeCondition, Time: 6:32:27h, Condition: AltitudeCondition, Altitude >= 20, , Triggers: Category: Ground Station, Item: Failures to PushoverTrigger: WhenUnsafeTrigger: AutofocusAfterTimeTrigger, Amount: 30mTrigger: DitherAfterExposures, After Exposures: 3Trigger: CenterAfterDriftTrigger, DistanceArcMinutes: 0.5
+2025-01-11T17:54:30.4450|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 5/40, , Triggers: Trigger: DitherAfterExposures, After Exposures: 1
+2025-01-11T17:54:30.4470|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: B
+2025-01-11T17:54:30.4472|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter B at Position 3
+2025-01-11T17:54:30.5059|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15080
+2025-01-11T17:54:34.8609|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: B
+2025-01-11T17:54:34.8624|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-11T17:54:34.9093|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:55:05.8623|INFO|Sequencer.cs|Start|85|Sequence run was cancelled
+2025-01-11T17:55:05.8657|INFO|Sequence2VM.cs|StartSequence|490|Advanced Sequence finished
+2025-01-11T17:55:24.7919|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter Lum at Position 0
+2025-01-11T17:55:24.8515|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15092
+2025-01-11T17:55:30.9209|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 60s; Filter: Lum; Gain: 102; Offset 50; Binning: 4x4;
+2025-01-11T17:56:31.5702|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 136.27119422283954°
+2025-01-11T17:57:15.7742|INFO|FramingAssistantVM.cs|LoadImage|1072|Loading image from source NASA with field of view 12° for coordinates RA: 05:35:17; Dec: -05° 23' 28"; Epoch: J2000
+2025-01-11T17:57:35.1729|INFO|Sequence2VM.cs|StartSequence|485|Advanced Sequence starting
+2025-01-11T17:57:35.1870|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[CREATED]: 3, Triggers: Category: Ground Station, Item: Failures to Pushover
+2025-01-11T17:57:35.1872|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-11T17:57:35.1873|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-11T17:57:35.1874|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 1
+2025-01-11T17:57:35.1874|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.DeepSkyObjectContainer, Strategy: SequentialStrategy, Items[CREATED]: 2, Triggers: Category: Ground Station, Item: Failures to Pushover, Target: M 42 RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000 280
+2025-01-11T17:57:35.1876|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 5
+2025-01-11T17:57:35.1876|INFO|SequenceItem.cs|Run|208|Starting Category: Utility, Item: WaitForAltitude, Altitude: >20
+2025-01-11T17:57:35.1880|INFO|SequenceItem.cs|Run|254|Finishing Category: Utility, Item: WaitForAltitude, Altitude: >20
+2025-01-11T17:57:35.1881|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: EnableDomeSynchronization
+2025-01-11T17:57:39.2195|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: EnableDomeSynchronization
+2025-01-11T17:57:39.2197|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: Center, Coordinates RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000
+2025-01-11T17:57:39.2808|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW to RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW - Alt: 52° 42' 45"; Az: 113° 59' 00"
+2025-01-11T17:57:46.3357|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 6s; Filter: Lum; Gain: 100; Offset 50; Binning: 1x1;
+2025-01-11T17:57:54.8795|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 03:47:00 Dec: 24° 07' 00" Epoch: J2000
+2025-01-11T17:57:55.0267|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\52myzx5s.ynt.fits
+2025-01-11T17:57:56.3249|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 03:46:59; Dec: 24° 06' 55"; Epoch: J2000
+2025-01-11T17:57:56.3251|INFO|CenteringSolver.cs|Center|99|Centering Solver - Scope Position: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Offset: RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"; Centering Coordinates: RA: 03:48:30; Dec: 24° 11' 45"; Epoch: JNOW; Solved: RA: 03:48:29; Dec: 24° 11' 40"; Epoch: JNOW; Separation RA: 00:00:01; Dec: 00° 00' 05"; Distance: 00° 00' 14"; Bearing: 110° 09' 52"; Threshold: 1
+2025-01-11T17:57:56.3252|INFO|CenteringSolver.cs|Center|165|Restoring filter to Lum after centering
+2025-01-11T17:57:56.3310|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: Center, Coordinates RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000
+2025-01-11T17:57:56.3314|INFO|SequenceItem.cs|Run|208|Starting Category: Focuser, Item: RunAutofocus
+2025-01-11T17:57:56.4514|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:03.1825|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|788|Waiting on initial HFR analysis
+2025-01-11T17:58:03.2218|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15332
+2025-01-11T17:58:03.9564|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.971224380366708, HFR MAD: 0.2765043029722478, Detected Stars 91, Region: 0
+2025-01-11T17:58:08.8942|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:15.6230|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15272
+2025-01-11T17:58:16.3758|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 10.512936672968136, HFR MAD: 0.32734219690339295, Detected Stars 35, Region: 0
+2025-01-11T17:58:18.9180|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:25.6437|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15212
+2025-01-11T17:58:26.3820|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.19509486041401, HFR MAD: 0.4389466939298954, Detected Stars 44, Region: 0
+2025-01-11T17:58:28.9132|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:35.6744|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15152
+2025-01-11T17:58:36.4321|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.2667241693811055, HFR MAD: 0.46520660563995975, Detected Stars 59, Region: 0
+2025-01-11T17:58:40.8928|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:47.6817|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|816|Waiting on initial focuser move analyses
+2025-01-11T17:58:48.4544|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.735870826473288, HFR MAD: 0.3505271726740773, Detected Stars 70, Region: 0
+2025-01-11T17:58:48.5008|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15092
+2025-01-11T17:58:52.9076|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:58:59.6157|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:59:00.3937|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.6915870076320285, HFR MAD: 0.2774882438279942, Detected Stars 102, Region: 0
+2025-01-11T17:59:00.4309|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15032
+2025-01-11T17:59:04.9001|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:59:11.6391|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-11T17:59:12.4102|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.1322689626892775, HFR MAD: 0.30590135299304855, Detected Stars 89, Region: 0
+2025-01-11T17:59:12.4181|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|860|Enough right trend points (4) with an established minimum (15092) to queue remaining left focus points down to 14852
+2025-01-11T17:59:12.4539|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14972
+2025-01-11T17:59:16.8841|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:59:21.5481|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 137.29980111092627°
+2025-01-11T17:59:23.7218|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14912
+2025-01-11T17:59:24.4688|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.0898693478563235, HFR MAD: 0.3102077345343952, Detected Stars 71, Region: 0
+2025-01-11T17:59:28.8912|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:59:35.6535|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 14852
+2025-01-11T17:59:36.4106|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.368855666566979, HFR MAD: 0.33727698907927195, Detected Stars 56, Region: 0
+2025-01-11T17:59:38.9152|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T17:59:45.6143|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|915|Waiting on remaining AutoFocus analysis tasks
+2025-01-11T17:59:46.4078|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.156399232302798, HFR MAD: 0.45918418673794115, Detected Stars 51, Region: 0
+2025-01-11T17:59:46.4668|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15082
+2025-01-11T17:59:52.8699|INFO|AutoFocusEngine.cs|ValidateCalculatedFocusPosition|1168|Validating HFR at final focus position 15082
+2025-01-11T17:59:52.8902|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:00:00.4929|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.3330706609342915, HFR MAD: 0.19393943536978764, Detected Stars 122, Region: 0
+2025-01-11T18:00:00.4943|INFO|FocuserMediator.cs|BroadcastSuccessfulAutoFocusRun|45|Autofocus notification received - Temperature -3.1875
+2025-01-11T18:00:00.5052|INFO|SequenceItem.cs|Run|254|Finishing Category: Focuser, Item: RunAutofocus
+2025-01-11T18:00:00.5053|INFO|SequenceItem.cs|Run|208|Starting Category: Guider, Item: StartGuiding
+2025-01-11T18:00:00.5054|INFO|SequenceItem.cs|Run|254|Finishing Category: Guider, Item: StartGuiding
+2025-01-11T18:00:00.5055|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[FINISHED]: 5
+2025-01-11T18:00:00.5056|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 5, Conditions: Condition: TimeCondition, Time: 6:32:27h, Condition: AltitudeCondition, Altitude >= 20, , Triggers: Category: Ground Station, Item: Failures to PushoverTrigger: WhenUnsafeTrigger: AutofocusAfterTimeTrigger, Amount: 30mTrigger: DitherAfterExposures, After Exposures: 3Trigger: CenterAfterDriftTrigger, DistanceArcMinutes: 0.5
+2025-01-11T18:00:00.5069|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[CREATED]: 2, Conditions: Condition: LoopCondition, Iterations: 0/40, , Triggers: Trigger: DitherAfterExposures, After Exposures: 1
+2025-01-11T18:00:00.5081|INFO|SequenceItem.cs|Run|208|Starting Category: Filter Wheel, Item: SwitchFilter, Filter: B
+2025-01-11T18:00:00.5082|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter B at Position 3
+2025-01-11T18:00:00.5753|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15070
+2025-01-11T18:00:04.8727|INFO|SequenceItem.cs|Run|254|Finishing Category: Filter Wheel, Item: SwitchFilter, Filter: B
+2025-01-11T18:00:04.8735|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-11T18:00:04.9102|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:00:18.1620|INFO|Sequencer.cs|Start|85|Sequence run was cancelled
+2025-01-11T18:00:18.1650|INFO|Sequence2VM.cs|StartSequence|490|Advanced Sequence finished
+2025-01-11T18:00:59.3627|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:00:59.3634|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:01:01.3713|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:01:01.3714|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:01:02.0494|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:01:02.4174|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:01:03.3771|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:01:03.3772|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:01:05.3770|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 126.94617377481711°
+2025-01-11T18:01:27.0961|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:01:27.4553|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:01:29.4538|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter Ha at Position 4
+2025-01-11T18:01:29.5140|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15129
+2025-01-11T18:01:34.9063|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 60s; Filter: Ha; Gain: 102; Offset 50; Binning: 4x4;
+2025-01-11T18:03:43.8085|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:03:43.8086|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:03:45.8189|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:03:45.8190|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:03:47.8236|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:03:47.8237|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:03:49.8257|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 105.30455019448027°
+2025-01-11T18:04:17.5943|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:36.3026|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:38.2936|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:39.8578|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:41.4618|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:43.0144|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:44.6277|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:46.1957|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:47.8053|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:49.3589|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:51.0077|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:52.6588|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:54.3853|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:55.9566|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:57.5786|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:04:59.3820|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:00.9934|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:02.5572|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:04.1718|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:05.8182|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:07.4476|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:09.0182|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:10.6136|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:12.1972|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:13.8162|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:05:39.5324|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:05:39.5326|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:05:41.5315|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:05:41.5316|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:05:43.5366|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 123.69575853490468°
+2025-01-11T18:06:06.9487|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:08.9974|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:10.6066|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:12.2860|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:13.8967|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:15.4374|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:17.9213|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:20.0425|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:21.6436|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.01s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:31.9794|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:34.9312|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:37.4758|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:40.0072|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:42.6837|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:45.2215|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:47.8124|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:50.3485|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:52.9648|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:55.5855|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:06:58.3018|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 1s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:07.7700|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:09.8726|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:11.4567|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:13.0353|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:14.6668|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:16.3173|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:17.9394|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:19.5320|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:21.1503|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:22.7700|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:24.4125|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:26.0154|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:27.6282|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:29.3067|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:30.9765|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:07:32.5499|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Ha; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:08:19.7843|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:19.7845|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:21.7901|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:21.7902|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:23.7963|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:23.7964|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:25.8028|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:25.8029|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:27.8152|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:27.8153|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:29.8286|INFO|DomeFollower.cs|CanSyncDome|188|Will not synchronize telescope while it is slewing since SynchronizeDuringMountSlew is disabled
+2025-01-11T18:08:29.8287|WARNING|DomeFollower.cs|TriggerTelescopeSync|198|Cannot sync dome at this time
+2025-01-11T18:08:31.8435|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 228.0882771404618°
+2025-01-11T18:10:02.8722|INFO|FilterWheelVM.cs|ChangeFilter|112|Moving to Filter Lum at Position 0
+2025-01-11T18:10:02.9111|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15082
+2025-01-11T18:10:07.2132|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:09.2754|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:10.9017|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:12.4926|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:14.1239|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:15.7331|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:17.3602|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:19.2135|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:23.0404|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.0001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:25.1010|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.0001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:26.7016|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.0001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:28.3407|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.0001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:10:29.9558|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 0.0001s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:13:15.3622|INFO|Sequence2VM.cs|StartSequence|485|Advanced Sequence starting
+2025-01-11T18:13:15.3697|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[CREATED]: 3, Triggers: Category: Ground Station, Item: Failures to Pushover
+2025-01-11T18:13:15.3698|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-11T18:13:15.3698|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.StartAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-11T18:13:15.3699|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 1
+2025-01-11T18:13:15.3699|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.DeepSkyObjectContainer, Strategy: SequentialStrategy, Items[FINISHED]: 1, Items[CREATED]: 1, Triggers: Category: Ground Station, Item: Failures to Pushover, Target: M 42 RA: 03:47:00; Dec: 24° 07' 00"; Epoch: J2000 280
+2025-01-11T18:13:15.3701|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 5, Conditions: Condition: TimeCondition, Time: 6:32:27h, Condition: AltitudeCondition, Altitude >= 20, , Triggers: Category: Ground Station, Item: Failures to PushoverTrigger: WhenUnsafeTrigger: AutofocusAfterTimeTrigger, Amount: 30mTrigger: DitherAfterExposures, After Exposures: 3Trigger: CenterAfterDriftTrigger, DistanceArcMinutes: 0.5
+2025-01-11T18:13:15.3712|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Container: NINA.Sequencer.SequenceItem.Imaging.SmartExposure, Strategy: SequentialStrategy, Items[FINISHED]: 1, Items[CREATED]: 1, Conditions: Condition: LoopCondition, Iterations: 0/40, , Triggers: Trigger: DitherAfterExposures, After Exposures: 1
+2025-01-11T18:13:15.3723|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-11T18:13:15.3922|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-11T18:13:18.1954|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 1
+2025-01-11T18:13:18.1956|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 3
+2025-01-11T18:13:18.1958|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: DisableDomeSynchronization
+2025-01-11T18:13:18.1971|INFO|DomeVM.cs|OnFollowChanged|719|Dome following stopped
+2025-01-11T18:13:21.2153|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: DisableDomeSynchronization
+2025-01-11T18:13:21.2155|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.ParallelContainer, Strategy: ParallelStrategy, Items[CREATED]: 5
+2025-01-11T18:13:21.2164|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: CloseDomeShutter
+2025-01-11T18:13:21.2423|INFO|DomeVM.cs|CloseShutter|525|Closing dome shutter. Shutter state before closing ShutterOpen
+2025-01-11T18:13:21.2432|INFO|AscomDome.cs|CloseShutter|244|Sending a CloseShutter request, since it is currently ShutterOpen
+2025-01-11T18:15:03.2723|INFO|SequenceItem.cs|Run|208|Starting Category: Ground Station, Item: Send to Pushover, Title: Dome closed
+2025-01-11T18:15:03.2742|INFO|SequenceItem.cs|Run|208|Starting Category: Flat Device, Item: CloseCover
+2025-01-11T18:15:03.2760|INFO|FlatDeviceVM.cs|CloseCover|331|Closing Flat Device Cover
+2025-01-11T18:15:03.4371|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: WarmCamera, Duration: 0
+2025-01-11T18:15:03.4384|INFO|CameraVM.cs|WarmCamera|162|Warming Camera. Duration: 00:00:00
+2025-01-11T18:15:03.4412|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: ParkScope
+2025-01-11T18:15:03.4414|INFO|TelescopeVM.cs|ParkTelescope|134|Mount has been commanded to park
+2025-01-11T18:15:04.1875|INFO|SequenceItem.cs|Run|254|Finishing Category: Ground Station, Item: Send to Pushover, Title: Dome closed
+2025-01-11T18:15:09.1932|INFO|DomeVM.cs|CloseShutter|531|Closed dome shutter. Shutter state after closing ShutterClosed
+2025-01-11T18:15:09.1937|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: CloseDomeShutter
+2025-01-11T18:15:14.8259|INFO|SequenceItem.cs|Run|254|Finishing Category: Flat Device, Item: CloseCover
+2025-01-11T18:15:16.2937|INFO|TelescopeVM.cs|ParkTelescope|180|Mount has parked
+2025-01-11T18:15:16.2938|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: ParkScope
+2025-01-11T18:16:05.3236|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:16:05.6769|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:16:10.5966|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:16:10.9676|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:16:54.4071|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:16:54.7453|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-11T18:28:11.5550|INFO|CameraVM.cs|WarmCamera|180|Could not reach warming temperature. Most likley due to ambient temperature being lower. Continuing...
+2025-01-11T18:28:31.6229|INFO|CameraVM.cs|WarmCamera|187|Turning cooler off
+2025-01-11T18:28:31.6244|INFO|SequenceItem.cs|Run|254|Finishing Category: Camera, Item: WarmCamera, Duration: 0
+2025-01-11T18:28:31.6246|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.ParallelContainer, Strategy: ParallelStrategy, Items[FINISHED]: 5
+2025-01-11T18:28:31.6249|INFO|SequenceItem.cs|Run|208|Starting Category: ASA Tools, Item: PowerOn
+2025-01-11T18:28:31.6265|INFO|SequenceItem.cs|Run|254|Finishing Category: ASA Tools, Item: PowerOn
+2025-01-11T18:28:31.6267|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 3
+2025-01-11T18:28:31.6268|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[FINISHED]: 3, Triggers: Category: Ground Station, Item: Failures to Pushover
+2025-01-11T18:28:31.6269|INFO|Sequence2VM.cs|StartSequence|490|Advanced Sequence finished
+2025-01-11T21:09:07.1626|INFO|PluginInstaller.cs|Install|91|Downloading plugin from https://bitbucket.org/zorkmid/nina.plugin.when/downloads/Powerups.3.22.0.3.zip
+2025-01-11T21:09:09.4999|INFO|PluginInstaller.cs|InstallArchive|236|Installing plugin Sequencer Powerups - extracting archive to C:\Users\AMOS\AppData\Local\NINA\Plugins\3.0.0\Sequencer Powerups
+2025-01-11T21:09:12.6523|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2025-01-11T21:09:12.6690|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.AMOS.Dome ASCOM Dome Driver for AMOS
+2025-01-11T21:09:12.6739|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-11T21:09:12.6745|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.OptecAlnitak.CoverCalibrator Optec Alnitak
+2025-01-11T21:09:12.6796|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-11T21:09:12.6802|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2025-01-11T21:09:12.7402|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-11T21:09:12.7410|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.photonProxyHub.Telescope ASCOM Telescope Driver for photonProxyHub
+2025-01-11T21:09:12.7558|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-11T21:09:12.7559|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.EFW2.FilterWheel ZWO FilterWheel (1)
+2025-01-11T21:09:12.7604|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-11T21:09:12.8624|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.MicroTouchServer.Focuser1 MicroTouch Focuser1
+2025-01-11T21:09:12.8928|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-11T21:09:12.8933|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-11T21:09:12.8934|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-11T21:09:12.8946|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.ObservingConditions Lunatico CloudWatcher Observing Conditions
+2025-01-11T21:09:12.8998|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-11T21:09:12.9004|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.SafetyMonitor Lunatico CloudWatcher Safety Monitor
+2025-01-11T21:09:12.9032|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-11T21:09:13.4637|INFO|HttpServer.cs|WaitForStopped|108|waited 0ms for web server to stop

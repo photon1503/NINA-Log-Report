@@ -1,0 +1,490 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2025-01-01T00:00:12--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.26100---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2025-01-01T00:00:12.5014|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 37" Epoch: J2000
+2025-01-01T00:00:12.5134|INFO|NINAEventWatcher.cs|LogFileRolled|85|web viewer detected log roll, new file is 20241231-213850-3.1.2.9001.17512-202501.log
+2025-01-01T00:00:12.5363|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20241231-213850-3.1.2.9001.17512-202412.log
+2025-01-01T00:00:12.6177|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:00:12.6183|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:00:12.6871|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (-3.5976428594540555, -0.01789499971724877) to (-5.502268749461526, 0.18603541797142148) using guide durations of -0.15754374051320658 and 0.01686838395700254 seconds
+2025-01-01T00:00:12.7377|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\21s4v4wi.dex.fits
+2025-01-01T00:00:13.2161|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 40"; Epoch: J2000
+2025-01-01T00:00:13.2162|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.13831046743937248 / 0.5 arc minutes
+2025-01-01T00:00:13.2872|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.1252246223441227, HFR MAD: 0.15326499847001274, Detected Stars 298, Region: 0
+2025-01-01T00:00:13.4877|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2024-12-31_23-55-10_Lum_-15.00_300.00s_0022_20.25_M 33_2.46_0.50__.fits
+2025-01-01T00:00:13.4878|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2024-12-31_23-55-10_Lum_-15.00_300.00s_0022_20.25_M 33_2.46_0.50__.fits. Duration Total: 00:00:00.9864518; BeforeSave: 00:00:00.0000606; BeforeFinalizeImageSaved: 00:00:00.8618207; FinalizeSaveTime: 00:00:00.1245697
+2025-01-01T00:00:22.8488|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:00:22.8493|INFO|SequenceTrigger.cs|Run|114|Starting Trigger: AutofocusAfterTimeTrigger, Amount: 30m
+2025-01-01T00:00:22.8495|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 6
+2025-01-01T00:00:22.8496|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:00:22.8497|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:00:22.8502|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:00:22.8503|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:00:22.8504|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:00:22.8506|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:00:22.8506|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:00:22.8507|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:00:22.8508|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:00:22.8509|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:00:22.8509|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:00:22.8511|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:00:22.8511|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:00:22.8511|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:00:22.8513|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:00:22.8513|INFO|SequenceItem.cs|Run|208|Starting Category: Focuser, Item: RunAutofocus
+2025-01-01T00:00:22.9587|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:00:29.6355|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|788|Waiting on initial HFR analysis
+2025-01-01T00:00:29.6680|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15537
+2025-01-01T00:00:30.3330|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.2615707963523306, HFR MAD: 0.13348014777176198, Detected Stars 243, Region: 0
+2025-01-01T00:00:35.9853|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:00:42.7034|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15477
+2025-01-01T00:00:43.3480|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 9.413260362778903, HFR MAD: 0.2671120292694287, Detected Stars 28, Region: 0
+2025-01-01T00:00:47.9478|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:00:54.6693|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15417
+2025-01-01T00:00:55.3572|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.91421310645736, HFR MAD: 0.35160397414230626, Detected Stars 46, Region: 0
+2025-01-01T00:00:57.9525|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:01:04.6702|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15357
+2025-01-01T00:01:05.3825|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.635572632493785, HFR MAD: 0.275267354153093, Detected Stars 94, Region: 0
+2025-01-01T00:01:07.9601|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:01:14.6395|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|816|Waiting on initial focuser move analyses
+2025-01-01T00:01:15.3488|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.8297711911631995, HFR MAD: 0.20165321622065369, Detected Stars 198, Region: 0
+2025-01-01T00:01:15.4147|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15297
+2025-01-01T00:01:19.9654|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:01:26.7512|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:01:27.4584|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.2790205617118335, HFR MAD: 0.12733169805058875, Detected Stars 240, Region: 0
+2025-01-01T00:01:27.5163|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15237
+2025-01-01T00:01:31.9571|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:01:38.7280|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:01:39.4860|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.9793191013162867, HFR MAD: 0.25745500892008755, Detected Stars 179, Region: 0
+2025-01-01T00:01:39.5349|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15177
+2025-01-01T00:01:43.9356|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:01:50.6158|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:01:51.3482|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.183525432026878, HFR MAD: 0.48048543278783074, Detected Stars 109, Region: 0
+2025-01-01T00:01:51.3620|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|860|Enough right trend points (4) with an established minimum (15297) to queue remaining left focus points down to 15057
+2025-01-01T00:01:51.4050|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15117
+2025-01-01T00:01:55.9612|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:02:02.6634|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15057
+2025-01-01T00:02:03.3529|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.22245771660571, HFR MAD: 0.6219705179440522, Detected Stars 56, Region: 0
+2025-01-01T00:02:05.9732|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:02:12.6491|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|915|Waiting on remaining AutoFocus analysis tasks
+2025-01-01T00:02:13.3774|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.713812723527152, HFR MAD: 0.46042867727061854, Detected Stars 28, Region: 0
+2025-01-01T00:02:13.4213|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15305
+2025-01-01T00:02:19.9171|INFO|AutoFocusEngine.cs|ValidateCalculatedFocusPosition|1168|Validating HFR at final focus position 15305
+2025-01-01T00:02:19.9392|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:02:27.3921|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.2933841832419186, HFR MAD: 0.1474717723145642, Detected Stars 241, Region: 0
+2025-01-01T00:02:27.3933|INFO|FocuserMediator.cs|BroadcastSuccessfulAutoFocusRun|45|Autofocus notification received - Temperature 3.9375
+2025-01-01T00:02:27.4068|INFO|SequenceItem.cs|Run|254|Finishing Category: Focuser, Item: RunAutofocus
+2025-01-01T00:02:27.4069|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[FAILED]: 5, Items[FINISHED]: 1
+2025-01-01T00:02:27.4070|ERROR|SequenceTrigger.cs|Run|132|Failed: Trigger: AutofocusAfterTimeTrigger, Amount: 30m - Category: Powerups (Expressions), Item: IfTimeout failed to exectue
+2025-01-01T00:02:27.4086|INFO|FailuresToPushoverTrigger.cs|WorkerFn|191|Failures to Pushover: Sending Failure running AF After Time
+2025-01-01T00:02:27.4086|INFO|FailuresToPushoverTrigger.cs|WorkerFn|191|Failures to Pushover: Sending Failure running AF After Time
+2025-01-01T00:02:27.4199|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:02:27.4618|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:04:45.0678|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 269.77477887606653°
+2025-01-01T00:07:29.3766|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 37" Epoch: J2000
+2025-01-01T00:07:29.4099|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:07:29.4105|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:07:29.4797|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (-5.502268749461526, 0.18603541797142148) to (0.030790811219983442, -2.5407664072690586) using guide durations of 0.4576746038397627 and -0.22555114967220113 seconds
+2025-01-01T00:07:29.5705|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\lbxilqfh.hmf.fits
+2025-01-01T00:07:30.0308|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 41"; Epoch: J2000
+2025-01-01T00:07:30.0310|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.14193848801874062 / 0.5 arc minutes
+2025-01-01T00:07:30.0724|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.14610489114176, HFR MAD: 0.15527894200334824, Detected Stars 308, Region: 0
+2025-01-01T00:07:30.2945|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-02-27_Lum_-15.00_300.00s_0023_20.42_M 33_2.48_0.47__.fits
+2025-01-01T00:07:30.2946|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-02-27_Lum_-15.00_300.00s_0023_20.42_M 33_2.48_0.47__.fits. Duration Total: 00:00:00.9182613; BeforeSave: 00:00:00.0000376; BeforeFinalizeImageSaved: 00:00:00.7732698; FinalizeSaveTime: 00:00:00.1449536
+2025-01-01T00:07:39.9423|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:07:39.9431|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:07:39.9637|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:10:15.0786|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 270.78899243208554°
+2025-01-01T00:12:41.9153|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 36" Epoch: J2000
+2025-01-01T00:12:42.0441|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:12:42.1019|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\hzgrf4kx.5rz.fits
+2025-01-01T00:12:42.7058|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.213022239295962, HFR MAD: 0.1593169383063784, Detected Stars 294, Region: 0
+2025-01-01T00:12:42.8992|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-07-39_Lum_-15.00_300.00s_0024_20.51_M 33_2.58_0.49__.fits
+2025-01-01T00:12:42.8992|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-07-39_Lum_-15.00_300.00s_0024_20.51_M 33_2.58_0.49__.fits. Duration Total: 00:00:00.9850994; BeforeSave: 00:00:00.0011645; BeforeFinalizeImageSaved: 00:00:00.8616242; FinalizeSaveTime: 00:00:00.1223103
+2025-01-01T00:12:43.0098|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 39"; Epoch: J2000
+2025-01-01T00:12:43.0099|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.17160530696775467 / 0.5 arc minutes
+2025-01-01T00:12:43.3201|INFO|Symbol.cs|OnMessageReceived|562|Received message from Target Scheduler re: TargetScheduler-TargetStart
+2025-01-01T00:12:43.3203|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: SwitchFilter, Filter: Lum
+2025-01-01T00:12:43.3228|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: SwitchFilter, Filter: Lum
+2025-01-01T00:12:43.3233|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: SetReadoutMode, Mode: 0
+2025-01-01T00:12:43.3236|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: SetReadoutMode, Mode: 0
+2025-01-01T00:12:43.3240|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:12:43.3600|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:15:49.1050|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 271.8058860200706°
+2025-01-01T00:17:45.2995|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 36" Epoch: J2000
+2025-01-01T00:17:45.4094|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:17:45.4098|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:17:45.4802|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\n4ca3jo1.a42.fits
+2025-01-01T00:17:45.4947|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (0.030790811219983442, -2.5407664072690586) to (-0.7390129948312875, 0.9296670666116911) using guide durations of -0.06367537672510823 and 0.2870616605318068 seconds
+2025-01-01T00:17:46.0582|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.3056035570187428, HFR MAD: 0.1773538798555041, Detected Stars 278, Region: 0
+2025-01-01T00:17:46.2825|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-12-43_Lum_-15.00_300.00s_0025_20.48_M 33_2.70_0.48__.fits
+2025-01-01T00:17:46.2826|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-12-43_Lum_-15.00_300.00s_0025_20.48_M 33_2.70_0.48__.fits. Duration Total: 00:00:00.9843796; BeforeSave: 00:00:00.0012396; BeforeFinalizeImageSaved: 00:00:00.8354134; FinalizeSaveTime: 00:00:00.1477260
+2025-01-01T00:17:46.4500|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 39"; Epoch: J2000
+2025-01-01T00:17:46.4501|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.17715076266515783 / 0.5 arc minutes
+2025-01-01T00:17:55.7879|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:17:55.7881|INFO|AutofocusAfterHFRIncreaseTrigger.cs|ShouldTrigger|221|Autofocus after HFR change should be triggered, as current HFR trend is 6.74% higher compared to threshold of 5%
+2025-01-01T00:17:55.7883|INFO|SequenceTrigger.cs|Run|114|Starting Trigger: AutofocusAfterHFRIncreaseTrigger, Amount: 5
+2025-01-01T00:17:55.7883|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[CREATED]: 6
+2025-01-01T00:17:55.7884|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:17:55.7885|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:17:55.7888|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:17:55.7889|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:17:55.7890|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:17:55.7892|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:17:55.7892|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:17:55.7892|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:17:55.7893|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:17:55.7893|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:17:55.7894|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:17:55.7895|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:17:55.7895|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:17:55.7895|ERROR|SequenceItem.cs|Run|263|Category: Powerups (Expressions), Item: IfTimeout - 
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at WhenPlugin.When.IfTimeout.Execute(IProgress`1 progress, CancellationToken token)
+   at NINA.Sequencer.SequenceItem.SequenceItem.Run(IProgress`1 progress, CancellationToken token) in C:\Projects\nina\NINA.Sequencer\SequenceItem\SequenceItem.cs:line 227
+2025-01-01T00:17:55.7896|ERROR|SequenceItem.cs|RunErrorBehavior|195|Instruction If Timed Out failed after 1 attempt. Error behavior is set to ContinueOnError. Continuing.
+2025-01-01T00:17:55.7896|INFO|SequenceItem.cs|Run|208|Starting Category: Focuser, Item: RunAutofocus
+2025-01-01T00:17:55.8814|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:18:02.5560|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|788|Waiting on initial HFR analysis
+2025-01-01T00:18:02.5865|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15545
+2025-01-01T00:18:03.2505|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.495471115160054, HFR MAD: 0.16058001543622025, Detected Stars 242, Region: 0
+2025-01-01T00:18:09.9545|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:18:16.7718|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15485
+2025-01-01T00:18:17.4408|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 9.711871489667345, HFR MAD: 0.3031583999643779, Detected Stars 28, Region: 0
+2025-01-01T00:18:21.9472|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:18:28.6893|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15425
+2025-01-01T00:18:29.3965|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 7.374837737190129, HFR MAD: 0.3572785488981287, Detected Stars 39, Region: 0
+2025-01-01T00:18:33.9543|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:18:40.6631|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15365
+2025-01-01T00:18:41.3108|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.170768208894505, HFR MAD: 0.3257799747746297, Detected Stars 75, Region: 0
+2025-01-01T00:18:43.9456|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:18:50.6238|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|816|Waiting on initial focuser move analyses
+2025-01-01T00:18:51.3645|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.3822995426141373, HFR MAD: 0.22840240334447692, Detected Stars 149, Region: 0
+2025-01-01T00:18:51.4230|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15305
+2025-01-01T00:18:55.9919|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:19:02.6739|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:19:03.4183|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.6069994043700326, HFR MAD: 0.15195864957700955, Detected Stars 216, Region: 0
+2025-01-01T00:19:03.5157|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15245
+2025-01-01T00:19:07.9648|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:19:14.7510|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:19:15.4728|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.1343615471438024, HFR MAD: 0.2135985319255469, Detected Stars 162, Region: 0
+2025-01-01T00:19:15.4863|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|860|Enough right trend points (4) with an established minimum (15305) to queue remaining left focus points down to 15065
+2025-01-01T00:19:15.5232|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15185
+2025-01-01T00:19:19.9440|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:19:26.6654|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15125
+2025-01-01T00:19:27.3544|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.348706699420049, HFR MAD: 0.3612101343448324, Detected Stars 101, Region: 0
+2025-01-01T00:19:29.9496|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:19:36.7523|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15065
+2025-01-01T00:19:37.4702|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 6.366205325982311, HFR MAD: 0.4006883765084215, Detected Stars 47, Region: 0
+2025-01-01T00:19:41.9369|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:19:48.6208|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|915|Waiting on remaining AutoFocus analysis tasks
+2025-01-01T00:19:49.3713|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 8.453872904350437, HFR MAD: 0.5458178851651496, Detected Stars 31, Region: 0
+2025-01-01T00:19:49.4320|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15302
+2025-01-01T00:19:55.9221|INFO|AutoFocusEngine.cs|ValidateCalculatedFocusPosition|1168|Validating HFR at final focus position 15302
+2025-01-01T00:19:55.9439|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:20:03.3551|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.6451671199605284, HFR MAD: 0.1576574617847566, Detected Stars 216, Region: 0
+2025-01-01T00:20:03.3563|INFO|FocuserMediator.cs|BroadcastSuccessfulAutoFocusRun|45|Autofocus notification received - Temperature 3.8125
+2025-01-01T00:20:03.3697|INFO|SequenceItem.cs|Run|254|Finishing Category: Focuser, Item: RunAutofocus
+2025-01-01T00:20:03.3699|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequentialContainer, Strategy: SequentialStrategy, Items[FAILED]: 5, Items[FINISHED]: 1
+2025-01-01T00:20:03.3700|ERROR|SequenceTrigger.cs|Run|132|Failed: Trigger: AutofocusAfterHFRIncreaseTrigger, Amount: 5 - Category: Powerups (Expressions), Item: IfTimeout failed to exectue
+2025-01-01T00:20:03.3717|INFO|FailuresToPushoverTrigger.cs|WorkerFn|191|Failures to Pushover: Sending Failure running AF After HFR Increase
+2025-01-01T00:20:03.3717|INFO|FailuresToPushoverTrigger.cs|WorkerFn|191|Failures to Pushover: Sending Failure running AF After HFR Increase
+2025-01-01T00:20:03.5983|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:20:03.6356|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:21:29.0822|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 272.83028021468203°
+2025-01-01T00:25:05.5680|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 38" Epoch: J2000
+2025-01-01T00:25:05.6855|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:25:05.6859|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:25:05.7725|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (-0.7390129948312875, 0.9296670666116911) to (-6.902627085575377, -0.9022003610665663) using guide durations of -0.5098317858799672 and -0.15152542459643173 seconds
+2025-01-01T00:25:05.7807|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\px55j0pa.lf0.fits
+2025-01-01T00:25:06.2998|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.472186067086842, HFR MAD: 0.17119337175881277, Detected Stars 255, Region: 0
+2025-01-01T00:25:06.5323|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-20-03_Lum_-15.00_300.00s_0026_20.58_M 33_2.91_0.45__.fits
+2025-01-01T00:25:06.5324|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-20-03_Lum_-15.00_300.00s_0026_20.58_M 33_2.91_0.45__.fits. Duration Total: 00:00:00.9652967; BeforeSave: 00:00:00.0008779; BeforeFinalizeImageSaved: 00:00:00.8090568; FinalizeSaveTime: 00:00:00.1553617
+2025-01-01T00:25:06.7233|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 41"; Epoch: J2000
+2025-01-01T00:25:06.7234|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.193612484448598 / 0.5 arc minutes
+2025-01-01T00:25:16.2968|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:25:16.2975|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:25:16.3166|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:27:13.0654|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 273.85704150034627°
+2025-01-01T00:30:18.1218|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 37" Epoch: J2000
+2025-01-01T00:30:18.1540|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:30:18.1548|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:30:18.2268|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (-6.902627085575377, -0.9022003610665663) to (-2.2252617389798033, 1.035652322240877) using guide durations of 0.38689468431337315 and 0.16029214025364924 seconds
+2025-01-01T00:30:18.3216|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\5atscpk1.bcs.fits
+2025-01-01T00:30:18.8227|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.3561185385380625, HFR MAD: 0.17074364659192565, Detected Stars 276, Region: 0
+2025-01-01T00:30:19.0277|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-25-16_Lum_-15.00_300.00s_0027_20.60_M 33_2.75_0.50__.fits
+2025-01-01T00:30:19.0278|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-25-16_Lum_-15.00_300.00s_0027_20.60_M 33_2.75_0.50__.fits. Duration Total: 00:00:00.9060257; BeforeSave: 00:00:00.0000615; BeforeFinalizeImageSaved: 00:00:00.7767153; FinalizeSaveTime: 00:00:00.1292483
+2025-01-01T00:30:19.3372|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 40"; Epoch: J2000
+2025-01-01T00:30:19.3373|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.14474936311482026 / 0.5 arc minutes
+2025-01-01T00:30:28.6166|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:30:28.6173|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:30:28.6521|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:32:57.0804|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 274.87337110510776°
+2025-01-01T00:35:30.5590|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 38" Epoch: J2000
+2025-01-01T00:35:30.6690|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:35:30.6693|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:35:30.7482|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (-2.2252617389798033, 1.035652322240877) to (6.038545387879507, 2.4116787022428765) using guide durations of 0.683552130880676 and 0.11381990767200571 seconds
+2025-01-01T00:35:30.7824|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\lwzgnfv3.b23.fits
+2025-01-01T00:35:31.2803|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 41"; Epoch: J2000
+2025-01-01T00:35:31.2804|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.18588345868159636 / 0.5 arc minutes
+2025-01-01T00:35:31.3652|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.2131163081910774, HFR MAD: 0.16709889451097348, Detected Stars 303, Region: 0
+2025-01-01T00:35:31.5851|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-30-28_Lum_-15.00_300.00s_0028_20.62_M 33_2.54_0.51__.fits
+2025-01-01T00:35:31.5852|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-30-28_Lum_-15.00_300.00s_0028_20.62_M 33_2.54_0.51__.fits. Duration Total: 00:00:01.0268261; BeforeSave: 00:00:00.0005212; BeforeFinalizeImageSaved: 00:00:00.8836581; FinalizeSaveTime: 00:00:00.1426466
+2025-01-01T00:35:41.4419|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:35:41.4426|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:35:41.4624|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:38:47.0549|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 275.8985087445694°
+2025-01-01T00:40:43.3616|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 01:33:51 Dec: 30° 39' 39" Epoch: J2000
+2025-01-01T00:40:43.4008|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:40:43.5680|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\3w1nyw24.uhw.fits
+2025-01-01T00:40:44.0665|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.702363017782786, HFR MAD: 0.15116548030549914, Detected Stars 237, Region: 0
+2025-01-01T00:40:44.3043|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-35-41_Lum_-15.00_300.00s_0029_20.64_M 33_3.24_0.64__.fits
+2025-01-01T00:40:44.3044|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-35-41_Lum_-15.00_300.00s_0029_20.64_M 33_3.24_0.64__.fits. Duration Total: 00:00:00.9429026; BeforeSave: 00:00:00.0000573; BeforeFinalizeImageSaved: 00:00:00.7743842; FinalizeSaveTime: 00:00:00.1684606
+2025-01-01T00:40:44.5064|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 01:33:52; Dec: 30° 39' 40"; Epoch: J2000
+2025-01-01T00:40:44.5065|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.23567669183778273 / 0.5 arc minutes
+2025-01-01T00:40:44.6300|INFO|Symbol.cs|OnMessageReceived|562|Received message from Target Scheduler re: TargetScheduler-TargetStart
+2025-01-01T00:40:44.6304|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: Center, Coordinates RA: 12:22:55; Dec: 15° 49' 20"; Epoch: J2000
+2025-01-01T00:40:44.8317|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 01:35:16; Dec: 30° 47' 30"; Epoch: JNOW to RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW - Alt: 20° 49' 54"; Az: 88° 57' 57"
+2025-01-01T00:40:44.8323|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 102.76914875972547°
+2025-01-01T00:40:45.0502|INFO|DomeFollower.cs|WaitForPreviousSlew|212|Dome is already slewing. Waiting for previous slew to finish
+2025-01-01T00:42:59.0497|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 6s; Filter: Lum; Gain: 100; Offset 50; Binning: 1x1;
+2025-01-01T00:43:07.1600|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 12:22:55 Dec: 15° 49' 20" Epoch: J2000
+2025-01-01T00:43:07.3221|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\ss10fzdf.1rw.fits
+2025-01-01T00:43:07.9018|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 12:25:07; Dec: 15° 50' 33"; Epoch: J2000
+2025-01-01T00:43:07.9063|INFO|CenteringSolver.cs|Center|99|Centering Solver - Scope Position: RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW; Offset: RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"; Centering Coordinates: RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW; Solved: RA: 12:26:23; Dec: 15° 42' 07"; Epoch: JNOW; Separation RA: -00:02:12; Dec: -00° 01' 13"; Distance: 00° 31' 52"; Bearing: -87° 43' 34"; Threshold: 1
+2025-01-01T00:43:08.9526|INFO|TelescopeVM.cs|Sync|800|Syncing scope from RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW to RA: 12:26:23; Dec: 15° 42' 07"; Epoch: JNOW
+2025-01-01T00:43:13.9547|INFO|CenteringSolver.cs|Center|132|Slewing to target after sync. Current Position: RA: 12:26:24; Dec: 15° 42' 06"; Epoch: JNOW; Target coordinates: RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW; Offset RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"
+2025-01-01T00:43:13.9558|INFO|TelescopeVM.cs|SlewToCoordinatesAsync|926|Slewing from RA: 12:26:24; Dec: 15° 42' 06"; Epoch: JNOW to RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW - Alt: 21° 15' 33"; Az: 89° 25' 01"
+2025-01-01T00:43:21.9978|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 6s; Filter: Lum; Gain: 100; Offset 50; Binning: 1x1;
+2025-01-01T00:43:30.0313|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 12:22:55 Dec: 15° 49' 20" Epoch: J2000
+2025-01-01T00:43:30.1866|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\1kymu5xl.1rc.fits
+2025-01-01T00:43:30.7052|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 12:22:55; Dec: 15° 49' 21"; Epoch: J2000
+2025-01-01T00:43:30.7076|INFO|CenteringSolver.cs|Center|99|Centering Solver - Scope Position: RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW; Offset: RA: 00:00:00; Dec: 00° 00' 00"; Distance: 00° 00' 00"; Bearing: 00° 00' 00"; Centering Coordinates: RA: 12:24:11; Dec: 15° 40' 54"; Epoch: JNOW; Solved: RA: 12:24:11; Dec: 15° 40' 55"; Epoch: JNOW; Separation RA: 00:00:00; Dec: -00° 00' 01"; Distance: 00° 00' 02"; Bearing: 61° 54' 35"; Threshold: 1
+2025-01-01T00:43:30.7077|INFO|CenteringSolver.cs|Center|165|Restoring filter to Lum after centering
+2025-01-01T00:43:30.7106|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: Center, Coordinates RA: 12:22:55; Dec: 15° 49' 20"; Epoch: J2000
+2025-01-01T00:43:30.7172|INFO|SequenceItem.cs|Run|208|Starting Category: , Container: Assistant.NINAPlugin.Sequencer.InstructionContainer, Strategy: InstructionContainerStrategy, Items[CREATED]: 2
+2025-01-01T00:43:30.7175|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: EnableDomeSynchronization
+2025-01-01T00:43:33.0337|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: EnableDomeSynchronization
+2025-01-01T00:43:33.0341|INFO|SequenceItem.cs|Run|208|Starting Category: Focuser, Item: RunAutofocus
+2025-01-01T00:43:33.1229|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:43:39.8211|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|788|Waiting on initial HFR analysis
+2025-01-01T00:43:39.8758|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15542
+2025-01-01T00:43:40.5414|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.6039115474367485, HFR MAD: 0.2078305537017937, Detected Stars 83, Region: 0
+2025-01-01T00:43:45.9297|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:43:52.6509|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15482
+2025-01-01T00:43:53.3230|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 10.01044731088242, HFR MAD: 0.3816190776636983, Detected Stars 9, Region: 0
+2025-01-01T00:43:55.9496|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:02.6601|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15422
+2025-01-01T00:44:03.2918|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 7.62283467473946, HFR MAD: 0.16922711905313204, Detected Stars 16, Region: 0
+2025-01-01T00:44:05.9611|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:12.6921|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15362
+2025-01-01T00:44:13.3164|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.410316833714115, HFR MAD: 0.2646217464756182, Detected Stars 29, Region: 0
+2025-01-01T00:44:15.9363|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:22.6310|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|816|Waiting on initial focuser move analyses
+2025-01-01T00:44:23.3317|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 3.4556129120747485, HFR MAD: 0.24869601552878562, Detected Stars 62, Region: 0
+2025-01-01T00:44:23.3763|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15302
+2025-01-01T00:44:27.9328|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:34.6170|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:44:35.3156|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.546597199729917, HFR MAD: 0.14988918519820293, Detected Stars 81, Region: 0
+2025-01-01T00:44:35.3492|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15242
+2025-01-01T00:44:39.9521|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:46.6496|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|889|Waiting on next left movement analysis
+2025-01-01T00:44:47.3181|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.948369554622527, HFR MAD: 0.20456071880916715, Detected Stars 70, Region: 0
+2025-01-01T00:44:47.3259|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|860|Enough right trend points (4) with an established minimum (15302) to queue remaining left focus points down to 15062
+2025-01-01T00:44:47.3630|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15182
+2025-01-01T00:44:51.9650|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:44:58.6877|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15122
+2025-01-01T00:44:59.3813|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 4.097931258565066, HFR MAD: 0.24860578539068978, Detected Stars 46, Region: 0
+2025-01-01T00:45:01.9419|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:45:08.6703|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15062
+2025-01-01T00:45:09.3336|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 5.887539513848489, HFR MAD: 0.4212261015471812, Detected Stars 24, Region: 0
+2025-01-01T00:45:11.0725|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 103.67131722748387°
+2025-01-01T00:45:11.9645|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:45:18.7434|INFO|AutoFocusEngine.cs|StartBlindFocusPoints|915|Waiting on remaining AutoFocus analysis tasks
+2025-01-01T00:45:19.4394|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 7.936299657159381, HFR MAD: 0.7368187451394279, Detected Stars 14, Region: 0
+2025-01-01T00:45:19.4808|INFO|FocuserVM.cs|MoveFocuserInternal|213|Moving Focuser to position 15291
+2025-01-01T00:45:25.9410|INFO|AutoFocusEngine.cs|ValidateCalculatedFocusPosition|1168|Validating HFR at final focus position 15291
+2025-01-01T00:45:25.9802|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 5s; Filter: Lum; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:45:33.4634|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.6284722973939063, HFR MAD: 0.17217007745602908, Detected Stars 82, Region: 0
+2025-01-01T00:45:33.4648|INFO|FocuserMediator.cs|BroadcastSuccessfulAutoFocusRun|45|Autofocus notification received - Temperature 3.75
+2025-01-01T00:45:33.4874|INFO|SequenceItem.cs|Run|254|Finishing Category: Focuser, Item: RunAutofocus
+2025-01-01T00:45:33.4877|INFO|SequenceItem.cs|Run|254|Finishing Category: , Container: Assistant.NINAPlugin.Sequencer.InstructionContainer, Strategy: InstructionContainerStrategy, Items[FINISHED]: 2
+2025-01-01T00:45:33.4927|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: SwitchFilter, Filter: Lum
+2025-01-01T00:45:33.4928|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: SwitchFilter, Filter: Lum
+2025-01-01T00:45:33.4929|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: SetReadoutMode, Mode: 0
+2025-01-01T00:45:33.4932|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: SetReadoutMode, Mode: 0
+2025-01-01T00:45:33.4937|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:45:33.5138|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:46:29.0674|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-20-03_Lum_-15.00_300.00s_0026_20.58_M 33_2.91_0.45__.fits
+2025-01-01T00:46:33.1629|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-25-16_Lum_-15.00_300.00s_0027_20.60_M 33_2.75_0.50__.fits
+2025-01-01T00:46:36.4220|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-30-28_Lum_-15.00_300.00s_0028_20.62_M 33_2.54_0.51__.fits
+2025-01-01T00:46:38.7530|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-35-41_Lum_-15.00_300.00s_0029_20.64_M 33_3.24_0.64__.fits
+2025-01-01T00:46:46.6642|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2024-12-31_21-51-21_Lum_-15.00_300.00s_0000_20.55_M 33_2.10_0.33__.fits
+2025-01-01T00:46:51.4899|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2024-12-31_21-56-34_Lum_-15.00_300.00s_0001_20.55_M 33_2.11_0.35__.fits
+2025-01-01T00:46:56.4644|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-35-41_Lum_-15.00_300.00s_0029_20.64_M 33_3.24_0.64__.fits
+2025-01-01T00:48:36.7510|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-30-28_Lum_-15.00_300.00s_0028_20.62_M 33_2.54_0.51__.fits
+2025-01-01T00:48:38.6773|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-35-41_Lum_-15.00_300.00s_0029_20.64_M 33_3.24_0.64__.fits
+2025-01-01T00:48:41.2539|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-30-28_Lum_-15.00_300.00s_0028_20.62_M 33_2.54_0.51__.fits
+2025-01-01T00:48:46.5494|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-25-16_Lum_-15.00_300.00s_0027_20.60_M 33_2.75_0.50__.fits
+2025-01-01T00:48:50.0261|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-20-03_Lum_-15.00_300.00s_0026_20.58_M 33_2.91_0.45__.fits
+2025-01-01T00:49:04.0287|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\BAD_2025-01-01_00-25-16_Lum_-15.00_300.00s_0027_20.60_M 33_2.75_0.50__.fits
+2025-01-01T00:50:11.0984|INFO|DomeVM.cs|SlewToAzimuth|630|Slewing dome to azimuth 104.69808708904789°
+2025-01-01T00:50:35.3838|INFO|ImageSolver.cs|Solve|41|Platesolving with parameters: FocalLength: 1260 PixelSize: 3.8 SearchRadius: 30 BlindFailoverEnabled: True Regions: 5000 DownSampleFactor: 0 MaxObjects: 500 Reference Coordinates RA: 12:22:55 Dec: 15° 49' 20" Epoch: J2000
+2025-01-01T00:50:35.4162|INFO|SequenceItem.cs|Run|254|Finishing Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:50:35.4166|INFO|SequenceItem.cs|Run|208|Starting Category: , Item: Dither
+2025-01-01T00:50:35.4867|INFO|DirectGuider.cs|SelectDitherPulse|289|Dither target from (6.038545387879507, 2.4116787022428765) to (-0.2863040194205015, -1.031545241432629) using guide durations of -0.523168586039158 and -0.2848109869540553 seconds
+2025-01-01T00:50:35.5789|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\AppData\Local\NINA\PlateSolver\ik1ojzbe.0nt.fits
+2025-01-01T00:50:36.0469|INFO|HocusFocusStarDetection.cs|Detect|410|Average HFR: 2.7302415941236458, HFR MAD: 0.16415242164140142, Detected Stars 212, Region: 0
+2025-01-01T00:50:36.2671|INFO|BaseImageData.cs|SaveToDisk|344|Saved image to C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-45-33_Lum_-15.00_300.00s_0030_20.65_NGC 4321_3.05_0.42__.fits
+2025-01-01T00:50:36.2673|INFO|ImageSaveController.cs|DoWork|97|Successfully saved file at C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-45-33_Lum_-15.00_300.00s_0030_20.65_NGC 4321_3.05_0.42__.fits. Duration Total: 00:00:00.8835622; BeforeSave: 00:00:00.0000518; BeforeFinalizeImageSaved: 00:00:00.7495078; FinalizeSaveTime: 00:00:00.1340017
+2025-01-01T00:50:36.3417|INFO|ImageSolver.cs|Solve|54|Platesolve successful: Coordinates: RA: 12:22:54; Dec: 15° 49' 31"; Epoch: J2000
+2025-01-01T00:50:36.3418|INFO|CenterAfterDriftTrigger.cs|PlatesolvingImageFollower_PropertyChanged|189|Drift: 0.2736665313282024 / 0.5 arc minutes
+2025-01-01T00:50:43.4377|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-45-33_Lum_-15.00_300.00s_0030_20.65_NGC 4321_3.05_0.42__.fits
+2025-01-01T00:50:45.4763|INFO|Thumbnail.cs|LoadOriginalImage|39|Reloading image from C:\Users\AMOS\Documents\N.I.N.A\2024-12-31\LIGHT\2025-01-01_00-45-33_Lum_-15.00_300.00s_0030_20.65_NGC 4321_3.05_0.42__.fits
+2025-01-01T00:50:46.0135|INFO|SequenceItem.cs|Run|254|Finishing Category: , Item: Dither
+2025-01-01T00:50:46.0143|INFO|SequenceItem.cs|Run|208|Starting Category: Scheduler, Item: TakeExposure, ExposureTime 300, Gain 102, Offset 50, ImageType LIGHT, Binning 1x1
+2025-01-01T00:50:46.0485|INFO|CameraVM.cs|Capture|737|Starting Exposure - Exposure Time: 300s; Filter: ; Gain: 102; Offset 50; Binning: 1x1;
+2025-01-01T00:51:32.5858|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.TargetAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 1
+2025-01-01T00:51:32.5859|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[CREATED]: 4
+2025-01-01T00:51:32.5860|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: DisableDomeSynchronization
+2025-01-01T00:51:32.5872|INFO|DomeVM.cs|OnFollowChanged|719|Dome following stopped
+2025-01-01T00:51:35.0139|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: DisableDomeSynchronization
+2025-01-01T00:51:35.0166|INFO|SequenceItem.cs|Run|208|Starting Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:51:35.0170|INFO|SequenceItem.cs|Run|208|Starting Category: Dome, Item: CloseDomeShutter
+2025-01-01T00:51:35.0189|INFO|DomeVM.cs|CloseShutter|525|Closing dome shutter. Shutter state before closing ShutterOpen
+2025-01-01T00:51:35.0197|INFO|AscomDome.cs|CloseShutter|244|Sending a CloseShutter request, since it is currently ShutterOpen
+2025-01-01T00:54:51.0489|INFO|DomeVM.cs|CloseShutter|531|Closed dome shutter. Shutter state after closing ShutterClosed
+2025-01-01T00:54:51.0494|INFO|SequenceItem.cs|Run|254|Finishing Category: Dome, Item: CloseDomeShutter
+2025-01-01T00:54:51.0514|INFO|SequenceItem.cs|Run|254|Finishing Category: Powerups (Expressions), Item: IfTimeout
+2025-01-01T00:54:51.0516|INFO|SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.ParallelContainer, Strategy: ParallelStrategy, Items[CREATED]: 4
+2025-01-01T00:54:51.0524|INFO|SequenceItem.cs|Run|208|Starting Category: Ground Station, Item: Send to Pushover, Title: Dome closed
+2025-01-01T00:54:51.0543|INFO|SequenceItem.cs|Run|208|Starting Category: Flat Device, Item: CloseCover
+2025-01-01T00:54:51.0561|INFO|FlatDeviceVM.cs|CloseCover|331|Closing Flat Device Cover
+2025-01-01T00:54:51.1996|INFO|SequenceItem.cs|Run|208|Starting Category: Camera, Item: WarmCamera, Duration: 0
+2025-01-01T00:54:51.2007|INFO|CameraVM.cs|WarmCamera|162|Warming Camera. Duration: 00:00:00
+2025-01-01T00:54:51.2029|INFO|SequenceItem.cs|Run|208|Starting Category: Telescope, Item: ParkScope
+2025-01-01T00:54:51.2030|INFO|TelescopeVM.cs|ParkTelescope|134|Mount has been commanded to park
+2025-01-01T00:54:51.3614|INFO|SequenceItem.cs|Run|254|Finishing Category: Ground Station, Item: Send to Pushover, Title: Dome closed
+2025-01-01T00:54:51.5039|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:54:56.5064|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:00.7692|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-01T00:55:01.1065|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-01T00:55:01.5067|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:02.7247|INFO|SequenceItem.cs|Run|254|Finishing Category: Flat Device, Item: CloseCover
+2025-01-01T00:55:03.3759|INFO|TelescopeVM.cs|ParkTelescope|180|Mount has parked
+2025-01-01T00:55:03.3760|INFO|SequenceItem.cs|Run|254|Finishing Category: Telescope, Item: ParkScope
+2025-01-01T00:55:06.5091|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:11.5103|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:16.5096|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:21.5116|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:26.5134|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:31.5144|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:36.5145|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:41.5162|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:46.5176|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:51.5209|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:55:56.5216|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:01.5234|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:06.5241|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:11.5259|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:16.5263|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:21.5263|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:26.5282|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:31.5292|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:36.5309|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:41.5314|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:46.5315|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:51.5331|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:56:53.0386|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceRemoved|178|USB Device disconnected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-01T00:56:53.3926|INFO|ApplicationDeviceConnectionVM.cs|UsbDeviceWatcher_DeviceInserted|173|New USB device detected DeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, PnpDeviceId: USB\VID_1A40&PID_0101\8&19153604&0&4, Description: Generischer USB-Hub, Name: Generischer USB-Hub, Manufacturer: (Standardmäßige USB-HUBs), Service: USBHUB3, Status: OK
+2025-01-01T00:56:56.5343|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:01.5345|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:06.5365|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:11.5383|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:16.5386|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:21.5402|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:26.5405|INFO|DSOTarget.cs|FindRunningItem|69|DSOTarget, found running target: 
+2025-01-01T00:57:30.7748|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.ParallelContainer, Strategy: ParallelStrategy, Items[FINISHED]: 3, Items[SKIPPED]: 1
+2025-01-01T00:57:30.7750|INFO|SequenceItem.cs|Run|208|Starting Category: ASA Tools, Item: PowerOn
+2025-01-01T00:57:30.7767|INFO|SequenceItem.cs|Run|254|Finishing Category: ASA Tools, Item: PowerOn
+2025-01-01T00:57:30.7769|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer, Strategy: SequentialStrategy, Items[FINISHED]: 4
+2025-01-01T00:57:30.7770|INFO|SequenceItem.cs|Run|254|Finishing Category: * Instruction Set *, Container: NINA.Sequencer.Container.SequenceRootContainer, Strategy: SequentialStrategy, Items[FINISHED]: 3, Triggers: Category: Ground Station, Item: Failures to Pushover
+2025-01-01T00:57:30.7819|INFO|Sequence2VM.cs|StartSequence|490|Advanced Sequence finished
+2025-01-01T00:57:41.4340|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.AMOS.Dome ASCOM Dome Driver for AMOS
+2025-01-01T00:57:41.4499|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-01T00:57:41.4506|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.OptecAlnitak.CoverCalibrator Optec Alnitak
+2025-01-01T00:57:41.5806|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-01T00:57:41.5814|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.ASICamera2.Camera ASI Camera (1) (ASCOM)
+2025-01-01T00:57:41.6260|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-01T00:57:41.6267|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.photonProxyHub.Telescope ASCOM Telescope Driver for photonProxyHub
+2025-01-01T00:57:41.6354|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-01T00:57:41.6355|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.EFW2.FilterWheel ZWO FilterWheel (1)
+2025-01-01T00:57:41.6660|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-01T00:57:41.6670|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.MicroTouchServer.Focuser1 MicroTouch Focuser1
+2025-01-01T00:57:41.6951|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-01T00:57:41.6961|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-01T00:57:41.6968|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-01T00:57:41.6976|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.ObservingConditions Lunatico CloudWatcher Observing Conditions
+2025-01-01T00:57:41.7035|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-01T00:57:41.7041|INFO|AscomDevice.cs|Disconnect|299|Disconnecting from ASCOM.CloudWatcher.SafetyMonitor Lunatico CloudWatcher Safety Monitor
+2025-01-01T00:57:41.7075|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-01T18:46:19.8921|INFO|ApplicationVM.cs|Closing|288|Application shutting down
+2025-01-01T18:46:19.9078|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2025-01-01T18:46:19.9092|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2025-01-01T18:46:19.9130|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2025-01-01T18:46:19.9132|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2025-01-01T18:46:19.9137|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2025-01-01T18:46:19.9139|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2025-01-01T18:46:19.9146|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2025-01-01T18:46:19.9150|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2025-01-01T18:46:19.9162|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2025-01-01T18:46:19.9166|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2025-01-01T18:46:20.9071|INFO|HttpServer.cs|WaitForStopped|108|waited 0ms for web server to stop

@@ -1,0 +1,121 @@
+----------------------------------------------------------------------
+--------------N.I.N.A. - Nighttime Imaging 'N' Astronomy--------------
+--------------------------Version 3.1.2.9001--------------------------
+-------------------------2024-12-21T17:46:13--------------------------
+----------------------------------------------------------------------
+---------------------Microsoft Windows 10.0.26100---------------------
+-------------------------OS Architecture X64--------------------------
+-----------------------Process Architecture X64-----------------------
+------------------------------.NET 8.0.8------------------------------
+----------------------------------------------------------------------
+--------------------------Processor Count 12--------------------------
+--------------------Total Physical Memory 27.89 GB--------------------
+----------------------------------------------------------------------
+DATE|LEVEL|SOURCE|MEMBER|LINE|MESSAGE
+2024-12-21T17:46:13.7118|INFO|CameraChooserVM.cs|GetEquipment|69|Found 2 ASI Cameras
+2024-12-21T17:46:13.8595|INFO|CameraChooserVM.cs|GetEquipment|84|Found 0 Altair Cameras
+2024-12-21T17:46:13.9815|INFO|CameraChooserVM.cs|GetEquipment|96|Found 0 Atik Cameras
+2024-12-21T17:46:13.9819|INFO|CameraChooserVM.cs|GetEquipment|110|Found 0 FLI Cameras
+2024-12-21T17:46:15.0163|INFO|CameraChooserVM.cs|GetEquipment|130|Found 0 QHYCCD Cameras
+2024-12-21T17:46:15.0529|INFO|CameraChooserVM.cs|GetEquipment|158|Found 0 ToupTek Cameras
+2024-12-21T17:46:15.0567|INFO|CameraChooserVM.cs|GetEquipment|173|Found 0 Ogma Cameras
+2024-12-21T17:46:15.0610|INFO|CameraChooserVM.cs|GetEquipment|188|Found 0 Omegon Cameras
+2024-12-21T17:46:15.0935|INFO|CameraChooserVM.cs|GetEquipment|203|Found 0 RisingCam Cameras
+2024-12-21T17:46:15.1105|INFO|CameraChooserVM.cs|GetEquipment|218|Found 0 MallinCam Cameras
+2024-12-21T17:46:15.1159|INFO|CameraChooserVM.cs|GetEquipment|244|Found 0 SBIG Cameras
+2024-12-21T17:46:15.4408|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive C:\: 51.55 GB
+2024-12-21T17:46:15.4415|INFO|ApplicationVM.cs|CheckDiskInfo|100|Available Space on Drive D:\: 4446.96 GB
+2024-12-21T17:46:15.4424|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive E:\ is not ready
+2024-12-21T17:46:15.4437|INFO|ApplicationVM.cs|CheckASCOMPlatformVersion|81|ASCOM Platform 6.6.2.4195 installed
+2024-12-21T17:46:15.4469|INFO|ApplicationVM.cs|CheckDiskInfo|102|Drive F:\ is not ready
+2024-12-21T17:46:15.6385|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin ASA Tools version 3.1.2.0 by Gerald Hitz (photon)
+2024-12-21T17:46:15.6600|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Connector version 2.0.3.0 by Stefan Berg
+2024-12-21T17:46:15.6855|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Device Actions and Commands version 2.0.0.0 by Dale Ghent
+2024-12-21T17:46:15.6956|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Filter Offset Calculator version 2.0.0.0 by S. Dimant & Stefan Berg
+2024-12-21T17:46:15.7640|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Ground Station version 2.4.1.0 by Dale Ghent
+2024-12-21T17:46:15.8663|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Hocus Focus version 3.0.0.18 by George Hilios (jokogeo)
+2024-12-21T17:46:15.8772|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Moon Angle version 2.2.0.0 by Dale Ghent
+2024-12-21T17:46:15.9241|INFO|OrbitalElementsAccessor.cs|LoadJWST|87|No JWST vector table loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\JWSTVectorTable.bin.gz
+2024-12-21T17:46:15.9247|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No NumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\NumberedAsteroidsElements.bin.gz
+2024-12-21T17:46:15.9248|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No Comet orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\MPC_CometElements.bin.gz
+2024-12-21T17:46:15.9247|INFO|OrbitalElementsAccessor.cs|LoadObjectType|118|No UnnumberedAsteroids orbital elements loaded since no file was found at C:\Users\AMOS\AppData\Local\NINA\OrbitalElements\UnnumberedAsteroidsElements.bin.gz
+2024-12-21T17:46:15.9317|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Orbitals version 3.0.0.13 by George Hilios (jokogeo)
+2024-12-21T17:46:15.9502|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Phd2 Tools version 1.0.4.2 by Stefan Berg
+2024-12-21T17:46:16.0381|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Sequencer Powerups version 3.20.0.0 by Marc Blank
+2024-12-21T17:46:16.1252|ERROR|DllLoader.cs|LoadDllFromAbsolutePath|53|DllLoader failed to load library C:\Program Files\N.I.N.A. - Nighttime Imaging 'N' Astronomy\External\x64\SQLite\SQLite.Interop.dll due to error code 126
+2024-12-21T17:46:16.3393|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Target Scheduler version 4.9.0.0 by Tom Palmer @tcpalmer
+2024-12-21T17:46:16.3779|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|102|purging web session history older than 10 days
+2024-12-21T17:46:16.3782|INFO|SessionHistoryManager.cs|PurgeHistoryOlderThan|110|purging old web session history: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\sessions\20241212-173343
+2024-12-21T17:46:16.4843|INFO|NINAWeb.cs|changePluginState|260|Web plugin state change from OFF to ON
+2024-12-21T17:46:16.4855|INFO|NINALogWatcher.cs|Start|29|web viewer: watching log file: C:\Users\AMOS\AppData\Local\NINA\Logs\20241221-174613-3.1.2.9001.7396-202412.log
+2024-12-21T17:46:16.4866|INFO|AutofocusDirectoryWatcher.cs|Watch|31|web viewer: watching AF directory file: C:\Users\AMOS\AppData\Local\NINA\AutoFocus
+2024-12-21T17:46:16.4891|INFO|HttpServer.cs|ConfigureLogging|143|web server log: C:\Users\AMOS\AppData\Local\NINA\WebPlugin\webserver-20241221-174616.log
+2024-12-21T17:46:16.4897|INFO|HttpServer.cs|WebServerTask|62|starting web server, listening at http://localhost:80/dist
+2024-12-21T17:46:16.4905|INFO|PluginLoader.cs|LoadPlugin|416|Successfully loaded plugin Web Session History Viewer version 2.2.1.0 by Tom Palmer @tcpalmer
+2024-12-21T17:46:16.5067|INFO|PluginFetcher.cs|RequestAll|43|Fetching plugin manifests from https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-12-21T17:46:16.5313|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 SVBony Cameras
+2024-12-21T17:46:16.5370|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 PlayerOne Cameras
+2024-12-21T17:46:16.5508|INFO|CameraChooserVM.cs|GetEquipment|264|Found 0 ASTPAN Cameras
+2024-12-21T17:46:16.5519|INFO|CameraChooserVM.cs|GetEquipment|278|Found 4 ASCOM Cameras
+2024-12-21T17:46:17.2401|INFO|PluginFetcher.cs|RequestAll|57|Found 58 valid plugins at https://nighttime-imaging.eu/wp-json/nina/v1/plugins/manifests
+2024-12-21T17:46:18.5377|INFO|SwitchChooserVM.cs|GetEquipment|71|Found 0 Alpaca Switch Hubs
+2024-12-21T17:46:18.5378|INFO|WeatherDataChooserVM.cs|GetEquipment|69|Found 0 Alpaca Observing Conditions
+2024-12-21T17:46:18.5377|INFO|FlatDeviceChooserVM.cs|GetEquipment|67|Found 0 Alpaca Cover Calibrators
+2024-12-21T17:46:18.5377|INFO|RotatorChooserVM.cs|GetEquipment|68|Found 0 Alpaca Rotators
+2024-12-21T17:46:18.5377|INFO|TelescopeChooserVM.cs|GetEquipment|69|Found 0 Alpaca Telescopes
+2024-12-21T17:46:18.5377|INFO|SafetyMonitorChooserVM.cs|GetEquipment|71|Found 0 Alpaca Safety Monitors
+2024-12-21T17:46:18.5377|INFO|FilterWheelChooserVM.cs|GetEquipment|193|Found 0 Alpaca Filter Wheels
+2024-12-21T17:46:18.5378|INFO|FocuserChooserVM.cs|GetEquipment|67|Found 0 Alpaca Focusers
+2024-12-21T17:46:18.5377|INFO|DomeChooserVM.cs|GetEquipment|67|Found 0 Alpaca Domes
+2024-12-21T17:46:18.5522|INFO|CameraChooserVM.cs|GetEquipment|290|Found 0 Alpaca Cameras
+2024-12-21T17:46:18.5543|INFO|CameraChooserVM.cs|GetEquipment|303|Found 0 Canon Cameras
+2024-12-21T17:46:26.9166|INFO|CameraVM.cs|Disconnect|645|Disconnected Camera
+2024-12-21T17:46:28.1408|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetX GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-12-21T17:46:28.1429|INFO|AscomDevice.cs|GetProperty|379|Property Camera.BayerOffsetY GET is not implemented in this driver (ASI Camera (1) (ASCOM))
+2024-12-21T17:46:28.1469|INFO|CameraVM.cs|ChooseCamera|448|Successfully connected Camera. Id: ASCOM.ASICamera2.Camera Name: ASI Camera (1) (ASCOM) DisplayName: ASI Camera (1) (ASCOM)Driver Version: 6.5
+2024-12-21T17:46:28.1529|INFO|FilterWheelVM.cs|Disconnect|324|Disconnected Filter Wheel
+2024-12-21T17:46:29.1135|INFO|FilterWheelVM.cs|ChooseFW|272|Successfully connected Filter Wheel. Id: ASCOM.EFW2.FilterWheel Name: ZWO FilterWheel (1) DisplayName: ZWO FilterWheel (1) Driver Version: 6.0
+2024-12-21T17:46:29.1203|INFO|TelescopeVM.cs|Disconnect|763|Disconnected mount
+2024-12-21T17:46:29.6190|INFO|AscomTelescope.cs|CheckMountTime|817|Mount UTC Time: 2024-12-21 16:46:29Z / System UTC Time: 2024-12-21 16:46:29Z; Difference: 0.002 seconds
+2024-12-21T17:46:29.6286|INFO|AscomTelescope.cs|CheckMountTime|837|Mount driver does not allow the mount's time to be set.
+2024-12-21T17:46:29.7173|INFO|TelescopeVM.cs|ChooseTelescope|518|Successfully connected mount. Id: ASCOM.photonProxyHub.Telescope Name: ASCOM Telescope Driver for photonProxyHub DisplayName: ASCOM Telescope Driver for photonProxyHub Driver Version: 2011_10_08
+2024-12-21T17:46:29.7193|INFO|FocuserVM.cs|Disconnect|426|Disconnected Focuser
+2024-12-21T17:46:30.1300|INFO|FocuserVM.cs|ChooseFocuser|324|Successfully connected Focuser. Id: ASCOM.MicroTouchServer.Focuser1 Name: MicroTouch Focuser1 DisplayName: MicroTouch Focuser1 Driver Version: 1.3
+2024-12-21T17:46:30.1327|INFO|RotatorVM.cs|Disconnect|438|Disconnected Rotator
+2024-12-21T17:46:30.7338|INFO|RotatorVM.cs|Connect|398|Successfully connected Rotator. Id: ASCOM.PegasusAstroFalconV2.Rotator Name: PegasusAstro FalconV2 DisplayName: PegasusAstro FalconV2 Driver Version: 2.4.4561.305
+2024-12-21T17:46:30.7428|INFO|FlatDeviceVM.cs|Disconnect|279|Disconnected Flat Device
+2024-12-21T17:46:31.5966|INFO|FlatDeviceVM.cs|Connect|234|Successfully connected flat device. Id: ASCOM.OptecAlnitak.CoverCalibrator Name: Optec Alnitak DisplayName: Optec Alnitak Driver Version: 1.0
+2024-12-21T17:46:31.6000|INFO|WeatherDataVM.cs|Disconnect|292|Disconnected Weather Device
+2024-12-21T17:46:33.3822|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.SkyBrightness GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-12-21T17:46:33.3877|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.StarFWHM GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-12-21T17:46:33.3913|INFO|AscomDevice.cs|GetProperty|379|Property ObservingConditions.WindDirection GET is not implemented in this driver (Lunatico CloudWatcher Observing Conditions)
+2024-12-21T17:46:33.3964|INFO|WeatherDataVM.cs|ChooseWeatherData|143|Successfully connected Weather Device. Id: ASCOM.CloudWatcher.ObservingConditions Name: Lunatico CloudWatcher Observing Conditions DisplayName: Lunatico CloudWatcher Observing Conditions Driver Version: 1.0
+2024-12-21T17:46:33.3993|INFO|SwitchVM.cs|Disconnect|298|Disconnected Switch
+2024-12-21T17:46:33.4023|INFO|DomeVM.cs|Disconnect|336|Disconnected Dome Device
+2024-12-21T17:46:33.8348|INFO|DomeVM.cs|ChooseDome|191|Successfully connected Dome. Id: ASCOM.AMOS.Dome Name: ASCOM Dome Driver for AMOS DisplayName: ASCOM Dome Driver for AMOS Driver Version: 1.0.1
+2024-12-21T17:46:33.8378|INFO|SafetyMonitorVM.cs|Disconnect|208|Disconnected Safety Monitor
+2024-12-21T17:46:34.0663|INFO|SafetyMonitorVM.cs|Connect|168|Successfully connected Safety Monitor. Id: ASCOM.CloudWatcher.SafetyMonitor Name: Lunatico CloudWatcher Safety Monitor DisplayName: Lunatico CloudWatcher Safety Monitor Driver Version: 1.0
+2024-12-21T17:51:16.4457|INFO|DomeVM.cs|OpenShutter|429|Opening dome shutter. Shutter state after opening ShutterClosed
+2024-12-21T17:51:16.4490|INFO|AscomDome.cs|OpenShutter|205|Sending an OpenShutter request, since it is currently ShutterClosed
+2024-12-21T17:52:39.9083|INFO|DomeVM.cs|OpenShutter|435|Opened dome shutter. Shutter state after opening ShutterOpen
+2024-12-21T17:52:55.6771|INFO|DomeVM.cs|CloseShutter|525|Closing dome shutter. Shutter state before closing ShutterOpen
+2024-12-21T17:52:55.6784|INFO|AscomDome.cs|CloseShutter|244|Sending a CloseShutter request, since it is currently ShutterOpen
+2024-12-21T17:54:15.8536|INFO|DomeVM.cs|CloseShutter|531|Closed dome shutter. Shutter state after closing ShutterClosed
+2024-12-21T23:58:04.7851|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T00:30:20.7771|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T00:36:04.7738|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T00:52:20.7861|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T00:58:20.7823|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T03:33:42.7846|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T03:36:28.7854|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T03:45:12.7739|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T04:51:46.7863|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T05:09:16.7822|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T05:36:16.7775|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-22T05:50:32.7729|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-22T06:05:34.7788|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-23T16:59:54.4170|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-23T18:46:14.4091|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-23T18:52:44.4108|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe
+2024-12-23T18:55:14.4043|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Unsafe
+2024-12-23T21:08:50.4101|INFO|SafetyMonitorVM.cs|UpdateMonitorValues|94|SafetyMonitorInfo state changed to Safe

@@ -1,5 +1,6 @@
 from datetime import datetime
 from datetime import timedelta
+import os
 
 
 TIME_DURATION_UNITS = (
@@ -232,9 +233,12 @@ def parse_log_file(log_file):
                 night.events.append(event)
 
         if member == "Capture":
-            exp.exposure = int(message.split(";")[0].split(":")[1].replace("s", ""))
-            
-            night.updateStartEnd(exp.date)
+            try:
+                exp.exposure = float(message.split(";")[0].split(":")[1].replace("s", ""))
+                
+                night.updateStartEnd(exp.date)
+            except:
+                pass
 
         if member == "Detect":            
             exp.hfr   = float(message.split(",")[0].split(":")[1])
@@ -251,7 +255,10 @@ def parse_log_file(log_file):
             #obj.name = message.split("\\")[-4]
             # C:\Users\AMOS\Documents\N.I.N.A\2025-01-03\LIGHT\2025-01-03_19-45-31_Lum_-15.00_300.00s_0000_20.30_NGC 1977_2.77_0.53__.fits
             # NGC 977 is name
-            exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
+            try:
+                exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
+            except:
+                exp.name = "Unknown"
             night.exposureTime += exp.exposure
             night.exposures += 1
 
@@ -266,21 +273,24 @@ def parse_log_file(log_file):
            
     f.close()
  
-def log_parser():
-
-    # read all log files with YYYYMMDD-*.log
+def log_parser(path):
     import glob
-    log_files = glob.glob("*.log") 
+
+    #path = r"C:/git/NINA Report/AMOS"
+    log_files = glob.glob(os.path.join(path, "*.log"))
+
     log_files.sort()
     for log_file in log_files:
-        if log_file.startswith("20"):
+        # remove path
+        baseName = os.path.basename(log_file)
+        print(f"Processing {log_file}")
+        if baseName.startswith("20"):
             parse_log_file(log_file)
 
-    for night in nights.nights:
-        print_summary(night)
+
     
 
-def print_summary(night):
+def generate_night_summary(night):
     if night.startTimestamp == 0:
         return
 
@@ -291,7 +301,8 @@ def print_summary(night):
     print (f"Total images: \t{night.exposures}")
     print (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
     print (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
-    print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
+    if night.getTotalUnsafeMinutes() > 0:
+        print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
 
     # add observations to events
     for obj in night.objects.values():                               
@@ -353,7 +364,19 @@ def print_summary(night):
 
 
 def main():
-    log_parser()
+    path = "AMOS"
+    log_parser(path)
+
+    # by default, print only last night
+    if len(nights.nights) == 0:
+        print("No data found")
+        return
+    
+    #last_night = nights.nights[-1]
+    #generate_night_summary(last_night)
+
+    for night in nights.nights:
+        generate_night_summary(night)
 
 if __name__ == '__main__':
     main()
