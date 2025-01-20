@@ -1,6 +1,9 @@
 from datetime import datetime
 from datetime import timedelta
+import json
 import os
+
+from pushover import PushoverClient
 
 
 TIME_DURATION_UNITS = (
@@ -36,6 +39,22 @@ def format_timestamp(timestamp):
     dt = toDateTime(timestamp)
     return dt.strftime('%H:%M')
 
+class Report:
+    def __init__(self):
+        self.lines = []
+
+    def addString(self, string):
+        # add string to last line
+        self.lines[-1] += string
+
+    def addLine(self, line=None):
+        if line is None:
+            self.lines.append("")
+        else:
+            self.lines.append(line)
+
+    def getLines(self):
+        return "\n".join(self.lines)
 class Event:
     def __init__(self,eventType="",startTimestamp=0,endTimestamp=0):
         self.startTimestamp = startTimestamp
@@ -139,7 +158,7 @@ class Target:
             return None
         return str(self.observations[-1].date)
 
-    def get_summary(self):
+    def get_summary(self, report):
         total_exposure_time = sum(obs.exposure for obs in self.observations)
         if len(self.observations) != 0:
             average_hfr = sum(obs.hfr for obs in self.observations) / len(self.observations)
@@ -162,18 +181,18 @@ class Target:
             total_exposure, num_exposures = exposure_time_by_filter[filter]
             exposure_time_by_filter[filter] = (total_exposure + exposure, num_exposures + 1)
 
-        print("\n" )
-        print(f"Object Summary for {self.name}:")        
+        report.addLine()
+        report.addLine(f"Object Summary for {self.name}:")        
         #for filter, exposure in exposure_time_by_filter.items():
         #    print(f"  {filter}: {exposure} seconds ({exposure/3600} hours)")
         for filter, (total_exposure, num_exposures) in exposure_time_by_filter.items():
-            print(f"  Filter {filter}: {num_exposures} exposures, {human_time_duration(total_exposure)} ")
+            report.addLine(f"  Filter {filter}: {num_exposures} exposures, {human_time_duration(total_exposure)} ")
 
         # if more then one filter
         if len(exposure_time_by_filter) > 1:
-            print(f"Total {number_of_observations} exposures,  Exposure Time: {human_time_duration(total_exposure_time)}")
-        print(f"Average HFR: {average_hfr:.2f} asec" )
-        print(f"Average Drift: {average_drift:.2f} asec/s" )
+            report.addLine(f"Total {number_of_observations} exposures,  Exposure Time: {human_time_duration(total_exposure_time)}")
+        report.addLine(f"Average HFR: {average_hfr:.2f} asec" )
+        report.addLine(f"Average Drift: {average_drift:.2f} asec/s" )
         
 
 def parse_log_file(log_file):
@@ -218,11 +237,9 @@ def parse_log_file(log_file):
                 startEndSequence = exp.date
             if message.__contains__("NINA.Sequencer.Container.EndAreaContainer") and message.startswith("Finishing"):
                 night.endSequence = exp.date
-                print(f"End sequence: {startEndSequence} {night.endSequence}")
                 night.events.append(Event("End sequence", startEndSequence, night.endSequence))
 
         if member == "Run":
-
             if message.__contains__("NINA.Sequencer.Container.TargetAreaContainer") and message.startswith("Finishing"):
                 night.endSequence = exp.date
                 night.events.append(Event("Finished Target Scheduler", night.endSequence, night.endSequence))
@@ -324,23 +341,23 @@ def log_parser(path):
 
     
 
-def generate_night_summary(night):
+def generate_night_summary(night, report):
     if night.startTimestamp == 0:
-        print (f"No activities for {night.date}" )
+        report.addLine(f"No activities for {night.date}" )
         return
 
     nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
     
-    print (f"Summary for {night.date}" )
+    report.addLine(f"Summary for {night.date}" )
 
-    print (f"Total images: \t{night.exposures}")
-    print (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
-    print (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
+    report.addLine (f"Total images: \t{night.exposures}")
+    report.addLine (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
+    report.addLine (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
     if night.getTotalUnsafeMinutes() > 0:
-        print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
+        report.addLine (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
 
     if night.errors > 0:
-        print (f"Errors: \t{night.errors}")
+        report.addLine (f"Errors: \t{night.errors}")
 
     # add observations to events
     for obj in night.objects.values():                               
@@ -376,7 +393,7 @@ def generate_night_summary(night):
     night.events = combined_events
 
     #print (f"Events: {len(night.events)}")
-    print()
+    report.addLine()
     for event in night.events:
         try:
             start =  format_timestamp(event.startTimestamp)
@@ -393,23 +410,26 @@ def generate_night_summary(night):
         except:
             duration = ""
         
-        if start == "":
-            print (f"     ", end="")
 
         if start == end:
-             print(f" {start}  \t{event.eventType}", end="" )
-             print()
+             report.addLine(f" {start}  \t{event.eventType}" )
+     
         else:
-            print(f" {start}-{end}  \t{event.eventType}", end="" )
+            report.addLine(f" {start}-{end}  \t{event.eventType}" )
             if duration != "":
-                print(f" ({duration})", end="")
-            print()
+                report.addString(f" ({duration})")
+
 
     for obj in night.objects.values():
-        obj.get_summary()
+        obj.get_summary(report)
 
 
 def main():
+    # get keys from secrets file
+   
+    with open('secrets.json') as secrets_file:
+        secrets = json.load(secrets_file)
+    pushover = PushoverClient(secrets.get("PUSHOVER_APIKEY"), secrets.get("PUSHOVER_USERKEY"))
     path = "AMOS"
     log_parser(path)
 
@@ -418,11 +438,17 @@ def main():
         print("No data found")
         return
     
-    #last_night = nights.nights[-1]
-    #generate_night_summary(last_night)
+    last_night = nights.nights[-2]
+    report=Report()
+    generate_night_summary(last_night, report)
+    pushover.send_message(report.getLines())
 
     for night in nights.nights:
-        generate_night_summary(night)
+        report = Report()
+        generate_night_summary(night, report)
+        print(report.getLines())
+
+
 
 if __name__ == '__main__':
     main()
