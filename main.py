@@ -204,22 +204,31 @@ def parse_log_file(log_file):
 
         night = nights.getNight(exp.date)  
            
-        if member == "StartSequence":
-            if message.startswith("Advanced Sequence finished"):
-                if not messageOld.startswith("Sequence run was cancelled"):                        
-                    night.endSequence = exp.date
-                    night.events.append(Event("Sequence finished", 0, night.endSequence))
+        # SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer   
+        if member == "Run":
+            if message.__contains__("NINA.Sequencer.Container.EndAreaContainer") and message.startswith("Finishing"):
+                night.endSequence = exp.date
+                night.events.append(Event("Finished End sequence", night.endSequence, night.endSequence))
 
-        if member == "StartSequence":
-            if message.startswith("Advanced Sequence starting"):                
-                if not messageOld.startswith("InterruptWhen: Sequence longer running"):                    
-                    night.startSequence = exp.date
-                    night.events.append(Event("Sequence starting", night.startSequence, 0))
-                    # set next day to obj.date + 1 at 12:00 
-                    # add 1 day to obj.date
-                    nextDay = datetime.strptime(exp.date.split("T")[0], '%Y-%m-%d') + timedelta(days=1)
-                    nextDay = nextDay.strftime('%Y-%m-%d') + "T12:00:00.0000"
-                    
+        if member == "Run":
+            if message.__contains__("NINA.Sequencer.Container.TargetAreaContainer") and message.startswith("Finishing"):
+                night.endSequence = exp.date
+                night.events.append(Event("Finished Target Scheduler", night.endSequence, night.endSequence))
+
+        if member == "Run":
+            if message.__contains__("NINA.Sequencer.Container.TargetAreaContainer") and message.startswith("Starting"):
+                night.endSequence = exp.date
+                night.events.append(Event("Started Target Scheduler", night.endSequence, night.endSequence))
+
+        if line == "Run":
+              if message.__contains__("NINA.Sequencer.Container.StartAreaContainer") and message.startswith("Finishing"):
+                night.startSequence = exp.date
+                night.events.append(Event("Finished start sequence", night.startSequence, night.startSequence))
+                # set next day to obj.date + 1 at 12:00 
+                # add 1 day to obj.date
+                nextDay = datetime.strptime(exp.date.split("T")[0], '%Y-%m-%d') + timedelta(days=1)
+                nextDay = nextDay.strftime('%Y-%m-%d') + "T12:00:00.0000"
+                
         if member == "UpdateMonitorValues":
             if message.startswith("SafetyMonitorInfo state changed to Unsafe"):
                 event = Event("unsafe")
@@ -240,6 +249,13 @@ def parse_log_file(log_file):
             except:
                 pass
 
+        if member == "Closing":
+            if message.startswith("Application shutting down"):
+                night.endTimestamp = exp.date
+                night.events.append(Event("NINA stopped", night.endTimestamp, night.endTimestamp))
+
+        if member == "CheckASCOMPlatformVersion":
+            night.events.append(Event("NINA started", exp.date, exp.date))
         if member == "Detect":            
             exp.hfr   = float(message.split(",")[0].split(":")[1])
             exp.stars = int(message.split(",")[2].split(" ")[3])            
@@ -292,11 +308,12 @@ def log_parser(path):
 
 def generate_night_summary(night):
     if night.startTimestamp == 0:
+        print (f"No activities for {night.date}" )
         return
 
     nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
     
-    print (f"Summary for {nighttime}" )
+    print (f"Summary for {night.date}" )
 
     print (f"Total images: \t{night.exposures}")
     print (f"Exposure time: \t{human_time_duration( night.exposureTime)}")
@@ -311,7 +328,11 @@ def generate_night_summary(night):
         night.events.append(Event(obj.name, start_timestamp, end_timestamp))
         
 
+    
+
     night.events.sort(key=lambda x: toDateTime(x.startTimestamp) or datetime.max)
+
+
 
 
     # Combine consecutive "unsafe" events
@@ -354,10 +375,14 @@ def generate_night_summary(night):
         if start == "":
             print (f"     ", end="")
 
-        print(f" {start}-{end}  \t{event.eventType}", end="" )
-        if duration != "":
-            print(f" ({duration})", end="")
-        print()
+        if start == end:
+             print(f" {start}  \t{event.eventType}", end="" )
+             print()
+        else:
+            print(f" {start}-{end}  \t{event.eventType}", end="" )
+            if duration != "":
+                print(f" ({duration})", end="")
+            print()
 
     for obj in night.objects.values():
         obj.get_summary()
