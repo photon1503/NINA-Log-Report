@@ -80,6 +80,10 @@ class Night:
         self.exposures = 0
         self.events = []
         self.objects = {}
+        self.errors = 0
+
+    def addError(self):
+        self.errors += 1
 
 
       
@@ -179,7 +183,8 @@ def parse_log_file(log_file):
     messageOld = ""
     exp = Exposure()   
     event = Event()
-    
+    startEndSequence=0
+    startBeginSequence=0
     for line in lines:
         # if line starts with "---" then ignore it
         if line.startswith("---"):
@@ -203,14 +208,21 @@ def parse_log_file(log_file):
         level, source, member, line, message = fields     
 
         night = nights.getNight(exp.date)  
-           
+    
+        if level == "ERROR":
+            night.addError()
+
         # SequenceItem.cs|Run|208|Starting Category: * Instruction Set *, Container: NINA.Sequencer.Container.EndAreaContainer   
         if member == "Run":
+            if message.__contains__("NINA.Sequencer.Container.EndAreaContainer") and message.startswith("Starting"):
+                startEndSequence = exp.date
             if message.__contains__("NINA.Sequencer.Container.EndAreaContainer") and message.startswith("Finishing"):
                 night.endSequence = exp.date
-                night.events.append(Event("Finished End sequence", night.endSequence, night.endSequence))
+                print(f"End sequence: {startEndSequence} {night.endSequence}")
+                night.events.append(Event("End sequence", startEndSequence, night.endSequence))
 
         if member == "Run":
+
             if message.__contains__("NINA.Sequencer.Container.TargetAreaContainer") and message.startswith("Finishing"):
                 night.endSequence = exp.date
                 night.events.append(Event("Finished Target Scheduler", night.endSequence, night.endSequence))
@@ -220,10 +232,16 @@ def parse_log_file(log_file):
                 night.endSequence = exp.date
                 night.events.append(Event("Started Target Scheduler", night.endSequence, night.endSequence))
 
-        if line == "Run":
-              if message.__contains__("NINA.Sequencer.Container.StartAreaContainer") and message.startswith("Finishing"):
+        if member == "Start":
+            if message.startswith("Sequence run was cancelled"):
+                night.events.append(Event("Sequence cancelled", exp.date, exp.date))
+
+        if member == "Run":
+            if message.__contains__("NINA.Sequencer.Container.StartAreaContainer") and message.startswith("Starting"):
+                startBeginSequence = exp.date
+            if message.__contains__("NINA.Sequencer.Container.StartAreaContainer") and message.startswith("Finishing"):
                 night.startSequence = exp.date
-                night.events.append(Event("Finished start sequence", night.startSequence, night.startSequence))
+                night.events.append(Event("Start sequence", startBeginSequence, night.startSequence))
                 # set next day to obj.date + 1 at 12:00 
                 # add 1 day to obj.date
                 nextDay = datetime.strptime(exp.date.split("T")[0], '%Y-%m-%d') + timedelta(days=1)
@@ -320,6 +338,9 @@ def generate_night_summary(night):
     print (f"Safe duration: \t{human_time_duration(night.getTotalSafeMinutes() * 60)}")
     if night.getTotalUnsafeMinutes() > 0:
         print (f"Unsafe dur.: \t{human_time_duration(night.getTotalUnsafeMinutes() * 60)}")
+
+    if night.errors > 0:
+        print (f"Errors: \t{night.errors}")
 
     # add observations to events
     for obj in night.objects.values():                               
