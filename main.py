@@ -196,7 +196,7 @@ class Target:
         report.addLine(f"Average Drift: {average_drift:.2f} asec/s" )
         
 
-def parse_log_file(log_file):
+def parse_log_file(log_file, pattern):
     f = open(log_file, "r")
     lines = f.readlines()
 
@@ -304,13 +304,19 @@ def parse_log_file(log_file):
                 continue
             exp.filter = message.split("\\")[-2]            
 
-            #obj.name = message.split("\\")[-4]
-            # C:\Users\AMOS\Documents\N.I.N.A\2025-01-03\LIGHT\2025-01-03_19-45-31_Lum_-15.00_300.00s_0000_20.30_NGC 1977_2.77_0.53__.fits
-            # NGC 977 is name
-            try:
-                exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
-            except:
-                exp.name = "Unknown"
+ 
+            if pattern == "AMOS":
+                try:
+                    exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
+                except:
+                    exp.name = "Unknown"
+            if pattern == "skyimages":
+                try:
+                    exp.name = message.split("\\")[-4]
+                except:
+                     exp.name = "Unknown"
+       
+                  
             night.exposureTime += exp.exposure
             night.exposures += 1
 
@@ -325,7 +331,7 @@ def parse_log_file(log_file):
            
     f.close()
  
-def log_parser(path):
+def log_parser(path, pattern):
     import glob
 
     #path = r"C:/git/NINA Report/AMOS"
@@ -337,7 +343,7 @@ def log_parser(path):
         baseName = os.path.basename(log_file)
         print(f"Processing {log_file}")
         if baseName.startswith("20"):
-            parse_log_file(log_file)
+            parse_log_file(log_file, pattern)
 
 
     
@@ -423,13 +429,15 @@ def main():
     parser = argparse.ArgumentParser("nina_report")
     parser.add_argument("-n", "--night", help="0=last night, 1=the night before etc.", type=int, default=0)
     parser.add_argument("-P", "--pushover", help="Send report to pushover", action="store_true", default=False)
+    parser.add_argument("-p", "--path", help="Path to NINA log files", default="%LOCALAPPDATA%/NINA/Logs")
+    parser.add_argument("-o", "--pattern", help="Pattern to use for parsing. Currently supported values are skyimages and AMOS", default="AMOS")
     args = parser.parse_args()
    
     with open('secrets.json') as secrets_file:
         secrets = json.load(secrets_file)
     pushover = PushoverClient(secrets.get("PUSHOVER_APIKEY"), secrets.get("PUSHOVER_USERKEY"))
-    path = "AMOS"
-    log_parser(path)
+
+    log_parser(args.path, args.pattern)
 
     # by default, print only last night
     if len(nights.nights) == 0:
