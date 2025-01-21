@@ -4,7 +4,7 @@ import json
 import os
 import argparse
 
-from pushover import PushoverClient
+from src.pushover import PushoverClient
 
 
 TIME_DURATION_UNITS = (
