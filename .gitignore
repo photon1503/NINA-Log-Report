@@ -2,3 +2,5 @@ secrets.*
 AMOS/*
 __pycache__/*
 *.pyc
+build/*
+dist/*
