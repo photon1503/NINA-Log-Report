@@ -4,7 +4,7 @@ import json
 import os
 import argparse
 
-from src.pushover import PushoverClient
+from pushover import PushoverClient
 
 
 TIME_DURATION_UNITS = (
@@ -353,6 +353,8 @@ def generate_night_summary(night, report, silent=False):
         if silent == False:
             report.addLine(f"No activities for {night.date}" )
             return
+        if silent == True:
+            return
 
     nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
     
@@ -427,10 +429,12 @@ def generate_night_summary(night, report, silent=False):
 
 
 def main():
+    log_path = os.path.join(os.getenv('LOCALAPPDATA'), 'NINA', 'Logs')
+
     parser = argparse.ArgumentParser("nina_report")
     parser.add_argument("-n", "--night", help="0=last night, 1=the night before etc.", type=int, default=0)
     parser.add_argument("-P", "--pushover", help="Send report to pushover", action="store_true", default=False)
-    parser.add_argument("-p", "--path", help="Path to NINA log files", default="%LOCALAPPDATA%/NINA/Logs")
+    parser.add_argument("-p", "--path", help="Path to NINA log files", default=log_path)
     parser.add_argument("-o", "--pattern", help="Pattern to use for parsing. Currently supported values are skyimages and AMOS", default="AMOS")
     parser.add_argument("-s", "--silent", help="Disable message without content", action="store_true",default=False)
     args = parser.parse_args()
