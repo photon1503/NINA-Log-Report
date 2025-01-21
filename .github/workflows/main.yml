@@ -10,13 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: PyInstaller Windows
-      uses: JackMcKew/pyinstaller-action-windows@python3-10-pyinstaller-5-3
-      with:
-        path: src
+    - uses: actions/checkout@v4
 
-    - uses: actions/upload-artifact@v2
+    - name: Package Application
+      uses: JackMcKew/pyinstaller-action-windows@main
+
+    - uses: actions/upload-artifact@v4
       with:
-        name: my-exe
-        path: src/dist/windows # or path/to/artifact
+        name: name-of-artifact
+        path: src/dist/windows
