@@ -1,0 +1,126 @@
+name: Build Executables
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:       
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['windows-latest', 'ubuntu-latest', 'macos-latest']
+
+    env:
+      MAIN_PY_FILE: 'nina-report.py'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10.x
+
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements.txt
+      working-directory: ./
+
+    - name: Install PyInstaller
+      run: |
+        pip install pyinstaller
+      working-directory: ./
+
+    - name: Build executable
+      run: |
+        pyinstaller ${{ env.MAIN_PY_FILE }}
+      working-directory: ./
+
+    # Zip steps for different platforms
+    - name: Zip dist folder (Windows)
+      if: matrix.os == 'windows-latest'
+      run: Compress-Archive -Path dist/* -DestinationPath windows-executables.zip
+      shell: pwsh
+
+    - name: Zip dist folder (Unix-like)
+      if: matrix.os != 'windows-latest'
+      run: zip -r ${{ matrix.os }}-executables.zip dist/*
+
+    # Only Windows runner creates the release
+    - name: Create Release
+      id: create_release
+      if: matrix.os == 'windows-latest'
+      uses: actions/create-release@v1.1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ github.run_number }}
+        release_name: Release v${{ github.run_number }}
+        draft: false
+        prerelease: false
+
+    # Get release URL (for non-Windows runners)
+    - name: Get Release URL
+      if: matrix.os != 'windows-latest'
+      id: get_release
+      shell: bash
+      run: |
+        attempt=1
+        max_attempts=30
+        while [ $attempt -le $max_attempts ]; do
+          echo "Attempt $attempt to get release..."
+          release_url=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/v${{ github.run_number }}" \
+            | jq -r '.upload_url')
+          
+          if [ "$release_url" != "null" ] && [ -n "$release_url" ]; then
+            echo "upload_url=$release_url" >> $GITHUB_OUTPUT
+            break
+          fi
+          
+          attempt=$((attempt + 1))
+          sleep 10
+        done
+        
+        if [ $attempt -gt $max_attempts ]; then
+          echo "Failed to get release URL after $max_attempts attempts"
+          exit 1
+        fi
+
+    # Upload assets for each platform
+    - name: Upload Release Asset (Windows)
+      if: matrix.os == 'windows-latest'
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./windows-executables.zip
+        asset_name: windows-executables.zip
+        asset_content_type: application/zip
+
+    - name: Upload Release Asset (Linux)
+      if: matrix.os == 'ubuntu-latest'
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release.outputs.upload_url }}
+        asset_path: ./ubuntu-latest-executables.zip
+        asset_name: linux-executables.zip
+        asset_content_type: application/zip
+
+    - name: Upload Release Asset (macOS)
+      if: matrix.os == 'macos-latest'
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.get_release.outputs.upload_url }}
+        asset_path: ./macos-latest-executables.zip
+        asset_name: macos-executables.zip
+        asset_content_type: application/zip
