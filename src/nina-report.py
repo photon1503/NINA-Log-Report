@@ -196,6 +196,7 @@ class Target:
         report.addLine(f"Average Drift: {average_drift:.2f} asec/s" )
         
 
+
 def parse_log_file(log_file, pattern):
     f = open(log_file, "r")
     lines = f.readlines()
@@ -330,7 +331,20 @@ def parse_log_file(log_file, pattern):
         
            
     f.close()
- 
+
+def log_cleanup(path, days=90):
+    import glob
+
+    log_files = glob.glob(os.path.join(path, "*.log"))
+    log_files.sort()
+    for log_file in log_files:
+        baseName = os.path.basename(log_file)
+        if baseName.startswith("20"):
+            file_date = datetime.strptime(baseName.split("-")[0], '%Y%m%d')
+            if file_date < datetime.now() - timedelta(days=days):
+                print(f"Removing {log_file}")
+                os.remove(log_file) 
+
 def log_parser(path, pattern):
     import glob
 
@@ -437,7 +451,12 @@ def main():
     parser.add_argument("-p", "--path", help="Path to NINA log files", default=log_path)
     parser.add_argument("-o", "--pattern", help="Pattern to use for parsing. Currently supported values are skyimages and AMOS", default="AMOS")
     parser.add_argument("-s", "--silent", help="Disable message without content", action="store_true",default=False)
+    parser.add_argument("-c", "--cleanup", help="Cleanup log files older than X days", type=int, default=0)
     args = parser.parse_args()
+
+    if args.cleanup > 0:
+        log_cleanup(args.path, args.cleanup)
+        return
    
     with open('secrets.json') as secrets_file:
         secrets = json.load(secrets_file)

@@ -44,17 +44,21 @@ Make sure to update the `secrets.json` file with your Pushover API token and use
 
 3. The script will parse the log files and send a push message with the report.
 
-```sh
-usage: nina_report [-h] [-n NIGHT] [-P] [-p PATH] [-o PATTERN]
+```
+usage: nina_report [-h] [-n NIGHT] [-P] [-p PATH] [-o PATTERN] [-s] [-c CLEANUP]
 
 options:
   -h, --help            show this help message and exit
   -n NIGHT, --night NIGHT
                         0=last night, 1=the night before etc.
   -P, --pushover        Send report to pushover
-  -p PATH, --path PATH  Path to NINA log files
+  -p PATH, --path PATH  Path to NINA log files (Default = %localappdata%/NINA/Logs)
   -o PATTERN, --pattern PATTERN
                         Pattern to use for parsing. Currently supported values are skyimages and AMOS
+  -s, --silent          Don't send empty message
+  -c CLEANUP, --cleanup CLEANUP
+                        Cleanup log files older than X days.
+                        
 ```
 ## Examples
 
