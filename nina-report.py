@@ -348,10 +348,11 @@ def log_parser(path, pattern):
 
     
 
-def generate_night_summary(night, report):
+def generate_night_summary(night, report, silent=False):
     if night.startTimestamp == 0:
-        report.addLine(f"No activities for {night.date}" )
-        return
+        if silent == False:
+            report.addLine(f"No activities for {night.date}" )
+            return
 
     nighttime = datetime.strptime(night.startTimestamp,'%Y-%m-%dT%H:%M:%S.%f').strftime('%Y-%m-%d')
     
@@ -431,6 +432,7 @@ def main():
     parser.add_argument("-P", "--pushover", help="Send report to pushover", action="store_true", default=False)
     parser.add_argument("-p", "--path", help="Path to NINA log files", default="%LOCALAPPDATA%/NINA/Logs")
     parser.add_argument("-o", "--pattern", help="Pattern to use for parsing. Currently supported values are skyimages and AMOS", default="AMOS")
+    parser.add_argument("-s", "--silent", help="Disable message without content", action="store_true",default=False)
     args = parser.parse_args()
    
     with open('secrets.json') as secrets_file:
@@ -448,16 +450,14 @@ def main():
     print (f"Processing night {n}")
     last_night = nights.nights[n]
     report=Report()
-    generate_night_summary(last_night, report)
+    generate_night_summary(last_night, report, args.silent)
+    if last_night.startTimestamp == 0 and args.silent:
+        return
+    
     if args.pushover:
         pushover.send_message(report.getLines(), f"NINA Report for {last_night.date}")
     else:
         print(report.getLines())
-
-   # for night in nights.nights:
-   #     report = Report()
-   #     generate_night_summary(night, report)
-   #     print(report.getLines())
 
 if __name__ == '__main__':
     main()
