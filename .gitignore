@@ -1,4 +1,4 @@
-secrets.*
+secrets.json.local
 AMOS/*
 __pycache__/*
 *.pyc

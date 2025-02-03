@@ -306,6 +306,13 @@ def parse_log_file(log_file, pattern):
             exp.filter = message.split("\\")[-2]            
 
  
+            if pattern == "FOLDER2":
+                
+                try:
+                    exp.name = message.split("\\")[-2]
+                except:
+                    exp.name = "Unknown"
+
             if pattern == "AMOS":
                 try:
                     exp.name = message.split("\\")[-1].split("_")[7].replace(" ", "")
